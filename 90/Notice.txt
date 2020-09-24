@@ -1,0 +1,1 @@
+Đây là tệp chứa code app TED của chúng ta. Mọi người trong nhóm clone file xuống và đẩy code vào đây qua từng tuần nhé :))

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/zzzz"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_marginLeft="8dp"
+            app:srcCompat="@drawable/rsz_tedwork" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_marginLeft="208dp"
+            app:srcCompat="@drawable/tenradio" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="270dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="122dp"
+            android:layout_height="35dp"
+            android:text="Worklife with Adam Granth"
+            android:textColor="@android:color/background_dark"
+            android:layout_marginLeft="8dp"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="May 12,2020"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="136dp"
+            android:layout_height="37dp"
+            android:text="TED Radio Hour"
+            android:textColor="@android:color/background_dark"
+            android:layout_marginLeft="208dp"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Friday"
+            android:layout_marginLeft="208dp"
+            android:layout_marginTop="20dp"/>
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="342dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_marginLeft="8dp"
+            app:srcCompat="@drawable/tedtalk" />
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_marginLeft="208dp"
+            app:srcCompat="@drawable/ten" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="532dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="122dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:text="TED talk daily"
+            android:textColor="@android:color/background_dark" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21:46"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="136dp"
+            android:layout_height="37dp"
+            android:text="TED en Espanol"
+            android:textColor="@android:color/background_dark"
+            android:layout_marginLeft="208dp"/>
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thursday"
+            android:layout_marginLeft="208dp"
+            android:layout_marginTop="20dp"/>
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="585dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_marginLeft="8dp"
+            app:srcCompat="@drawable/teninterview" />
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_marginLeft="208dp"
+            app:srcCompat="@drawable/tedsincerely" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="670dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/under" />
+        </RelativeLayout>
+
+</RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

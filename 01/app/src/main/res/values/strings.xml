@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Alarm Clock Alarmy</string>
+    <string name="add_to_photo">Add to Photo</string>
+    <string name="save">Save</string>
+    <string name="the_kitchen_or_bathroom_works_great">(The kitchen or bathroom works great!)</string>
+    <string name="select_a_spot_far_from_your_bed_you_will_snap_to_dismiss_your_alarm">Select a spot far from your bed you will snap to dismiss your alarm.</string>
+    <string name="ch_p_nh">Chụp ảnh</string>
+</resources>

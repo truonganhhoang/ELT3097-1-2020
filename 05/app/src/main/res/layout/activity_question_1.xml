@@ -87,7 +87,7 @@
         android:text="anh" />
 
     <Button
-        android:background="@drawable/button_question_1"
+        android:background="@drawable/buttonkiemtra"
         android:id="@+id/button9"
         android:layout_width="302dp"
         android:layout_height="59dp"
@@ -100,29 +100,9 @@
         android:layout_marginBottom="17dp"
         android:text="Kiểm tra" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="match_parent"
-        android:layout_height="106dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginLeft="0dp"
-        app:srcCompat="@drawable/progress" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="171dp"
-        app:srcCompat="@drawable/speaker" />
-
     <TextView
         android:id="@+id/textView4"
+        android:textStyle="bold"
         android:layout_width="170dp"
         android:layout_height="38dp"
         android:layout_alignParentStart="true"
@@ -170,5 +150,56 @@
         android:layout_marginTop="185dp"
         android:text="The Duck"
         android:textSize="20dp" />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="15dp"
+        android:progress="20"
+        android:progressBackgroundTint="#EEEEEE"
+        android:progressTint="#8BC34A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="9dp"
+        android:background="#FFFFFF"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="72dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="167dp"
+        app:srcCompat="@drawable/speaker" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="3dp"
+        android:progress="30"
+        android:progressBackgroundTint="#EEEEEE"
+        android:progressTint="#8BC34A" />
 
 </RelativeLayout>

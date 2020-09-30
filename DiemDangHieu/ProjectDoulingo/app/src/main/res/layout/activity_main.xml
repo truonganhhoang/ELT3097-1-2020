@@ -14,6 +14,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="68dp"
         android:layout_marginEnd="16dp"
+        android:textStyle="bold"
         android:text="Chọn bản dịch đúng"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,6 +50,7 @@
         android:id="@+id/button"
         android:layout_width="405dp"
         android:layout_height="57dp"
+        android:background="#B0D2D6"
         android:text="A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,17 +62,19 @@
         android:id="@+id/button2"
         android:layout_width="405dp"
         android:layout_height="57dp"
+        android:background="#B0D2D6"
         android:text="B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.388" />
+        app:layout_constraintVertical_bias="0.408" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="340dp"
         android:layout_height="55dp"
+        android:background="#1E88E5"
         android:text="Kiểm Tra"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -83,12 +87,13 @@
         android:id="@+id/button3"
         android:layout_width="405dp"
         android:layout_height="57dp"
+        android:background="#B0D2D6"
         android:text="C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.486" />
+        app:layout_constraintVertical_bias="0.526" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton"

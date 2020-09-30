@@ -1,44 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:id="@+id/layout"
-    android:layout_height="match_parent">
-    /*<ScrollView
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFFFFF"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:src="@drawable/button_language"></ImageButton>
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFFFFF"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:src="@drawable/crown"></ImageButton>
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFFFFF"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:src="@drawable/ruby"></ImageButton>
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFFFFF"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:src="@drawable/ruby"></ImageButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="607dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+        <ImageButton
+            android:layout_marginLeft="20dp"
+            android:layout_width="70dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitCenter"
+            android:background="#FFFFFF"
+            android:src="@drawable/dashboard"></ImageButton>
+        <ImageButton
+            android:id="@+id/button_account"
+            android:layout_marginLeft="30dp"
+            android:layout_width="70dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitCenter"
+            android:background="#FFFFFF"
+            android:src="@drawable/account"></ImageButton>
+        <ImageButton
+            android:layout_marginLeft="30dp"
+            android:layout_width="70dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitCenter"
+            android:background="#FFFFFF"
+            android:src="@drawable/ranking"></ImageButton>
+        <ImageButton
+            android:layout_marginLeft="10dp"
+            android:layout_width="70dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitCenter"
+            android:background="#FFFFFF"
+            android:src="@drawable/store"></ImageButton>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="0dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="vertical"
             android:layout_height="match_parent">
+
+            <ImageView
+
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="#c1c1c1"
+                android:src="@drawable/mson" />
+
             <ImageView
                 android:layout_width="match_parent"
-                android:background="#c1c1c1"
                 android:layout_height="300dp"
-                android:src="@drawable/speaker"/>
+                android:layout_marginTop="30dp"
+                android:background="#c1c1c1"
+                android:src="@drawable/mson" />
+
             <ImageView
                 android:layout_width="match_parent"
                 android:background="#c1c1c1"
                 android:layout_height="300dp"
                 android:layout_marginTop="30dp"
-                android:src="@drawable/facebook"/>
+                android:src="@drawable/mson"/>
             <ImageView
                 android:layout_width="match_parent"
                 android:background="#c1c1c1"
                 android:layout_height="300dp"
                 android:layout_marginTop="30dp"
-                android:src="@drawable/facebook"/>
+                android:src="@drawable/mson"/>
             <ImageView
                 android:layout_width="match_parent"
                 android:background="#c1c1c1"
                 android:layout_height="300dp"
                 android:layout_marginTop="30dp"
-                android:src="@drawable/facebook"/>
-            <ImageView
-                android:layout_width="match_parent"
-                android:background="#c1c1c1"
-                android:layout_height="300dp"
-                android:layout_marginTop="30dp"
-                android:src="@drawable/facebook"/>
-        </LinearLayout>*/
+                android:src="@drawable/mson"/>
+        </LinearLayout>
     </ScrollView>
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,15 +7,6 @@
     tools:context=".MainActivity">
 
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/anh7"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="16dp" />
-
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="392dp"
@@ -37,37 +28,53 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="120dp"
         android:layout_marginEnd="16dp"
-        android:text="Họ uống nước trái cây"
+        android:text="Họ uống nước trái cây."
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="403dp"
-        android:layout_height="167dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="228dp"
-        android:layout_marginEnd="16dp"
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="283dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/anh8" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="341dp"
-        android:layout_height="112dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="468dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/anh9" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="405dp"
+        android:layout_height="57dp"
+        android:text="Button"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="191dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="405dp"
+        android:layout_height="57dp"
+        android:text="Button"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="405dp"
+        android:layout_height="57dp"
+        android:text="Button"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="317dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="340dp"
+        android:layout_height="55dp"
+        android:text="Button"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="636dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

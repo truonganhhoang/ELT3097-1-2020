@@ -12,6 +12,9 @@
         android:layout_height="40dp"
         android:scaleType="center"
         android:src="@drawable/button_x"
+        android:background="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="8dp"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="20dp" />
 
@@ -19,16 +22,16 @@
         android:id="@+id/progressBar"
         style="@android:style/Widget.ProgressBar.Horizontal"
         android:layout_width="0dp"
-        android:background="@drawable/button_social"
         android:layout_height="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="15dp"
         android:progress="20"
-        android:progressTint="#8BC34A"
         android:progressBackgroundTint="#EEEEEE"
+        android:progressTint="#8BC34A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintLeft_toRightOf="@id/image_x"
-        app:layout_constraintStart_toEndOf="@id/image_x"
-        android:layout_marginRight="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="26dp" />
 
     <TextView
@@ -115,7 +118,7 @@
         android:layout_marginRight="15dp"
         android:text="kiểm tra"
         android:textStyle="bold"
-        android:textColor="#999999"
+        android:textColor="#666666"
         android:background="@drawable/button_round_kt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.551"

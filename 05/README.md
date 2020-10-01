@@ -21,3 +21,10 @@ Layout của Lê Minh Sơn
 
 
 ![Layout của Lê Minh Sơn](https://github.com/sonnh23/ELT3097-1-2020/blob/master/LeMinhSon/Baitaptuan4.gif) 
+
+
+
+
+
+
+![PhamTheThinh](https://user-images.githubusercontent.com/71000977/94785419-cd3d0380-03f9-11eb-86eb-18b24d3eeca9.gif)

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="220dp"
+        app:srcCompat="@drawable/Untitled2"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="251dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="250dp"
+        android:layout_height="220dp"
+        app:srcCompat="@drawable/Untitled1"
+        tools:layout_editor_absoluteX="303dp"
+        tools:layout_editor_absoluteY="251dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="250dp"
+        android:layout_height="220dp"
+        app:srcCompat="@drawable/Untitled3"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="503dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="250dp"
+        android:layout_height="220dp"
+        app:srcCompat="@drawable/Untitled4"
+        tools:layout_editor_absoluteX="304dp"
+        tools:layout_editor_absoluteY="503dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="324dp"
+        android:layout_height="75dp"
+        android:text="Kiểm Tra"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="794dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="477dp"
+        android:layout_height="79dp"
+        android:text="Hình nào là tiếng Nhật ?"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="141dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="529dp"
+        android:layout_height="106dp"
+        app:srcCompat="@drawable/Untitled6"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="10dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

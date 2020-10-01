@@ -1,4 +1,5 @@
-Đã bổ sung videoĐỗ Văn Chí
-Đặng Đức Cảnh
-Trần Minh Tuấn
-Nộp màn hình app My Note: https://drive.google.com/file/d/1oW6ds6x0NQr8nizAdg8Q2Gck6K7vQv94/view?fbclid=IwAR3uq2kfELjfBK6vdcMUqRm1hyMCVI2ZmuoriTW7mJa5KNlAWeorChx6Xyw
+# ELT3097-1-2020 Môn học Lập trình cho thiết bị di động
+
+Mỗi sinh viên cần tự học theo khóa học MOOC và nộp bài hàng tuần các sản phẩm đã làm được theo khóa học.
+
+Hàng tuần sinh viên cập nhật tiến độ học tập bằng cách chụp ảnh [màn hình khóa học](https://classroom.udacity.com/courses/ud851) và cập nhật file theo mẫu \NguyenVanA\udacity.jpg.

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_learn"
+            android:icon="@drawable/ic_baseline_directions_car_24"
+            android:title="Learning" />
+        <item
+            android:id="@+id/mav_info"
+            android:icon="@drawable/ic_baseline_info_24"
+            android:title="Instruction" />
+        <item
+            android:id="@+id/nav_email"
+            android:icon="@drawable/ic_baseline_email_24"
+            android:title="Email" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:title="Settings" />
+    </group>
+
+    <item android:title="Others">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_baseline_share_24"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_baseline_send_24"
+                android:title="Send" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_baseline_thumb_up_24"
+                android:title="Rating" />
+        </menu>
+    </item>
+
+</menu>

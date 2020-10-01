@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f08080">
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        tools:layout_editor_absoluteX="320dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:id="@+id/anh2"
+        android:src="@drawable/anh2"
+        android:scaleType="fitCenter"/>
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/anh1"
+        android:src="@drawable/anh1"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:text="1/10"
+        android:textColor="#ffffff"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="111dp"
+        android:id="@+id/anh3"
+        android:src="@drawable/anh3"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        tools:layout_editor_absoluteX="210dp"
+        tools:layout_editor_absoluteY="111dp"
+        android:id="@+id/anh4"
+        android:src="@drawable/anh4"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:layout_width="170dp"
+        android:layout_height="150dp"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="407dp"
+        android:id="@+id/anh5"
+        android:src="@drawable/anh5"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:layout_width="170dp"
+        android:layout_height="150dp"
+        tools:layout_editor_absoluteX="225dp"
+        tools:layout_editor_absoluteY="407dp"
+        android:id="@+id/anh6"
+        android:src="@drawable/anh6"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:layout_width="283dp"
+        android:layout_height="105dp"
+        android:layout_heigh="10dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:text="3  +  10  =  15"
+        android:textColor="#ffffff"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="249dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

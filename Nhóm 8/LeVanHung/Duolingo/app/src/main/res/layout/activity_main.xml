@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/layout"
+    android:layout_height="match_parent"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+    <Button
+        android:id="@+id/button1"
+        android:gravity="center"
+        android:layout_below="@+id/textView"
+        android:layout_width="161dp"
+        android:layout_height="202dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/coffee"
+     />
+
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_below="@+id/textView"
+        android:gravity="center"
+        android:layout_width="161dp"
+        android:layout_height="202dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="25dp"
+        android:layout_toRightOf="@+id/button1"
+        android:background="@drawable/rice"
+
+         />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_below="@id/button1"
+        android:gravity="center"
+        android:layout_width="161dp"
+        android:layout_height="202dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/food"
+        />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_below="@id/button2"
+        android:gravity="center"
+        android:layout_width="161dp"
+        android:layout_height="202dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="25dp"
+        android:layout_toRightOf="@+id/button3"
+        android:background="@drawable/tea"
+        />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_below="@id/button3"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:text="Kiểm Tra"
+        />
+    <ImageButton
+
+        android:id="@+id/imageButton"
+        android:background="#00F32121"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/btn_dialog"
+        />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="351dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/imageButton"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar"
+        android:layout_marginTop="29dp"
+        android:textSize="30sp"
+        android:textColor="#131314"
+        android:text= "@string/stringName"
+        />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

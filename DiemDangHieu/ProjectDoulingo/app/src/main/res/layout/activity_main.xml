@@ -50,53 +50,57 @@
         android:id="@+id/button"
         android:layout_width="405dp"
         android:layout_height="57dp"
-        android:background="#B0D2D6"
         android:text="A. They drink juice"
+        android:textSize="20dp"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.29" />
+        app:layout_constraintVertical_bias="0.29"
+        android:background="@drawable/button_answer_design"/>
 
     <Button
         android:id="@+id/button2"
         android:layout_width="405dp"
         android:layout_height="57dp"
-        android:background="#B0D2D6"
         android:text="B. He drinks water"
+        android:textSize="20dp"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.408" />
+        app:layout_constraintVertical_bias="0.408"
+        android:background="@drawable/button_answer_design"/>
 
     <Button
         android:id="@+id/button4"
         android:layout_width="340dp"
         android:layout_height="55dp"
-        android:background="#1E88E5"
         android:text="Kiểm Tra"
+        android:textSize="23dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.933" />
+        app:layout_constraintVertical_bias="0.933"
+        android:background="@drawable/button_design"/>
 
     <Button
         android:id="@+id/button3"
         android:layout_width="405dp"
         android:layout_height="57dp"
-        android:background="#B0D2D6"
         android:text="C. I drink coffee"
+        android:textSize="20dp"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.526" />
+        app:layout_constraintVertical_bias="0.526"
+        android:background="@drawable/button_answer_design"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton"
@@ -106,6 +110,7 @@
         app:backgroundTint="#FFFFFF"
         app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
         tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="10dp" />
+        tools:layout_editor_absoluteY="-2dp"
+        android:onClick="clickexit"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

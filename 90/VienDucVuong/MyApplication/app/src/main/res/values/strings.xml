@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string name="button">Button</string>
+    <string name="ted_en_espanol"></string>
+    <string name="_21_46"></string>
+    <string name="ted_talk_daily"></string>
+    <string name="friday"></string>
+    <string name="may_12_2020"></string>
+    <string name="worklife_with_adam_granth"></string>
+    <string name="ted_radio_hour"></string>
+    <string name="thursday"></string>
 </resources>

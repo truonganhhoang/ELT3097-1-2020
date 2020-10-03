@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.TED;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         btnFirst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, layout2.class);
+                Intent intent = new Intent(MainActivity.this, Education.class);
                 startActivity(intent);
             }
         });
@@ -29,16 +29,15 @@ public class MainActivity extends AppCompatActivity {
         btnSecond.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, layout3.class);
+                Intent intent = new Intent(MainActivity.this, Design.class);
                 startActivity(intent);
             }
         });
     }
     public void batdau(View view) {
-        Intent i = new Intent(this,Main2Activity.class);
+        Intent i = new Intent(this,Podcasts.class);
         startActivity(i);
     }
 
 
 }
-

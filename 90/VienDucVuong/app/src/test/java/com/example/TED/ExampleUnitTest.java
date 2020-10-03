@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.TED;
 
 import org.junit.Test;
 

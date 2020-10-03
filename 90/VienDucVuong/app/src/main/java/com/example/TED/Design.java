@@ -1,19 +1,14 @@
-package com.example.myapplication;
-
-
-import android.os.Bundle;
+package com.example.TED;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.Bundle;
 
-
-public class Main2Activity extends AppCompatActivity {
+public class Design extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.trung);
-
+        setContentView(R.layout.activity_design);
     }
-
 }

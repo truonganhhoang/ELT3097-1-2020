@@ -55,7 +55,7 @@ public class Them_or_they extends AppCompatActivity {
                     builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int i) {
-                            startActivity(new Intent(Them_or_they.this, Main_Vocabulary.class));
+                            startActivity(new Intent(Them_or_they.this, Vocabulary.class));
                         }
                     });
                     builder.show();

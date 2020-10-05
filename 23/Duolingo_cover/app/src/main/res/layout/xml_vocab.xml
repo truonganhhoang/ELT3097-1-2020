@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
-    tools:context=".Main_Vocabulary">
+    tools:context=".Vocabulary">
 
     <TextView
         android:id="@+id/Translate"

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TED app</string>
+    <string name="ted_talk_daily">TED talk daily</string>
+    <string name="ted_en_espanol">TED en Espanol</string>
+    <string name="_21_46">21:46</string>
+    <string name="thursday">Thursday</string>
+    <string name="ted_radio_hour">TED Radio Hour</string>
+    <string name="may_12_2020">May 12,2020</string>
+    <string name="worklife_with_adam_granth">Worklife with Adam Granth</string>
+    <string name="friday">Friday</string>
+    <string name="welcome_to_new_activity">Welcome to New Activity</string>
+    <string name="the_ted_interview">The TED interview</string>
+    <string name="sincerely_x_season_1">Sincerely, X: Season 1</string>
+    <string name="july_23_2020">July 23, 2020</string>
+    <string name="apr_6_2020">Apr 6, 2020</string>
+</resources>

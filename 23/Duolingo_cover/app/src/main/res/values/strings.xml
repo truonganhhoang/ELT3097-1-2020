@@ -9,4 +9,9 @@
     <string name="them">them</string>
     <string name="they">they</string>
     <string name="kmtraCheck">KIỂM TRA</string>
+    <string name="b_t_u">BẮT ĐẦU</string>
+    <string name="todo2">TODO</string>
+    <string name="ch_o_m_ng_n_v_i_duolingo">Chào mừng đến với Duolingo</string>
+    <string name="textview">TextView</string>
+    <string name="let_s_begin">Let\'s Begin</string>
 </resources>

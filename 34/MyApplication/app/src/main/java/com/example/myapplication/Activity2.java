@@ -15,7 +15,16 @@ public class Activity2 extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_2);
+        button2 = findViewById(R.id.imageButton12);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Activity2.this,thanh.class);
+                startActivity(intent);
+            }
+        });
         button2 = findViewById(R.id.imageButton);
+
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -25,4 +34,5 @@ public class Activity2 extends AppCompatActivity {
         });
 
     }
+
 }

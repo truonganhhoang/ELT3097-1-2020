@@ -11,7 +11,7 @@
     tools:ignore="Deprecated">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/back"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="69dp"
         android:layout_height="42dp"
@@ -23,7 +23,7 @@
         android:textSize="32sp" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/dapan1"
         android:layout_width="162dp"
         android:layout_height="165dp"
         android:layout_x="22dp"
@@ -35,7 +35,7 @@
         android:textAllCaps="false" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/dapan2"
         android:layout_width="162dp"
         android:layout_height="170dp"
         android:layout_x="208dp"
@@ -47,7 +47,7 @@
         android:text="cafe" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/dapan3"
         android:layout_width="160dp"
         android:layout_height="170dp"
         android:layout_x="22dp"
@@ -59,7 +59,7 @@
         android:textAllCaps="false" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/dapan4"
         android:layout_width="160dp"
         android:layout_height="168dp"
         android:layout_x="207dp"
@@ -73,7 +73,7 @@
 
     <Button
 
-        android:id="@+id/button5"
+        android:id="@+id/kiemtra"
         android:layout_width="360dp"
         android:layout_height="41dp"
         android:layout_x="26dp"
@@ -116,7 +116,7 @@
         android:visibility="invisible">
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/tieptuc"
             android:layout_width="361dp"
             android:layout_height="46dp"
             android:layout_alignParentEnd="true"
@@ -128,7 +128,7 @@
             android:textColor="#FFFF" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/check"
             android:layout_width="190dp"
             android:layout_height="44dp"
             android:layout_alignParentEnd="true"

@@ -16,15 +16,15 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    Button button;
-    Button button1;
-    Button button2;
-    Button button3;
-    Button button4;
-    Button button5;
-    Button button6;
+    Button back;
+    Button dapan1;
+    Button dapan2;
+    Button dapan3;
+    Button dapan4;
+    Button kiemtra;
+    Button tieptuc;
     RelativeLayout layout1;
-    TextView textView3;
+    TextView check;
     ActionBar actionBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,34 +32,34 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         actionBar = getSupportActionBar();
         actionBar.hide();
-        button = findViewById(R.id.button);
-        button1 = findViewById(R.id.button1);
-        button2 = findViewById(R.id.button2);
-        button3 = findViewById(R.id.button3);
-        button4 = findViewById(R.id.button4);
-        button5 = findViewById(R.id.button5);
-        button6 = findViewById(R.id.button6);
+        back = findViewById(R.id.back);
+        dapan1 = findViewById(R.id.dapan1);
+        dapan2 = findViewById(R.id.dapan2);
+        dapan3 = findViewById(R.id.dapan3);
+        dapan4 = findViewById(R.id.dapan4);
+        kiemtra = findViewById(R.id.kiemtra);
+        tieptuc = findViewById(R.id.tieptuc);
         layout1 = findViewById(R.id.layout1);
-        textView3 = findViewById(R.id.textView3);
+        check = findViewById(R.id.check);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, PreActivity.class));
             }
         });
-        button6.setOnClickListener(new View.OnClickListener() {
+        tieptuc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, NextActivity.class));
                 overridePendingTransition(R.anim.anim_enter,R.anim.anim_exit);
             }
         });
-        button1.setOnClickListener(mListener);
-        button2.setOnClickListener(mListener);
-        button3.setOnClickListener(mListener);
-        button4.setOnClickListener(mListener);
-        button5.setOnClickListener(mListener);
+        dapan1.setOnClickListener(mListener);
+        dapan2.setOnClickListener(mListener);
+        dapan3.setOnClickListener(mListener);
+        dapan4.setOnClickListener(mListener);
+        kiemtra.setOnClickListener(mListener);
     }
 
     View.OnClickListener mListener = new View.OnClickListener() {
@@ -68,57 +68,57 @@ public class MainActivity extends AppCompatActivity {
             int Id = v.getId();
             boolean b;
             switch (Id) {
-                case R.id.button1:
-                    button5.setEnabled(true);
-                    button5.setBackgroundResource(R.drawable.custom_kiemtra);
-                    button1.setSelected(true);
-                    button2.setSelected(false);
-                    button3.setSelected(false);
-                    button4.setSelected(false);
+                case R.id.dapan1:
+                    kiemtra.setEnabled(true);
+                    kiemtra.setBackgroundResource(R.drawable.custom_kiemtra);
+                    dapan1.setSelected(true);
+                    dapan2.setSelected(false);
+                    dapan3.setSelected(false);
+                    dapan4.setSelected(false);
                     break;
-                case R.id.button2:
-                    button5.setEnabled(true);
-                    button2.setSelectAllOnFocus(true);
-                    button5.setBackgroundResource(R.drawable.custom_kiemtra);
-                    button2.setSelected(true);
-                    button1.setSelected(false);
-                    button3.setSelected(false);
-                    button4.setSelected(false);
+                case R.id.dapan2:
+                    kiemtra.setEnabled(true);
+                    dapan2.setSelectAllOnFocus(true);
+                    kiemtra.setBackgroundResource(R.drawable.custom_kiemtra);
+                    dapan2.setSelected(true);
+                    dapan1.setSelected(false);
+                    dapan3.setSelected(false);
+                    dapan4.setSelected(false);
                     break;
-                case R.id.button3:
-                    button5.setEnabled(true);
-                    button3.setSelectAllOnFocus(true);
-                    button5.setBackgroundResource(R.drawable.custom_kiemtra);
-                    button3.setSelected(true);
-                    button1.setSelected(false);
-                    button4.setSelected(false);
-                    button2.setSelected(false);
+                case R.id.dapan3:
+                    kiemtra.setEnabled(true);
+                    dapan3.setSelectAllOnFocus(true);
+                    kiemtra.setBackgroundResource(R.drawable.custom_kiemtra);
+                    dapan3.setSelected(true);
+                    dapan4.setSelected(false);
+                    dapan1.setSelected(false);
+                    dapan2.setSelected(false);
                     break;
-                case R.id.button4:
-                    button5.setEnabled(true);
-                    button4.setSelected(true);
-                    button1.setSelected(false);
-                    button3.setSelected(false);
-                    button2.setSelected(false);
-                    button5.setBackgroundResource(R.drawable.custom_kiemtra);
+                case R.id.dapan4:
+                    kiemtra.setEnabled(true);
+                    dapan4.setSelected(true);
+                    dapan1.setSelected(false);
+                    dapan3.setSelected(false);
+                    dapan2.setSelected(false);
+                    kiemtra.setBackgroundResource(R.drawable.custom_kiemtra);
 
                     break;
-                case R.id.button5:
-                    if(button1.isSelected()) {
-                        button5.setBackgroundResource(R.drawable.custom_check);
-                        button5.setText("Giỏi Lắm");
-                        button5.setTextColor(Color.WHITE);
+                case R.id.kiemtra:
+                    if(dapan1.isSelected()) {
+                        kiemtra.setBackgroundResource(R.drawable.custom_check);
+                        kiemtra.setText("Giỏi Lắm");
+                        kiemtra.setTextColor(Color.WHITE);
                         layout1.setVisibility(layout1.VISIBLE);
-                        button5.setVisibility(View.INVISIBLE);
+                        kiemtra.setVisibility(View.INVISIBLE);
                     }
                     else {
                         layout1.setVisibility(layout1.VISIBLE);
                         layout1.setBackgroundResource(R.drawable.custom_tiep1);
-                        button6.setTextColor(Color.WHITE);
-                        button6.setBackgroundResource(R.drawable.custom_check);
-                        button5.setVisibility(View.INVISIBLE);
-                        textView3.setText("Trả lời đúng: cake ");
-                        textView3.setTextColor(Color.RED);
+                        tieptuc.setTextColor(Color.WHITE);
+                        tieptuc.setBackgroundResource(R.drawable.custom_check);
+                        kiemtra.setVisibility(View.INVISIBLE);
+                        check.setText("Trả lời đúng: cake ");
+                        check.setTextColor(Color.RED);
                     }
                     break;
                 default:

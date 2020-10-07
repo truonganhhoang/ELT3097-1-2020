@@ -61,7 +61,7 @@
         app:layout_constraintVertical_bias="0.403" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button1"
         android:layout_width="405dp"
         android:layout_height="57dp"
         android:background="@drawable/button_answer_design"
@@ -89,7 +89,7 @@
         app:layout_constraintVertical_bias="0.976" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/button2"
         android:layout_width="405dp"
         android:layout_height="57dp"
         android:background="@drawable/button_answer_design"
@@ -112,5 +112,18 @@
         tools:layout_editor_absoluteX="3dp"
         tools:layout_editor_absoluteY="-2dp"
         android:onClick="clickexit"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="415dp"
+        android:layout_height="164dp"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

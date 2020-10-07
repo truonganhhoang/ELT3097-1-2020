@@ -12,10 +12,6 @@ import android.support.v7.widget.Toolbar;
 import com.danielkim.soundrecorder.R;
 import com.danielkim.soundrecorder.fragments.SettingsFragment;
 
-/**
- * Created by Daniel on 5/22/2017.
- */
-
 public class SettingsActivity extends android.support.v7.app.ActionBarActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

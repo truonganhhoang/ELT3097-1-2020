@@ -14,9 +14,7 @@ import android.view.ViewGroup;
 import com.danielkim.soundrecorder.R;
 import com.danielkim.soundrecorder.adapters.FileViewerAdapter;
 
-/**
- * Created by Daniel on 12/23/2014.
- */
+
 public class FileViewerFragment extends Fragment{
     private static final String ARG_POSITION = "position";
     private static final String LOG_TAG = "FileViewerFragment";
@@ -49,7 +47,7 @@ public class FileViewerFragment extends Fragment{
         LinearLayoutManager llm = new LinearLayoutManager(getActivity());
         llm.setOrientation(LinearLayoutManager.VERTICAL);
 
-        //newest to oldest order (database stores from oldest to newest)
+
         llm.setReverseLayout(true);
         llm.setStackFromEnd(true);
 
@@ -65,11 +63,11 @@ public class FileViewerFragment extends Fragment{
     FileObserver observer =
             new FileObserver(android.os.Environment.getExternalStorageDirectory().toString()
                     + "/SoundRecorder") {
-                // set up a file observer to watch this directory on sd card
+
                 @Override
                 public void onEvent(int event, String file) {
                     if(event == FileObserver.DELETE){
-                        // user deletes a recording file out of the app
+
 
                         String filePath = android.os.Environment.getExternalStorageDirectory().toString()
                                 + "/SoundRecorder" + file + "]";
@@ -78,7 +76,7 @@ public class FileViewerFragment extends Fragment{
                                 + android.os.Environment.getExternalStorageDirectory().toString()
                                 + "/SoundRecorder" + file + "]");
 
-                        // remove file from database and recyclerview
+
                         mFileViewerAdapter.removeOutOfApp(filePath);
                     }
                 }

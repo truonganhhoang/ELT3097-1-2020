@@ -11,9 +11,7 @@ import com.danielkim.soundrecorder.MySharedPreferences;
 import com.danielkim.soundrecorder.R;
 import com.danielkim.soundrecorder.activities.SettingsActivity;
 
-/**
- * Created by Daniel on 5/22/2017.
- */
+
 
 public class SettingsFragment extends PreferenceFragment {
     @Override

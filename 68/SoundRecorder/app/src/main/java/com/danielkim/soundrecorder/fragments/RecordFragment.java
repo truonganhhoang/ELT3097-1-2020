@@ -20,21 +20,14 @@ import com.melnykov.fab.FloatingActionButton;
 
 import java.io.File;
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * to handle interaction events.
- * Use the {@link RecordFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class RecordFragment extends Fragment {
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+
     private static final String ARG_POSITION = "position";
     private static final String LOG_TAG = RecordFragment.class.getSimpleName();
 
     private int position;
 
-    //Recording controls
     private FloatingActionButton mRecordButton = null;
     private Button mPauseButton = null;
 
@@ -45,14 +38,7 @@ public class RecordFragment extends Fragment {
     private boolean mPauseRecording = true;
 
     private Chronometer mChronometer = null;
-    long timeWhenPaused = 0; //stores time when user clicks pause button
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @return A new instance of fragment Record_Fragment.
-     */
+    long timeWhenPaused = 0;
     public static RecordFragment newInstance(int position) {
         RecordFragment f = new RecordFragment();
         Bundle b = new Bundle();
@@ -77,7 +63,7 @@ public class RecordFragment extends Fragment {
         View recordView = inflater.inflate(R.layout.fragment_record, container, false);
 
         mChronometer = (Chronometer) recordView.findViewById(R.id.chronometer);
-        //update recording prompt text
+
         mRecordingPrompt = (TextView) recordView.findViewById(R.id.recording_status_text);
 
         mRecordButton = (FloatingActionButton) recordView.findViewById(R.id.btnRecord);
@@ -92,7 +78,7 @@ public class RecordFragment extends Fragment {
         });
 
         mPauseButton = (Button) recordView.findViewById(R.id.btnPause);
-        mPauseButton.setVisibility(View.GONE); //hide pause button before recording starts
+        mPauseButton.setVisibility(View.GONE);
         mPauseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -104,24 +90,24 @@ public class RecordFragment extends Fragment {
         return recordView;
     }
 
-    // Recording Start/Stop
+
     //TODO: recording pause
     private void onRecord(boolean start){
 
         Intent intent = new Intent(getActivity(), RecordingService.class);
 
         if (start) {
-            // start recording
+
             mRecordButton.setImageResource(R.drawable.ic_media_stop);
-            //mPauseButton.setVisibility(View.VISIBLE);
+
             Toast.makeText(getActivity(),R.string.toast_recording_start,Toast.LENGTH_SHORT).show();
             File folder = new File(Environment.getExternalStorageDirectory() + "/SoundRecorder");
             if (!folder.exists()) {
-                //folder /SoundRecorder doesn't exist, create the folder
+
                 folder.mkdir();
             }
 
-            //start Chronometer
+
             mChronometer.setBase(SystemClock.elapsedRealtime());
             mChronometer.start();
             mChronometer.setOnChronometerTickListener(new Chronometer.OnChronometerTickListener() {
@@ -140,25 +126,24 @@ public class RecordFragment extends Fragment {
                 }
             });
 
-            //start RecordingService
+
             getActivity().startService(intent);
-            //keep screen on while recording
+
             getActivity().getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
             mRecordingPrompt.setText(getString(R.string.record_in_progress) + ".");
             mRecordPromptCount++;
 
         } else {
-            //stop recording
+
             mRecordButton.setImageResource(R.drawable.ic_mic_white_36dp);
-            //mPauseButton.setVisibility(View.GONE);
             mChronometer.stop();
             mChronometer.setBase(SystemClock.elapsedRealtime());
             timeWhenPaused = 0;
             mRecordingPrompt.setText(getString(R.string.record_prompt));
 
             getActivity().stopService(intent);
-            //allow the screen to turn off again once recording is finished
+
             getActivity().getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         }
     }
@@ -166,14 +151,14 @@ public class RecordFragment extends Fragment {
     //TODO: implement pause recording
     private void onPauseRecord(boolean pause) {
         if (pause) {
-            //pause recording
+
             mPauseButton.setCompoundDrawablesWithIntrinsicBounds
                     (R.drawable.ic_media_play ,0 ,0 ,0);
             mRecordingPrompt.setText((String)getString(R.string.resume_recording_button).toUpperCase());
             timeWhenPaused = mChronometer.getBase() - SystemClock.elapsedRealtime();
             mChronometer.stop();
         } else {
-            //resume recording
+
             mPauseButton.setCompoundDrawablesWithIntrinsicBounds
                     (R.drawable.ic_media_pause ,0 ,0 ,0);
             mRecordingPrompt.setText((String)getString(R.string.pause_recording_button).toUpperCase());

@@ -23,9 +23,7 @@ import com.melnykov.fab.FloatingActionButton;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by Daniel on 1/1/2015.
- */
+
 public class PlaybackFragment extends DialogFragment{
 
     private static final String LOG_TAG = "PlaybackFragment";
@@ -43,10 +41,9 @@ public class PlaybackFragment extends DialogFragment{
     private TextView mFileNameTextView = null;
     private TextView mFileLengthTextView = null;
 
-    //stores whether or not the mediaplayer is currently playing audio
+
     private boolean isPlaying = false;
 
-    //stores minutes and seconds of the length of the file.
     long minutes = 0;
     long seconds = 0;
 
@@ -117,7 +114,7 @@ public class PlaybackFragment extends DialogFragment{
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
                 if(mMediaPlayer != null) {
-                    // remove message Handler from updating progress bar
+
                     mHandler.removeCallbacks(mRunnable);
                 }
             }
@@ -151,7 +148,6 @@ public class PlaybackFragment extends DialogFragment{
 
         builder.setView(view);
 
-        // request a window without the title
         dialog.getWindow().requestFeature(Window.FEATURE_NO_TITLE);
 
         return builder.create();
@@ -161,11 +157,10 @@ public class PlaybackFragment extends DialogFragment{
     public void onStart() {
         super.onStart();
 
-        //set transparent background
+
         Window window = getDialog().getWindow();
         window.setBackgroundDrawableResource(android.R.color.transparent);
 
-        //disable buttons from dialog
         AlertDialog alertDialog = (AlertDialog) getDialog();
         alertDialog.getButton(Dialog.BUTTON_POSITIVE).setEnabled(false);
         alertDialog.getButton(Dialog.BUTTON_NEGATIVE).setEnabled(false);
@@ -190,18 +185,18 @@ public class PlaybackFragment extends DialogFragment{
         }
     }
 
-    // Play start/stop
+
     private void onPlay(boolean isPlaying){
         if (!isPlaying) {
-            //currently MediaPlayer is not playing audio
+
             if(mMediaPlayer == null) {
-                startPlaying(); //start from beginning
+                startPlaying();
             } else {
-                resumePlaying(); //resume the currently paused MediaPlayer
+                resumePlaying();
             }
 
         } else {
-            //pause the MediaPlayer
+
             pausePlaying();
         }
     }
@@ -234,12 +229,11 @@ public class PlaybackFragment extends DialogFragment{
 
         updateSeekBar();
 
-        //keep screen on while playing audio
+
         getActivity().getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
     }
 
     private void prepareMediaPlayerFromPoint(int progress) {
-        //set mediaPlayer to start from middle of the audio file
 
         mMediaPlayer = new MediaPlayer();
 
@@ -260,7 +254,6 @@ public class PlaybackFragment extends DialogFragment{
             Log.e(LOG_TAG, "prepare() failed");
         }
 
-        //keep screen on while playing audio
         getActivity().getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
     }
 
@@ -291,11 +284,11 @@ public class PlaybackFragment extends DialogFragment{
         mCurrentProgressTextView.setText(mFileLengthTextView.getText());
         mSeekBar.setProgress(mSeekBar.getMax());
 
-        //allow the screen to turn off again once audio is finished playing
+
         getActivity().getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
     }
 
-    //updating mSeekBar
+
     private Runnable mRunnable = new Runnable() {
         @Override
         public void run() {

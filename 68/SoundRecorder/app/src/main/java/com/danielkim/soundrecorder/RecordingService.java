@@ -94,8 +94,7 @@ public class RecordingService extends Service {
             mRecorder.start();
             mStartingTimeMillis = System.currentTimeMillis();
 
-            //startTimer();
-            //startForeground(1, createNotification());
+
 
         } catch (IOException e) {
             Log.e(LOG_TAG, "prepare() failed");

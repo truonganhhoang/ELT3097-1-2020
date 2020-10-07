@@ -30,9 +30,7 @@ import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 import java.util.ArrayList;
 
-/**
- * Created by Daniel on 12/29/2014.
- */
+
 public class FileViewerAdapter extends RecyclerView.Adapter<FileViewerAdapter.RecordingsViewHolder>
     implements OnDatabaseChangedListener{
 
@@ -72,7 +70,7 @@ public class FileViewerAdapter extends RecyclerView.Adapter<FileViewerAdapter.Re
             )
         );
 
-        // define an on click listener to open PlaybackFragment
+
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -104,7 +102,7 @@ public class FileViewerAdapter extends RecyclerView.Adapter<FileViewerAdapter.Re
                 final CharSequence[] items = entrys.toArray(new CharSequence[entrys.size()]);
 
 
-                // File delete confirm
+
                 AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
                 builder.setTitle(mContext.getString(R.string.dialog_title_options));
                 builder.setItems(items, new DialogInterface.OnClickListener() {
@@ -172,7 +170,7 @@ public class FileViewerAdapter extends RecyclerView.Adapter<FileViewerAdapter.Re
 
     @Override
     public void onNewDatabaseEntryAdded() {
-        //item added to top of the list
+
         notifyItemInserted(getItemCount() - 1);
         llm.scrollToPosition(getItemCount() - 1);
     }
@@ -184,9 +182,7 @@ public class FileViewerAdapter extends RecyclerView.Adapter<FileViewerAdapter.Re
     }
 
     public void remove(int position) {
-        //remove item from database, recyclerview and storage
 
-        //delete file from storage
         File file = new File(getItem(position).getFilePath());
         file.delete();
 
@@ -205,24 +201,24 @@ public class FileViewerAdapter extends RecyclerView.Adapter<FileViewerAdapter.Re
 
     //TODO
     public void removeOutOfApp(String filePath) {
-        //user deletes a saved recording out of the application through another application
+
     }
 
     public void rename(int position, String name) {
-        //rename a file
+
 
         String mFilePath = Environment.getExternalStorageDirectory().getAbsolutePath();
         mFilePath += "/SoundRecorder/" + name;
         File f = new File(mFilePath);
 
         if (f.exists() && !f.isDirectory()) {
-            //file name is not unique, cannot rename file.
+
             Toast.makeText(mContext,
                     String.format(mContext.getString(R.string.toast_file_exists), name),
                     Toast.LENGTH_SHORT).show();
 
         } else {
-            //file name is unique, rename file
+
             File oldFilePath = new File(getItem(position).getFilePath());
             oldFilePath.renameTo(f);
             mDatabase.renameItem(getItem(position), name, mFilePath);
@@ -239,7 +235,7 @@ public class FileViewerAdapter extends RecyclerView.Adapter<FileViewerAdapter.Re
     }
 
     public void renameFileDialog (final int position) {
-        // File rename dialog
+
         AlertDialog.Builder renameFileBuilder = new AlertDialog.Builder(mContext);
 
         LayoutInflater inflater = LayoutInflater.from(mContext);
@@ -276,7 +272,7 @@ public class FileViewerAdapter extends RecyclerView.Adapter<FileViewerAdapter.Re
     }
 
     public void deleteFileDialog (final int position) {
-        // File delete confirm
+
         AlertDialog.Builder confirmDelete = new AlertDialog.Builder(mContext);
         confirmDelete.setTitle(mContext.getString(R.string.dialog_title_delete));
         confirmDelete.setMessage(mContext.getString(R.string.dialog_text_delete));
@@ -285,7 +281,6 @@ public class FileViewerAdapter extends RecyclerView.Adapter<FileViewerAdapter.Re
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         try {
-                            //remove item from database, recyclerview, and storage
                             remove(position);
 
                         } catch (Exception e) {

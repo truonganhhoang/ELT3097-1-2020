@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hoc giay phep lai xe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hocbanglaixemay">
+
+    <TextView
+        android:id="@+id/đề số 8"
+        android:layout_width="409dp"
+        android:layout_height="33dp"
+        android:text="đề số 8(câu 1/25)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="3dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="1dp" />
+
+    <TextView
+        android:id='@+id/Khái niệm" phương tiện giao thông thô sơ đường bộ'
+        android:layout_width="397dp"
+        android:layout_height="50dp"
+        android:text='Khái niệm" phương tiện giao thông thô sơ đường bộ?'
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="47dp" />
+
+    <TextView
+        android:id="@+id/1. Gồm xe đạp, xích lô, gắn máy và các loại xe tương tự"
+        android:layout_width="389dp"
+        android:layout_height="37dp"
+        android:text="1. Gồm xe đạp, xích lô, gắn máy và các loại xe tương tự"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="118dp" />
+
+    <TextView
+        android:id="@+id/2. Gồm xe đạp, xe gắn máy,xe cho người khuyết tật và xe máy chuyên dùng"
+        android:layout_width="388dp"
+        android:layout_height="42dp"
+        android:text="2. Gồm xe đạp, xe gắn máy,xe cho người khuyết tật và xe máy chuyên dùng"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="172dp" />
+
+    <TextView
+        android:id="@+id/3. Gồm xe ô tô, máy kéo, rơ mooc, máy kéo"
+        android:layout_width="391dp"
+        android:layout_height="38dp"
+        android:text="3. Gồm xe ô tô, máy kéo, rơ mooc, máy kéo"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="236dp" />
+
+    <TextView
+        android:id="@+id/Giải thích đáp án"
+        android:layout_width="134dp"
+        android:layout_height="26dp"
+        android:text="Giải thích đáp án"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="291dp" />
+
+    <TextView
+        android:id="@+id/Phương tiện thô sơ là xe dùng sức người hoặc sức người, sức vật đi chuyển"
+        android:layout_width="241dp"
+        android:layout_height="77dp"
+        android:text="Phương tiện thô sơ là xe dùng sức người hoặc sức người, sức vật đi chuyển"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="349dp" />
+</android.support.constraint.ConstraintLayout>
+<TextView
+android:layout_width="wrap_content"
+android:layout height="wrap_content"
+android:text="học bằng lái xe máy"/>
+</RelativeLayout>

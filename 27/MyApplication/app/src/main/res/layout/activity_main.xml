@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/cauhoi"
+        android:id="@+id/button"
         android:layout_width="0dp"
         android:layout_height="64dp"
         android:layout_marginTop="150dp"
@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.56" />
 
     <TextView
-        android:id="@+id/cauhoi"
+        android:id="@+id/textView"
         android:layout_width="326dp"
         android:layout_height="51dp"
         android:layout_marginTop="200dp"
@@ -36,7 +36,7 @@
         app:layout_constraintVertical_bias="0.869" />
 
     <Button
-        android:id="@+id/dapan"
+        android:id="@+id/button8"
         android:layout_width="327dp"
         android:layout_height="55dp"
         android:layout_marginTop="100dp"
@@ -48,7 +48,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/dapan"
+        android:id="@+id/button9"
         android:layout_width="327dp"
         android:layout_height="55dp"
         android:layout_marginBottom="1dp"
@@ -59,7 +59,7 @@
         app:layout_constraintTop_toBottomOf="@+id/button8" />
 
     <Button
-        android:id="@+id/dapan"
+        android:id="@+id/button10"
         android:layout_width="327dp"
         android:layout_height="55dp"
         android:layout_marginTop="1dp"

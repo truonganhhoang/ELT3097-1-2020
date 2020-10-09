@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/cauhoi"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="430dp"
+        android:background="#00FF00"
+        android:text="@string/s_8_c_u_1_25"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.59" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="326dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="350dp"
+        android:text="@string/ng_i_tham_gia_giao_th_ng_m_trong_c_th_c_ch_t_ma_t_y_c_b_nghi_m_c_m_kh_ng"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.869" />
+
+    <Button
+        android:id="@+id/dapan"
+        android:layout_width="327dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="2dp"
+        android:text="@string/_1_b_nghi_m_c_m"
+        app:layout_constraintBottom_toTopOf="@+id/dapan2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/dapan2"
+        android:layout_width="327dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="1dp"
+        android:text="@string/_2_kh_ng_b_nghi_m_c_m"
+        app:layout_constraintBottom_toTopOf="@+id/dapan3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dapan" />
+
+    <Button
+        android:id="@+id/dapan3"
+        android:layout_width="327dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/_3_kh_ng_b_nghi_m_c_m_n_u_ch_t_ma_t_y_m_c_nh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dapan2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

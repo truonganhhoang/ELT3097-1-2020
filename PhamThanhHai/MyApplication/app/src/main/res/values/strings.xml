@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="s_8_c_u_1_25">Đề số 8( câu 1/25)</string>
+    <string name="ng_i_tham_gia_giao_th_ng_m_trong_c_th_c_ch_t_ma_t_y_c_b_nghi_m_c_m_kh_ng">Người tham gia giao thông mà trong cơ thể có
+        chất ma túy có bị nghiêm cấm không?</string>
+    <string name="_1_b_nghi_m_c_m">1. Bị nghiêm cấm</string>
+    <string name="_2_kh_ng_b_nghi_m_c_m">2. Không bị nghiêm cấm</string>
+    <string name="_3_kh_ng_b_nghi_m_c_m_n_u_ch_t_ma_t_y_m_c_nh">3. Không bị nghiêm cấm nếu chất ma túy ở mức nhẹ.</string>
+</resources>

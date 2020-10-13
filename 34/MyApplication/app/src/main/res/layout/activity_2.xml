@@ -96,7 +96,7 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/imageButton20"
+                    android:id="@+id/buttonKiemTraLayout"
                     android:layout_width="189dp"
                     android:layout_height="182dp"
                     android:layout_marginLeft="20dp"

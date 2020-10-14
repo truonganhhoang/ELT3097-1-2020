@@ -18,9 +18,9 @@
         </activity>
         <activity android:name=".Activity2"/>
         <activity android:name=".thanh"/>
-        <activity android:name=".ActivityDauCongKiemTra">
+        <activity android:name=".ActivityDauCongKiemTra"/>
+        <activity android:name=".thanh1"/>
 
-        </activity>
     </application>
 
 </manifest>

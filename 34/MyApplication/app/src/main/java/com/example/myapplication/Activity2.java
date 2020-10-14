@@ -12,6 +12,7 @@ public class Activity2 extends AppCompatActivity {
     ImageButton buttonBack;
     ImageButton buttonSuaDoi;
     ImageButton buttonKiemTra;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -24,6 +25,7 @@ public class Activity2 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         buttonBack = findViewById(R.id.imageButton);
         buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override

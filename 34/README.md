@@ -43,7 +43,11 @@ Nguyễn Kiến Thanh
 
 
 ![Bài tập](https://github.com/tienanhngp/ELT3097-1-2020/blob/master/NguyenKienThanh/Android%20Emulator%20-%20Nexus_5_API_30_5554%202020-10-06%2022-17-28.gif)
-
+Màn hình
 
 (https://github.com/tienanhngp/ELT3097-1-2020/blob/master/34/MyApplication/app/src/main/java/com/example/myapplication/thanh.java)
+
+layout
+
+(https://github.com/tienanhngp/ELT3097-1-2020/blob/master/34/MyApplication/app/src/main/res/layout/thanh.xml)
 

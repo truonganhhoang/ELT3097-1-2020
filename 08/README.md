@@ -5,6 +5,8 @@ Môn học Lập trình cho thiết bị di động
 
 ![LeVanHung](https://user-images.githubusercontent.com/65001663/94886283-daf79500-049c-11eb-9935-7aa351522b16.gif)
 
+https://github.com/LE-VAN-HUNG/ELT3097-1-2020/blob/Nhom8/LeVanHung/Duolingo/app/src/main/java/com/example/relative_layouts/MainActivity.java
+
 2. VŨ ĐÌNH THÀNH
 https://github.com/LE-VAN-HUNG/ELT3097-1-2020/blob/Nhom8/VuDinhThanh/NopBai/app/src/main/res/layout/activity_main.xml
 

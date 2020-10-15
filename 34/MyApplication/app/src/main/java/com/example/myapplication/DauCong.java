@@ -8,37 +8,37 @@ import android.widget.ImageButton;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Activity2 extends AppCompatActivity {
+public class DauCong extends AppCompatActivity {
     ImageButton buttonBack;
-    ImageButton buttonSuaDoi;
-    ImageButton buttonKiemTra;
+    ImageButton buttonPractice;
+    ImageButton buttonTest;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_2);
-        buttonSuaDoi = findViewById(R.id.imageButton12);
-        buttonSuaDoi.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.dau_cong);
+        buttonPractice = findViewById(R.id.imageButtonPractice);
+        buttonPractice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Activity2.this, thanh.class);
+                Intent intent = new Intent(DauCong.this, thanh.class);
                 startActivity(intent);
             }
         });
 
-        buttonBack = findViewById(R.id.imageButton);
+        buttonBack = findViewById(R.id.imageButtonBackDauCong);
         buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Activity2.this, MainActivity.class);
+                Intent intent = new Intent(DauCong.this, ManHinhChinh.class);
                 startActivity(intent);
             }
         });
-        buttonKiemTra = findViewById(R.id.buttonKiemTraLayout);
-        buttonKiemTra.setOnClickListener(new View.OnClickListener() {
+        buttonTest = findViewById(R.id.buttonTest);
+        buttonTest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Activity2.this, ActivityDauCongKiemTra.class);
+                Intent intent = new Intent(DauCong.this, DauCongKiemTra.class);
                 startActivity(intent);
             }
         });

@@ -25,7 +25,7 @@ public class thanh extends AppCompatActivity{
         buttonback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(thanh.this,Activity2.class);
+                Intent intent = new Intent(thanh.this, DauCong.class);
                 startActivity(intent);
 
             }

@@ -1,180 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:id="@+id/layout"
     android:layout_height="match_parent"
+    android:layout_row="2"
+    android:layout_column="3"
     android:background="#F8FFFCFC"
-    >
+    tools:context=".MainActivity"
+    tools:ignore="Deprecated">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <Button
+        android:id="@+id/back"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="69dp"
+        android:layout_height="42dp"
+        android:layout_x="14dp"
+        android:layout_y="16dp"
+        android:background="#FFFFFF"
+        android:drawableTop="@drawable/back"
+        android:textColor="#848A8A"
+        android:textSize="32sp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+    <Button
+        android:id="@+id/ans1"
+        android:layout_width="162dp"
+        android:layout_height="165dp"
+        android:layout_x="22dp"
+        android:layout_y="141dp"
+        android:background="@drawable/custom"
+        android:drawableTop="@drawable/coffee"
+        android:paddingTop="10dp"
+        android:text="cake"
+        android:textAllCaps="false" />
 
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent">
+    <Button
+        android:id="@+id/ans2"
+        android:layout_width="162dp"
+        android:layout_height="170dp"
+        android:layout_x="208dp"
+        android:layout_y="140dp"
+        android:drawableTop="@drawable/rice"
+        android:paddingTop="10dp"
+        android:background="@drawable/custom"
+        android:textAllCaps="false"
+        android:text="cafe" />
 
-                <Button
-                    android:id="@+id/button1"
-                    android:layout_width="161dp"
-                    android:layout_height="202dp"
-                    android:layout_below="@+id/textView"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="30dp"
-                    android:background="@drawable/custom"
-                    android:drawableTop="@drawable/coffee"
-                    android:gravity="center"
-                    android:text="coffee"
-                    android:textAllCaps="false"
-                    android:textSize="20sp" />
+    <Button
+        android:id="@+id/ans3"
+        android:layout_width="160dp"
+        android:layout_height="170dp"
+        android:layout_x="22dp"
+        android:layout_y="332dp"
+        android:background="@drawable/custom"
+        android:drawableTop="@drawable/food"
+        android:paddingTop="10dp"
+        android:text="rice"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/ans4"
+        android:layout_width="160dp"
+        android:layout_height="168dp"
+        android:layout_x="207dp"
+        android:layout_y="333dp"
+        android:background="@drawable/custom"
+        android:drawableTop="@drawable/tea"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:text="bread"
+        android:textAllCaps="false" />
+
+    <Button
+
+        android:id="@+id/submit"
+        android:layout_width="360dp"
+        android:layout_height="41dp"
+        android:layout_x="26dp"
+        android:layout_y="600dp"
+        android:background="@drawable/custom"
+        android:enabled="false"
+        android:text="kiểm tra" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="277dp"
+        android:layout_height="13dp"
+        android:layout_x="109dp"
+        android:layout_y="29dp"
+        android:background="@drawable/custom_seek"
+        android:max="100"
+        android:progress="40"
+        android:progressTint="#1ABA20" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="28dp"
+        android:layout_y="72dp"
+        android:text='Đâu là "Bánh"?'
+        android:textColor="#DD000000"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="415dp"
+        android:layout_height="153dp"
+        android:layout_x="-1dp"
+        android:layout_y="535dp"
+        android:background="#5BE160"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/tieptuc"
+            android:layout_width="361dp"
+            android:layout_height="46dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="34dp"
+            android:background="@drawable/custom_true"
+            android:text="Tiếp Tục"
+            android:textColor="#FFFF" />
+
+        <TextView
+            android:id="@+id/check"
+            android:layout_width="190dp"
+            android:layout_height="44dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="217dp"
+            android:layout_marginBottom="93dp"
+            android:text="Giỏi Lắm!"
+            android:textSize="17dp"
+            android:textStyle="bold" />
 
 
-                <Button
-                    android:id="@+id/button2"
-                    android:layout_width="161dp"
-                    android:layout_height="202dp"
-                    android:background="@drawable/custom"
-                    android:layout_below="@+id/textView"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginRight="25dp"
-                    android:layout_toRightOf="@+id/button1"
-                    android:drawableTop="@drawable/rice"
-                    android:gravity="center"
-                    android:text="rice"
-                    android:textAllCaps="false"
-                    android:textSize="20sp"
+    </RelativeLayout>
 
-                    />
 
-                <Button
-                    android:id="@+id/button3"
-                    android:layout_width="161dp"
-                    android:layout_height="202dp"
-                    android:background="@drawable/custom"
-                    android:layout_below="@id/button1"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="30dp"
-                    android:drawableTop="@drawable/food"
-                    android:gravity="center"
-                    android:text="food"
-                    android:textAllCaps="false"
-                    android:textSize="20sp" />
-
-                <Button
-                    android:id="@+id/button4"
-                    android:layout_width="161dp"
-                    android:layout_height="202dp"
-                    android:background="@drawable/custom"
-                    android:layout_below="@id/button2"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginRight="25dp"
-                    android:layout_toRightOf="@+id/button3"
-                    android:drawableTop="@drawable/tea"
-                    android:gravity="center"
-                    android:text="tea"
-                    android:textAllCaps="false"
-                    android:textSize="20sp" />
-
-                <Button
-                    android:id="@+id/button5"
-                    android:layout_width="360dp"
-                    android:layout_height="41dp"
-                    android:layout_below="@id/button3"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="25dp"
-                    android:enabled="false"
-                    android:background="@drawable/custom_submit"
-                    android:gravity="center"
-                    android:text="Kiểm Tra" />
-
-                <ImageButton
-
-                    android:id="@+id/imageButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="#00F32121"
-                    app:srcCompat="@android:drawable/btn_dialog" />
-
-                <ProgressBar
-                    android:id="@+id/progressBar"
-                    style="@android:style/Widget.ProgressBar.Horizontal"
-                    android:layout_width="351dp"
-                    android:layout_height="20dp"
-                    android:background="@drawable/custom_seek"
-                    android:max="100"
-                    android:progress="40"
-                    android:progressTint="#1ABA20"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_toRightOf="@id/imageButton" />
-
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/progressBar"
-                    android:layout_marginTop="29dp"
-                    android:gravity="left"
-                    android:text="@string/stringName"
-                    android:textColor="#131314"
-                    android:textSize="30sp"
-                    android:textStyle="bold" />
-
-                <RelativeLayout
-                    android:id="@+id/layout1"
-                    android:layout_width="415dp"
-                    android:layout_height="140dp"
-                    android:layout_below="@+id/button1"
-                    android:layout_marginTop="190dp"
-                    android:layout_x="-1dp"
-                    android:layout_y="535dp"
-                    android:background="#76F491"
-                    android:orientation="vertical"
-                    android:translationZ="30dp"
-                    android:visibility="invisible">
-
-                    <TextView
-                        android:id="@+id/textView3"
-                        android:layout_width="190dp"
-                        android:layout_height="44dp"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginStart="27dp"
-                        android:layout_marginEnd="176dp"
-                        android:layout_marginBottom="93dp"
-                        android:text="Tuyệt vời!"
-                        android:textColor="#219E0B"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
-
-                    <Button
-                        android:id="@+id/button6"
-                        android:layout_width="361dp"
-                        android:layout_height="46dp"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="73dp"
-                        android:layout_marginRight="20dp"
-                        android:layout_marginBottom="34dp"
-                        android:background="@drawable/custom_true"
-                        android:text="Tiếp Tục"
-                        android:textColor="#FFFFFC"
-                        android:textSize="20sp" />
-
-                </RelativeLayout>
-            </RelativeLayout>
-        </LinearLayout>
-    </ScrollView>
-</LinearLayout>
-
+</AbsoluteLayout>

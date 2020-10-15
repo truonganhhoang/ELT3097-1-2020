@@ -1,10 +1,14 @@
-Nguyễn Hoàng Thăng (https://github.com/hoangthang1112/ELT3097-1-2020/tree/master/18/DuolingoNHT/app/src/main)
+Nguyễn Hoàng Thăng 
+https://github.com/hoangthang1112/ELT3097-1-2020/blob/master/NguyenHoangThang/DuolingoNHT/app/src/androidTest/java/com/hoangthang/duolingo/ExampleInstrumentedTest.java
+https://github.com/hoangthang1112/ELT3097-1-2020/blob/master/NguyenHoangThang/DuolingoNHT/app/src/main/res/layout/activity_main.xml
 
 ![duolingoo](https://user-images.githubusercontent.com/71000279/95849748-0d956d80-0d7a-11eb-950d-a6e2eb50ed68.gif)
 
 
 
-Ngô Duy Trường (https://github.com/hoangthang1112/ELT3097-1-2020/tree/master/18/DoulingoNDT/app/src/main)
+Ngô Duy Trường 
+https://github.com/hoangthang1112/ELT3097-1-2020/blob/master/NgoDuyTruong/DoulingoCover/app/src/androidTest/java/com/example/doulingocover/ExampleInstrumentedTest.java
+https://github.com/hoangthang1112/ELT3097-1-2020/tree/master/NgoDuyTruong/DoulingoCover/app/src/main/res/layout
 
 ![Doulingo](https://user-images.githubusercontent.com/71000626/95873383-15fda080-0d9a-11eb-87d4-112ca9d4eb9f.gif)
 

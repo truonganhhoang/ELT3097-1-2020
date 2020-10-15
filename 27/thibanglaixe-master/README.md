@@ -1,7 +1,4 @@
 # App thi bằng lái xe máy A1
-Use Retrofit2 + Okhttp3 + MVP structure
-
-> **Task in app**
 - Làm thử đề
 - Ôn lý thuyết
 - Học sa hình

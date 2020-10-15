@@ -1,5 +1,6 @@
-# ELT3097-1-2020
-Môn học Lập trình cho thiết bị di động
+Nguyễn Văn Minh 
 
-Mỗi sinh viên cần tự học theo khóa học MOOC và nộp bài hàng tuần các sản phẩm đã làm được theo khóa học.
 
+https://github.com/minhson1230/ELT3097-1-2020/blob/master/99/NguyenVanMinh.gif
+
+code mã nguồn https://github.com/minhson1230/ELT3097-1-2020/blob/master/99/Duolingo/app/src/main/java/com/example/duolingo/MainActivity.java

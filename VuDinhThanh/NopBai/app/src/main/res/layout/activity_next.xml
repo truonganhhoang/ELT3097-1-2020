@@ -76,12 +76,12 @@
         android:background="@drawable/custom_botton"
         android:text="I eat you."
         android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/layout1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cauhoi"
-        app:layout_constraintVertical_bias="0.303" />
+        app:layout_constraintVertical_bias="0.415" />
 
     <Button
         android:id="@+id/dapan2"
@@ -96,7 +96,7 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dapan1"
-        app:layout_constraintVertical_bias="0.694" />
+        app:layout_constraintVertical_bias="0.422" />
 
     <Button
         android:id="@+id/dapan3"
@@ -111,7 +111,7 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dapan2"
-        app:layout_constraintVertical_bias="0.745" />
+        app:layout_constraintVertical_bias="0.425" />
 
     <Button
 

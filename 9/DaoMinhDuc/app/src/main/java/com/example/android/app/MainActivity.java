@@ -59,13 +59,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         new SettingsFragment()).commit();
                 break;
             case R.id.nav_share:
-                Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Đã chia sẻ", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.nav_send:
-                Toast.makeText(this, "Send", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Đã gửi tin nhắn", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.nav_rate:
-                Toast.makeText(this, "Rated 5 stars", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Đã đánh giá ứng dụng 5 sao. Cảm ơn bạn!", Toast.LENGTH_SHORT).show();
                 break;
         }
 

@@ -7,19 +7,19 @@
         <item
             android:id="@+id/nav_learn"
             android:icon="@drawable/ic_baseline_directions_car_24"
-            android:title="Learning" />
+            android:title="Học bằng lái xe" />
         <item
             android:id="@+id/mav_info"
             android:icon="@drawable/ic_baseline_info_24"
-            android:title="Instruction" />
+            android:title="Hướng dẫn sử dụng" />
         <item
             android:id="@+id/nav_email"
             android:icon="@drawable/ic_baseline_email_24"
-            android:title="Email" />
+            android:title="Email hỗ trợ" />
         <item
             android:id="@+id/nav_settings"
             android:icon="@drawable/ic_baseline_settings_24"
-            android:title="Settings" />
+            android:title="Cài đặt" />
     </group>
 
     <item android:title="Others">
@@ -27,15 +27,15 @@
             <item
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_baseline_share_24"
-                android:title="Share" />
+                android:title="Chia sẻ ứng dụng" />
             <item
                 android:id="@+id/nav_send"
                 android:icon="@drawable/ic_baseline_send_24"
-                android:title="Send" />
+                android:title="Gửi tin nhắn" />
             <item
                 android:id="@+id/nav_rate"
                 android:icon="@drawable/ic_baseline_thumb_up_24"
-                android:title="Rating" />
+                android:title="Đánh giá ứng dụng" />
         </menu>
     </item>
 

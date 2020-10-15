@@ -19,6 +19,7 @@ https://github.com/Deviluke-z/ELT3097-1-2021/blob/master/9/app/src/main/res/layo
 https://github.com/Deviluke-z/ELT3097-1-2021/blob/master/9/app/src/main/java/com/example/android/app/MainActivity.java
 ![test_app](https://user-images.githubusercontent.com/63990239/96062477-f82a5b80-0ebf-11eb-99cd-861490009bcb.gif)
 
+
 Nguyễn Ngọc Đức:
 
 https://github.com/Deviluke-z/ELT3097-1-2021/blob/master/NguyenNgocDuc/app/app/src/main/res/layout/activity_main.xml

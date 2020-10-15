@@ -8,6 +8,6 @@ Thành viên nhóm: Đào Minh Đức, Nguyễn Ngọc Đức
 
 Tương tác với ứng dụng:
 
-![test_app](https://user-images.githubusercontent.com/63990239/94750929-70b5f600-03b1-11eb-870a-deed83ce6954.gif)
+![test_app](https://user-images.githubusercontent.com/63990239/96062477-f82a5b80-0ebf-11eb-99cd-861490009bcb.gif)
 
 ![test](https://user-images.githubusercontent.com/63990239/94774020-2cdde380-03e7-11eb-8edf-30b242820f12.gif)

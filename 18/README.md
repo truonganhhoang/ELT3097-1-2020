@@ -1,4 +1,4 @@
-Nguyễn Hoàng Thăng
+Nguyễn Hoàng Thăng 9 (https://github.com/hoangthang1112/ELT3097-1-2020/tree/master/18/DuolingoNHT)
 
 ![duolingoo](https://user-images.githubusercontent.com/71000279/95849748-0d956d80-0d7a-11eb-950d-a6e2eb50ed68.gif)
 

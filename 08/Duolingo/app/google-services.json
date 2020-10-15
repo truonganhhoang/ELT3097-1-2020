@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1072991909725",
+    "firebase_url": "https://duolingo-d0887.firebaseio.com",
+    "project_id": "duolingo-d0887",
+    "storage_bucket": "duolingo-d0887.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1072991909725:android:346665c0fc00964d51dab4",
+        "android_client_info": {
+          "package_name": "com.example.duolingo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1072991909725-motul4omut85e93fnftrirk5t846f9ob.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUHBFF8nSf6A1J4UiHUBN8_5mKWBXM9qg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1072991909725-motul4omut85e93fnftrirk5t846f9ob.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

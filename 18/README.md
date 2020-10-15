@@ -4,7 +4,7 @@ Nguyễn Hoàng Thăng (https://github.com/hoangthang1112/ELT3097-1-2020/tree/ma
 
 
 
-Ngô Duy Trường (https://github.com/hoangthang1112/ELT3097-1-2020/tree/master/18/DoulingoNDT)
+Ngô Duy Trường (https://github.com/hoangthang1112/ELT3097-1-2020/tree/master/18/DoulingoNDT/app/src/main)
 
 ![Doulingo](https://user-images.githubusercontent.com/71000626/95873383-15fda080-0d9a-11eb-87d4-112ca9d4eb9f.gif)
 

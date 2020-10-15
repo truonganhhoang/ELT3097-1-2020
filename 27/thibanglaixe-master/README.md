@@ -9,4 +9,5 @@ Use Retrofit2 + Okhttp3 + MVP structure
 - Giới thiệu + kinh nghiệm thi thực hành
 - Mức xử phạt
 
-> Phát triển ứng dụng di động D15-PTIT-2019
+> Lập trình thiết bị di động 
+ELT3097-1-2020

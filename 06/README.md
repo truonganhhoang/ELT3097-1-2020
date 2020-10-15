@@ -1,9 +1,8 @@
 # ELT3097-1-2020
-Môn học Lập trình cho thiết bị di động
 
-Mỗi sinh viên cần tự học theo khóa học MOOC và nộp bài hàng tuần các sản phẩm đã làm được theo khóa học.
-
-Hàng tuần sinh viên cập nhật tiến độ học tập bằng cách chụp ảnh [màn hình khóa học](https://classroom.udacity.com/courses/ud851) và cập nhật file theo mẫu \NguyenVanA\udacity.jpg.
-
+Tran Gia Long
+<p align="center">
+  <img width="400" height="800" src="https://github.com/nongrachan/ELT3097-1-2020/blob/master/TranGiaLong/TranGiaLong/TranGiaLong.gif">
+</p>
 
 

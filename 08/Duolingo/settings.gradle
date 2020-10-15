@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "Relative_layouts"
+rootProject.name = "Duolingo"

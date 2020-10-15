@@ -94,7 +94,7 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginRight="25dp"
                     android:enabled="false"
-                    android:background="@drawable/custom_botton1"
+                    android:background="@drawable/custom_submit"
                     android:gravity="center"
                     android:text="Kiểm Tra" />
 
@@ -136,9 +136,7 @@
                     android:layout_width="415dp"
                     android:layout_height="140dp"
                     android:layout_below="@+id/button1"
-                    android:layout_alignParentBottom="true"
                     android:layout_marginTop="190dp"
-                    android:layout_marginBottom="3dp"
                     android:layout_x="-1dp"
                     android:layout_y="535dp"
                     android:background="#76F491"
@@ -169,10 +167,10 @@
                         android:layout_marginTop="73dp"
                         android:layout_marginRight="20dp"
                         android:layout_marginBottom="34dp"
-                        android:background="@drawable/custom_tiep"
+                        android:background="@drawable/custom_true"
                         android:text="Tiếp Tục"
-                        android:textSize="20sp"
-                        android:textColor="#FFFFFC" />
+                        android:textColor="#FFFFFC"
+                        android:textSize="20sp" />
 
                 </RelativeLayout>
             </RelativeLayout>

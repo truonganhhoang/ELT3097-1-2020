@@ -14,3 +14,4 @@
 -https://github.com/kakarotvn/ELT3097-1-2020/blob/Nh%C3%B3m-27-Ti%E1%BA%BFn-%C4%91%E1%BB%99-h%E1%BB%8Dc-t%E1%BA%ADp/27/thibanglaixe-master/app/src/main/java/ui/MainActivity.java
 # Phạm Thanh Hải
 -![testandroid4](https://user-images.githubusercontent.com/71003340/96100428-90dfcc00-0efe-11eb-9a78-fa8610084d1a.gif)
+-https://github.com/kakarotvn/ELT3097-1-2020/blob/Nh%C3%B3m-27-Ti%E1%BA%BFn-%C4%91%E1%BB%99-h%E1%BB%8Dc-t%E1%BA%ADp/27/thibanglaixe-master/app/src/main/java/ui/fragmentImpl/QuestionFragmentImpl.java?fbclid=IwAR0podUY5sPgjyyXwxF9ccECEkfINDjXMGlHxRGbfbDa_ULWu3QCElM3q34

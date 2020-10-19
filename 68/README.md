@@ -8,6 +8,7 @@ https://github.com/QuanDucHo/ELT3097-1-2020/blob/master/68/SoundRecorder/app/src
 </p>
 2: Phạm Tùng Lâm 
 https://github.com/QuanDucHo/ELT3097-1-2020/blob/master/68/SoundRecorder/app/src/main/java/com/danielkim/soundrecorder/adapters/FileViewerAdapter.java
+
 <p align="center">
   <img width="400" height="800" src="https://github.com/QuanDucHo/ELT3097-1-2020/blob/master/PhamTungLam/Lam.gif">
 </p>

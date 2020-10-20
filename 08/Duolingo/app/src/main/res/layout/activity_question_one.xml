@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,7 +7,7 @@
     android:layout_row="2"
     android:layout_column="3"
     android:background="#F8FFFCFC"
-    tools:context=".MainActivity"
+    tools:context=".LoginActivity"
     tools:ignore="Deprecated">
 
     <Button
@@ -15,105 +15,145 @@
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="69dp"
         android:layout_height="42dp"
+        android:layout_marginTop="15dp"
         android:layout_x="14dp"
         android:layout_y="16dp"
         android:background="#FFFFFF"
         android:drawableTop="@drawable/back"
         android:textColor="#848A8A"
-        android:textSize="32sp" />
+        android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@+id/progressBar"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/dapan1"
-        android:layout_width="162dp"
-        android:layout_height="165dp"
+        android:layout_width="160dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="12dp"
         android:layout_x="22dp"
         android:layout_y="141dp"
         android:background="@drawable/custom_botton"
-        android:drawableTop="@drawable/cake"
+        android:drawableTop="@drawable/tea"
         android:paddingTop="10dp"
-        android:text="cake"
-        android:textAllCaps="false" />
+        android:text="tea"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/dapan2"
+        app:layout_constraintEnd_toStartOf="@+id/dapan3"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/dapan2"
-        android:layout_width="162dp"
-        android:layout_height="170dp"
+        android:layout_width="160dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="16dp"
         android:layout_x="208dp"
         android:layout_y="140dp"
-        android:drawableTop="@drawable/cf"
-        android:paddingTop="10dp"
         android:background="@drawable/custom_botton"
+        android:drawableTop="@drawable/coffee"
+        android:paddingTop="10dp"
+        android:text="cafe"
         android:textAllCaps="false"
-        android:text="cafe" />
+        app:layout_constraintBottom_toTopOf="@+id/layout1"
+        app:layout_constraintEnd_toStartOf="@+id/dapan4"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/dapan3"
         android:layout_width="160dp"
-        android:layout_height="170dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="12dp"
         android:layout_x="22dp"
         android:layout_y="332dp"
         android:background="@drawable/custom_botton"
-        android:drawableTop="@drawable/rc"
+        android:drawableTop="@drawable/rice"
         android:paddingTop="10dp"
         android:text="rice"
-        android:textAllCaps="false" />
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/dapan4"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/dapan4"
         android:layout_width="160dp"
-        android:layout_height="168dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="16dp"
         android:layout_x="207dp"
         android:layout_y="333dp"
         android:background="@drawable/custom_botton"
-        android:drawableTop="@drawable/br"
+        android:drawableTop="@drawable/food"
         android:paddingTop="10dp"
         android:paddingBottom="5dp"
-        android:text="bread"
-        android:textAllCaps="false" />
+        android:text="food"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/layout1"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
 
         android:id="@+id/kiemtra"
         android:layout_width="360dp"
         android:layout_height="41dp"
+        android:layout_marginBottom="22dp"
         android:layout_x="26dp"
         android:layout_y="600dp"
         android:background="@drawable/custom_botton1"
         android:enabled="false"
-        android:text="kiểm tra" />
+        android:text="kiểm tra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ProgressBar
         android:id="@+id/progressBar"
         style="@android:style/Widget.ProgressBar.Horizontal"
         android:layout_width="277dp"
         android:layout_height="13dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
         android:layout_x="109dp"
         android:layout_y="29dp"
         android:background="@drawable/custom_seek"
         android:max="100"
-        android:progress="40"
-        android:progressTint="#1ABA20" />
+        android:progress="10"
+        android:progressTint="#1ABA20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:layout_x="28dp"
         android:layout_y="72dp"
-        android:text='Đâu là "Bánh"?'
-        android:textColor="#DD000000"
-        android:textSize="22dp"
-        android:textStyle="bold" />
+        android:text='Đâu là "Trà"?'
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.007"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back" />
 
     <RelativeLayout
         android:id="@+id/layout1"
         android:layout_width="415dp"
         android:layout_height="153dp"
+        android:layout_marginBottom="0dp"
         android:layout_x="-1dp"
         android:layout_y="535dp"
         android:background="#5BE160"
         android:orientation="vertical"
-        android:visibility="invisible">
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <TextView
             android:id="@+id/check"
@@ -133,8 +173,8 @@
             android:layout_height="46dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="32dp"
-            android:layout_marginBottom="34dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="22dp"
             android:background="@drawable/custom_tiep"
             android:text="Tiếp Tục"
             android:textColor="#FFFF" />
@@ -143,4 +183,4 @@
     </RelativeLayout>
 
 
-</AbsoluteLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package vn.huyld247.tracnghiemthpt.activity;
+package vn.sonnh23.tracnghiemthpt.activity;
 
 import android.content.Context;
 import android.content.Intent;

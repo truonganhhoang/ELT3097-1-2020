@@ -1,4 +1,4 @@
-package vn.huyld247.tracnghiemthpt.activity;
+package vn.sonnh23.tracnghiemthpt.activity;
 
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;

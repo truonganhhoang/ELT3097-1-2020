@@ -1,4 +1,4 @@
-package vn.huyld247.tracnghiemthpt.model;
+package vn.sonnh23.tracnghiemthpt.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;

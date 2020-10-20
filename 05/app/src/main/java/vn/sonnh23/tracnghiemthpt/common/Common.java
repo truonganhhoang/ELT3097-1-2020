@@ -1,4 +1,4 @@
-package vn.huyld247.tracnghiemthpt.common;
+package vn.sonnh23.tracnghiemthpt.common;
 
 import android.app.Dialog;
 import android.content.Context;

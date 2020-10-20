@@ -1,4 +1,4 @@
-package vn.huyld247.tracnghiemthpt.adapter;
+package vn.sonnh23.tracnghiemthpt.adapter;
 
 import android.content.Context;
 import android.graphics.Color;

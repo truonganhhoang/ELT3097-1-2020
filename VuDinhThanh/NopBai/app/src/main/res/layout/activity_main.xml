@@ -115,18 +115,6 @@
         android:orientation="vertical"
         android:visibility="invisible">
 
-        <Button
-            android:id="@+id/tieptuc"
-            android:layout_width="361dp"
-            android:layout_height="46dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="32dp"
-            android:layout_marginBottom="34dp"
-            android:background="@drawable/custom_tiep"
-            android:text="Tiếp Tục"
-            android:textColor="#FFFF" />
-
         <TextView
             android:id="@+id/check"
             android:layout_width="190dp"
@@ -138,6 +126,18 @@
             android:text="Giỏi Lắm!"
             android:textSize="17dp"
             android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/tieptuc"
+            android:layout_width="361dp"
+            android:layout_height="46dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="34dp"
+            android:background="@drawable/custom_tiep"
+            android:text="Tiếp Tục"
+            android:textColor="#FFFF" />
 
 
     </RelativeLayout>

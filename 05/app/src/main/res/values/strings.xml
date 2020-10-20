@@ -1,32 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Minimal</string>
-    <string name="action_settings">Settings</string>
-    <string name="no_to_dos">You don\'t have any todos</string>
-    <string name="title">Title</string>
-    <string name="remind_me">Remind Me</string>
-    <string name="choose_date">Date</string>
-    <string name="choose_time">Time</string>
-    <string name="remind_date_and_time">Reminder set for %1$s, %2$s %3$s</string>
-    <string name="about">About</string>
-    <string name="app_version">Version: %1$s</string>
-    <string name="contact_me">You can contact me at</string>
-    <string name="made_by">Made by Avjinder</string>
-    <string name="done_label">Done</string>
-    <string name="date_reminder_default">Today</string>
-    <string name="date_error_check_again">The date you entered is in the past.</string>
-    <string name="night_mode">Night Mode</string>
-    <string name="night_mode_on_summary">Night mode is on</string>
-    <string name="night_mode_off_summary">Night mode is off</string>
-    <string name="description">Description</string>
-
-    <string-array name="snooze_options">
-        <item>10 Minutes</item>
-        <item>30 Minutes</item>
-        <item>1 Hour</item>
-    </string-array>
-
-    <string name="snooze">Snooze</string>
-    <string name="remove">Remove</string>
-    <string name="todo_error">Please enter a Todo</string>
+    <string name="app_name">Trắc nghiệm THPT</string>
+    <string name="close">Đóng</string>
+    <string name="open">Mở</string>
+    <string name="notification">Thông báo</string>
+    <string name="end_quiz">Kết thúc</string>
+    <string name="btn_return">Trở về</string>
+    <string name="warning_title">Cảnh báo thoát</string>
+    <string name="warning_message">Nếu bạn bấm ĐỒNG Ý,\nBạn sẽ được chuyển đến màn hình kết quả và không thể trả lời tiếp</string>
+    <string name="message_confirm">Bạn có thực sự muốn kết thúc bài thi?</string>
+    <string name="ok">Đồng ý</string>
+    <string name="cancel">Hủy bỏ</string>
+    <string name="corect">Đúng</string>
+    <string name="incorect">Sai</string>
+    <string name="un_choice">Chưa trả lời</string>
+    <string name="title_quiz_ques">Phiếu trả lời trắc nghiệm</string>
+    <string name="title_quiz_result">Phiếu kết quả</string>
+    <string name="warning_time_up">Hết thời gian!</string>
+    <string name="time_up_message">Đã hết thời gian làm bài.\nBấm ĐỒNG Ý\nđể chuyển đến màn hình xem kết quả</string>
+    <string name="subject">Môn học</string>
 </resources>

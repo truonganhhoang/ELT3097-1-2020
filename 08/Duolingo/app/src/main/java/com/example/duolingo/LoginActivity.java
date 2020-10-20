@@ -11,7 +11,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
+import com.example.duolingo.question.QuestionOne;
+import com.example.duolingo.question.QuestionTwo;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInApi;
@@ -95,7 +96,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private void validate(String userName, String userPassword) {
         if ((userName.equals("admin")) && (userPassword.equals("admin"))) {
-            startActivity(new Intent(LoginActivity.this, MainActivity.class));
+            startActivity(new Intent(LoginActivity.this, QuestionOne.class));
         } else {
             counter--;
             info.setText("Number of attemps remaining" + String.valueOf(counter));

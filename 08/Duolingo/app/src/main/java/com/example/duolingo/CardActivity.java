@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.duolingo.question.QuestionTwo;
+
 public class CardActivity extends AppCompatActivity {
 
     Button back;
@@ -19,7 +21,7 @@ public class CardActivity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(CardActivity.this, MainActivity.class));
+                startActivity(new Intent(CardActivity.this, QuestionTwo.class));
             }
         });
     }

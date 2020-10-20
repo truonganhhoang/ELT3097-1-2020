@@ -1,4 +1,4 @@
-package vn.huyld247.tracnghiemthpt.fragment;
+package vn.sonnh23.tracnghiemthpt.fragment;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -26,14 +26,14 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-import vn.huyld247.tracnghiemthpt.R;
-import vn.huyld247.tracnghiemthpt.adapter.ScoreAdapter;
-import vn.huyld247.tracnghiemthpt.adapter.SpinnerSubjectAdapter;
-import vn.huyld247.tracnghiemthpt.common.Common;
-import vn.huyld247.tracnghiemthpt.helper.IOHelper;
-import vn.huyld247.tracnghiemthpt.model.Exam;
-import vn.huyld247.tracnghiemthpt.model.HighScore;
-import vn.huyld247.tracnghiemthpt.model.Subject;
+import vn.sonnh23.tracnghiemthpt.R;
+import vn.sonnh23.tracnghiemthpt.adapter.ScoreAdapter;
+import vn.sonnh23.tracnghiemthpt.adapter.SpinnerSubjectAdapter;
+import vn.sonnh23.tracnghiemthpt.common.Common;
+import vn.sonnh23.tracnghiemthpt.helper.IOHelper;
+import vn.sonnh23.tracnghiemthpt.model.Exam;
+import vn.sonnh23.tracnghiemthpt.model.HighScore;
+import vn.sonnh23.tracnghiemthpt.model.Subject;
 
 public class ScoreboardFragment extends Fragment {
 

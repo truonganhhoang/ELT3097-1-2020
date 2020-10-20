@@ -1,4 +1,4 @@
-package vn.huyld247.tracnghiemthpt.activity;
+package vn.sonnh23.tracnghiemthpt.activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -20,13 +20,13 @@ import java.io.IOException;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 
-import vn.huyld247.tracnghiemthpt.R;
-import vn.huyld247.tracnghiemthpt.adapter.ExamAdapter;
-import vn.huyld247.tracnghiemthpt.common.Common;
-import vn.huyld247.tracnghiemthpt.fragment.HomeFragment;
-import vn.huyld247.tracnghiemthpt.helper.IOHelper;
-import vn.huyld247.tracnghiemthpt.model.Exam;
-import vn.huyld247.tracnghiemthpt.model.HighScore;
+import vn.sonnh23.tracnghiemthpt.R;
+import vn.sonnh23.tracnghiemthpt.adapter.ExamAdapter;
+import vn.sonnh23.tracnghiemthpt.common.Common;
+import vn.sonnh23.tracnghiemthpt.fragment.HomeFragment;
+import vn.sonnh23.tracnghiemthpt.helper.IOHelper;
+import vn.sonnh23.tracnghiemthpt.model.Exam;
+import vn.sonnh23.tracnghiemthpt.model.HighScore;
 
 public class ExamActivity extends AppCompatActivity {
 

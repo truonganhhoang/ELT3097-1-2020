@@ -1,4 +1,4 @@
-package vn.huyld247.tracnghiemthpt.activity;
+package vn.sonnh23.tracnghiemthpt.activity;
 
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -10,9 +10,9 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import vn.huyld247.tracnghiemthpt.R;
-import vn.huyld247.tracnghiemthpt.fragment.ScoreboardFragment;
-import vn.huyld247.tracnghiemthpt.fragment.HomeFragment;
+import vn.sonnh23.tracnghiemthpt.R;
+import vn.sonnh23.tracnghiemthpt.fragment.ScoreboardFragment;
+import vn.sonnh23.tracnghiemthpt.fragment.HomeFragment;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 

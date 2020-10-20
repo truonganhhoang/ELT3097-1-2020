@@ -1,4 +1,4 @@
-package vn.huyld247.tracnghiemthpt.common;
+package vn.sonnh23.tracnghiemthpt.common;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -23,8 +23,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Locale;
 
-import vn.huyld247.tracnghiemthpt.R;
-import vn.huyld247.tracnghiemthpt.model.HighScore;
+import vn.sonnh23.tracnghiemthpt.R;
+import vn.sonnh23.tracnghiemthpt.model.HighScore;
 
 public class Common {
     public static int getId(String resourceName, Class<?> c) {

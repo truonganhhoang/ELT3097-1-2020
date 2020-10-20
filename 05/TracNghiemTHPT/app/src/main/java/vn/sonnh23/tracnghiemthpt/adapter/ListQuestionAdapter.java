@@ -1,4 +1,4 @@
-package vn.huyld247.tracnghiemthpt.adapter;
+package vn.sonnh23.tracnghiemthpt.adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -11,10 +11,10 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import vn.huyld247.tracnghiemthpt.R;
-import vn.huyld247.tracnghiemthpt.activity.QuizActivity;
-import vn.huyld247.tracnghiemthpt.common.Common;
-import vn.huyld247.tracnghiemthpt.model.Question;
+import vn.sonnh23.tracnghiemthpt.R;
+import vn.sonnh23.tracnghiemthpt.activity.QuizActivity;
+import vn.sonnh23.tracnghiemthpt.common.Common;
+import vn.sonnh23.tracnghiemthpt.model.Question;
 
 public class ListQuestionAdapter extends ArrayAdapter<Question> {
 

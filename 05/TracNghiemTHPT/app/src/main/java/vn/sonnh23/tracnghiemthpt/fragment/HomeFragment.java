@@ -1,4 +1,4 @@
-package vn.huyld247.tracnghiemthpt.fragment;
+package vn.sonnh23.tracnghiemthpt.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,12 +16,12 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import cn.iwgang.countdownview.CountdownView;
-import vn.huyld247.tracnghiemthpt.R;
-import vn.huyld247.tracnghiemthpt.activity.ExamActivity;
-import vn.huyld247.tracnghiemthpt.adapter.SubjectAdapter;
-import vn.huyld247.tracnghiemthpt.common.Common;
-import vn.huyld247.tracnghiemthpt.helper.IOHelper;
-import vn.huyld247.tracnghiemthpt.model.Subject;
+import vn.sonnh23.tracnghiemthpt.R;
+import vn.sonnh23.tracnghiemthpt.activity.ExamActivity;
+import vn.sonnh23.tracnghiemthpt.adapter.SubjectAdapter;
+import vn.sonnh23.tracnghiemthpt.common.Common;
+import vn.sonnh23.tracnghiemthpt.helper.IOHelper;
+import vn.sonnh23.tracnghiemthpt.model.Subject;
 
 public class HomeFragment extends Fragment {
 
@@ -42,7 +42,7 @@ public class HomeFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
 
         long currentTime = System.currentTimeMillis();
-        long timeInMillis = Common.timeToUnix(1630000002);
+        long timeInMillis = Common.timeToUnix(1620000002);
 
         if (getActivity() != null) {
             CountdownView countdownView = getActivity().findViewById(R.id.countdownView);

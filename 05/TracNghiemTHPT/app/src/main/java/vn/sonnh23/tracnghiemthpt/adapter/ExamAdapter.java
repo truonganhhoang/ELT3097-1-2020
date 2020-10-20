@@ -1,4 +1,4 @@
-package vn.huyld247.tracnghiemthpt.adapter;
+package vn.sonnh23.tracnghiemthpt.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,12 +13,12 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.Locale;
 
-import vn.huyld247.tracnghiemthpt.R;
-import vn.huyld247.tracnghiemthpt.activity.ExamActivity;
-import vn.huyld247.tracnghiemthpt.activity.QuizActivity;
-import vn.huyld247.tracnghiemthpt.common.Common;
-import vn.huyld247.tracnghiemthpt.model.Exam;
-import vn.huyld247.tracnghiemthpt.model.HighScore;
+import vn.sonnh23.tracnghiemthpt.R;
+import vn.sonnh23.tracnghiemthpt.activity.ExamActivity;
+import vn.sonnh23.tracnghiemthpt.activity.QuizActivity;
+import vn.sonnh23.tracnghiemthpt.common.Common;
+import vn.sonnh23.tracnghiemthpt.model.Exam;
+import vn.sonnh23.tracnghiemthpt.model.HighScore;
 
 public class ExamAdapter extends RecyclerView.Adapter<ExamAdapter.ViewHolder>{
 

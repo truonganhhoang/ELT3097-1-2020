@@ -1,4 +1,4 @@
-package vn.huyld247.tracnghiemthpt.activity;
+package vn.sonnh23.tracnghiemthpt.activity;
 
 import android.app.Dialog;
 import android.content.Intent;
@@ -29,17 +29,17 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Locale;
 
-import vn.huyld247.tracnghiemthpt.R;
-import vn.huyld247.tracnghiemthpt.adapter.ExamAdapter;
-import vn.huyld247.tracnghiemthpt.adapter.ListQuestionAdapter;
-import vn.huyld247.tracnghiemthpt.adapter.ViewQuestionAdapter;
-import vn.huyld247.tracnghiemthpt.adapter.ViewQuestionMathAdapter;
-import vn.huyld247.tracnghiemthpt.common.Common;
-import vn.huyld247.tracnghiemthpt.helper.IOHelper;
-import vn.huyld247.tracnghiemthpt.model.HighScore;
-import vn.huyld247.tracnghiemthpt.model.Question;
+import vn.sonnh23.tracnghiemthpt.R;
+import vn.sonnh23.tracnghiemthpt.adapter.ExamAdapter;
+import vn.sonnh23.tracnghiemthpt.adapter.ListQuestionAdapter;
+import vn.sonnh23.tracnghiemthpt.adapter.ViewQuestionAdapter;
+import vn.sonnh23.tracnghiemthpt.adapter.ViewQuestionMathAdapter;
+import vn.sonnh23.tracnghiemthpt.common.Common;
+import vn.sonnh23.tracnghiemthpt.helper.IOHelper;
+import vn.sonnh23.tracnghiemthpt.model.HighScore;
+import vn.sonnh23.tracnghiemthpt.model.Question;
 
-import static vn.huyld247.tracnghiemthpt.fragment.HomeFragment.EXTRA_RAW_NAME;
+import static vn.sonnh23.tracnghiemthpt.fragment.HomeFragment.EXTRA_RAW_NAME;
 
 public class QuizActivity extends AppCompatActivity implements View.OnClickListener {
 

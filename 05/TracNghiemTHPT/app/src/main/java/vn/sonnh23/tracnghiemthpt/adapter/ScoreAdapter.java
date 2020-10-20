@@ -1,4 +1,4 @@
-package vn.huyld247.tracnghiemthpt.adapter;
+package vn.sonnh23.tracnghiemthpt.adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -11,9 +11,9 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import vn.huyld247.tracnghiemthpt.R;
-import vn.huyld247.tracnghiemthpt.common.Common;
-import vn.huyld247.tracnghiemthpt.model.HighScore;
+import vn.sonnh23.tracnghiemthpt.R;
+import vn.sonnh23.tracnghiemthpt.common.Common;
+import vn.sonnh23.tracnghiemthpt.model.HighScore;
 
 public class ScoreAdapter extends RecyclerView.Adapter<ScoreAdapter.ViewHolder>{
 

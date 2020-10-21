@@ -1,6 +1,7 @@
 # ELT3097-1-2020
 
 1: Hồ Đức Quân
+
 [Activity](https://github.com/QuanDucHo/ELT3097-1-2020/blob/master/68/SoundRecorder/app/src/main/java/com/danielkim/soundrecorder/activities/MainActivity.java)
 
 <p align="center">

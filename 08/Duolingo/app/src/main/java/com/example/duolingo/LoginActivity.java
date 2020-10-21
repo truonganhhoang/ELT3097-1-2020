@@ -31,8 +31,9 @@ import com.google.firebase.auth.GoogleAuthProvider;
 public class LoginActivity extends AppCompatActivity {
 
 
-    private static final int RC_SIGN_IN = 120;
+
     private static final String TAG = "SignInActivity";
+    private static final int RC_SIGN_IN = 0;
     private EditText account;
     private EditText password;
     private TextView info;
@@ -126,6 +127,7 @@ public class LoginActivity extends AppCompatActivity {
                     GoogleSignInAccount account = task.getResult(ApiException.class);
                     Log.d(TAG, "firebaseAuthWithGoogle:" + account.getId());
                     firebaseAuthWithGoogle(account.getIdToken());
+                    startActivity(new Intent(LoginActivity.this , QuestionOne.class));
                 } catch (ApiException e) {
                     // Google Sign In failed, update UI appropriately
                     Log.w(TAG, "Google sign in failed", e);

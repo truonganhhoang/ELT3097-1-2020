@@ -14,8 +14,17 @@ Layout của Lê Minh Sơn
 
 
 
-![BangDiem](https://user-images.githubusercontent.com/57243212/96665987-610e4980-1380-11eb-978a-c3659f420cdf.gif)
+![BangDiem](https://user-images.githubusercontent.com/57243212/96599200-e01c6700-1319-11eb-9b3b-181b402056b1.gif)
 
 [Layout](https://github.com/sonnh23/ELT3097-1-2020/blob/master/05/TracNghiemTHPT/app/src/main/res/layout/fragment_scoreboard.xml)
 
-[Activity](https://github.com/sonnh23/ELT3097-1-2020/blob/master/05/TracNghiemTHPT/app/src/main/java/vn/sonnh23/tracnghiemthpt/fragment/ScoreboardFragment.java)
+
+
+
+Layout của Phạm Thế Thịnh
+
+![PhamTheThinh](https://user-images.githubusercontent.com/71000977/96666105-a6327b80-1380-11eb-8b2d-90e2b0f9ac8b.gif)
+
+[Layout](https://github.com/sonnh23/ELT3097-1-2020/blob/master/05/TracNghiemTHPT/app/src/main/res/layout/view_question_math.xml)
+
+[Activity](https://github.com/sonnh23/ELT3097-1-2020/blob/master/05/TracNghiemTHPT/app/src/main/java/vn/sonnh23/tracnghiemthpt/adapter/ViewQuestionMathAdapter.java)

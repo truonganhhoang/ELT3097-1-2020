@@ -17,3 +17,5 @@ Layout của Lê Minh Sơn
 ![BangDiem](https://user-images.githubusercontent.com/57243212/96665987-610e4980-1380-11eb-978a-c3659f420cdf.gif)
 
 [Layout](https://github.com/sonnh23/ELT3097-1-2020/blob/master/05/TracNghiemTHPT/app/src/main/res/layout/fragment_scoreboard.xml)
+
+[Activity](https://github.com/sonnh23/ELT3097-1-2020/blob/master/05/TracNghiemTHPT/app/src/main/java/vn/sonnh23/tracnghiemthpt/fragment/ScoreboardFragment.java)

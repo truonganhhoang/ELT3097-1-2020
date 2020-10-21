@@ -14,11 +14,11 @@ Layout của Lê Minh Sơn
 
 
 
-![BangDiem](https://user-images.githubusercontent.com/57243212/96599200-e01c6700-1319-11eb-9b3b-181b402056b1.gif)
+![LeMinhSon](https://user-images.githubusercontent.com/57243212/96666955-49d05b80-1382-11eb-9b73-8162ec3ee10d.gif)
 
-[Layout](https://github.com/sonnh23/ELT3097-1-2020/blob/master/05/TracNghiemTHPT/app/src/main/res/layout/fragment_scoreboard.xml)
+[Layout](https://github.com/sonnh23/ELT3097-1-2020/blob/master/05/TracNghiemTHPT/app/src/main/res/layout/fragment_scoreboard
 
-
+[Activity](https://github.com/sonnh23/ELT3097-1-2020/blob/master/05/TracNghiemTHPT/app/src/main/java/vn/sonnh23/tracnghiemthpt/fragment/ScoreboardFragment.java)
 
 
 Layout của Phạm Thế Thịnh

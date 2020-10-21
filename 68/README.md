@@ -18,6 +18,7 @@
 
 [Activity](https://github.com/QuanDucHo/ELT3097-1-2020/blob/master/68/SoundRecorder/app/src/main/java/com/danielkim/soundrecorder/fragments/LicensesFragment.java)
 
+
 <p align="center">
   <img width="400" height="800" src=" https://github.com/QuanDucHo/ELT3097-1-2020/blob/master/NguyenVugiangNam/Nam.gif">
 </p>

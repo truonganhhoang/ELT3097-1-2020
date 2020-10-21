@@ -10,6 +10,9 @@ Layout của Nguyễn Hồng Sơn
 
 
 
+
+
+
 Layout của Lê Minh Sơn
 
 
@@ -20,7 +23,12 @@ Layout của Lê Minh Sơn
 [Activity](https://github.com/sonnh23/ELT3097-1-2020/blob/master/05/TracNghiemTHPT/app/src/main/java/vn/sonnh23/tracnghiemthpt/fragment/ScoreboardFragment.java)
 
 
+
+
+
+
 Layout của Phạm Thế Thịnh
+
 
 ![PhamTheThinh](https://user-images.githubusercontent.com/71000977/96666105-a6327b80-1380-11eb-8b2d-90e2b0f9ac8b.gif)
 

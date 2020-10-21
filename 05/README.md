@@ -13,8 +13,7 @@ Layout của Nguyễn Hồng Sơn
 Layout của Lê Minh Sơn
 
 
-
-![LeMinhSon](https://user-images.githubusercontent.com/57243212/96666955-49d05b80-1382-11eb-9b73-8162ec3ee10d.gif)
+![BangDiem](https://user-images.githubusercontent.com/57243212/96667240-e266db80-1382-11eb-9e7c-055077c0d17f.gif)
 
 [Layout](https://github.com/sonnh23/ELT3097-1-2020/blob/master/05/TracNghiemTHPT/app/src/main/res/layout/fragment_scoreboard)
 

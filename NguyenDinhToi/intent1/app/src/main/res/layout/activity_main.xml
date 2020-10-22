@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1DAFA2"
+        android:text="Truyen Song Ngu AV"
+        android:textColor="#F8F8F8"
+        android:textSize="20sp" />
+    <TextView
+
+        android:textColor="#000000"
+        android:background="#B0E6E1"
+        android:text="Today's quotation When you reach the end of your rope, tie a knot in it and hang on "
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn1a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Nhat ki chinh phuc English"
+        android:textColor="#f000"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/btn1b"
+        android:textColor="#f000"
+        android:text="Bao song ngu"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn1c"
+        android:textColor="#f000"
+        android:text="Cac cau danh ngon"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn1d"
+        android:textColor="#f000"
+        android:text="Truyen ngan"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn1e"
+        android:textColor="#f000"
+        android:text="Truyen cuoi"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn1f"
+        android:textColor="#f000"
+        android:text="Mau cau thong dung"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

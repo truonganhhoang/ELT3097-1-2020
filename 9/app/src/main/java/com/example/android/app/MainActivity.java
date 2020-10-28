@@ -11,6 +11,10 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -80,5 +84,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }else {
             super.onBackPressed();
         }
+    }
+
+    public void button1(View view){
+        Intent i = new Intent(this, MainActivity2.class);
+        startActivity(i);
     }
 }

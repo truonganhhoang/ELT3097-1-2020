@@ -9,7 +9,7 @@ https://github.com/tmt162/ELT3097-1-2020/tree/master/NguyenDinhToi/intent1?fbcli
 
 Trần Minh Toàn- MSSV 18021285
 
-![Tương tác](https://giphy.com/gifs/d7C1G2SqCNzhypmkFc/html5)
+![Tương tác](https://media.giphy.com/media/EWB1Ay09BhZNRJoez7/giphy.gif)
 
 codeMainActivity
 

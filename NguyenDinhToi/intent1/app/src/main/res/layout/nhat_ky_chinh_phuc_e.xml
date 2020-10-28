@@ -6,42 +6,108 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
+    <ImageView
+        android:src="@drawable/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.183" />
+    <LinearLayout
 
-        android:id="@+id/button2"
-        android:layout_width="372dp"
         android:layout_height="62dp"
-        android:text="Dang nhap bang dien thoai"
-        android:textSize="24sp"
+        android:layout_width="372dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.739" />
+        app:layout_constraintVertical_bias="0.739">
 
-    <Button
-        android:layout_width="372dp"
-        android:layout_height="62dp"
-        android:text="Dang nhap bang Google"
-        android:textSize="24sp"
+        <ImageView
+            android:background="#487E0A"
+            android:src="@drawable/phonea"
+            android:layout_width="55dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="316dp"
+            android:layout_height="62dp"
+            android:background="#487E0A"
+            android:text="Dang nhap bang dien thoai"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.739" />
+    </LinearLayout>
+
+    <LinearLayout
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
-
-    <Button
-        android:textSize="24sp"
-        android:id="@+id/button"
+        app:layout_constraintVertical_bias="0.857"
         android:layout_width="372dp"
-        android:layout_height="62dp"
-        android:text="Dang nhap bang Facebook"
+        android:layout_height="62dp">
+        <ImageView
+            android:background="#3f48cc"
+            android:src="@drawable/facebook"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="318dp"
+            android:layout_height="62dp"
+            android:background="#3f48cc"
+            android:text="Dang nhap bang Facebook"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.857" />
+    </LinearLayout>
+
+    <LinearLayout
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.857" />
+        app:layout_constraintVertical_bias="0.976"
+        android:layout_width="372dp"
+        android:layout_height="62dp">
+        <ImageView
+            android:background="#000000"
+            android:src="@drawable/googlea"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:layout_width="320dp"
+            android:layout_height="62dp"
+            android:background="#000000"
+            android:text="Dang nhap bang Google"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.976" />
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

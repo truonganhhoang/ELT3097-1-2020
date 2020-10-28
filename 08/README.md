@@ -23,3 +23,7 @@ Môn học Lập trình cho thiết bị di động
 3. NGUYỄN VĂN DUY
 
 ![NguyenVanDuy](https://user-images.githubusercontent.com/65001663/94886288-e1860c80-049c-11eb-9da9-3b82d9df258c.gif)
+![NguyenVanDuy](https://github.com/LE-VAN-HUNG/ELT3097-1-2020/blob/Nhom8/NguyenVanDuy/NguyenVanDuy/app/src/main/java/com/example/npbi/MainActivity.java)
+![NguyenVanDuy](https://github.com/LE-VAN-HUNG/ELT3097-1-2020/blob/Nhom8/NguyenVanDuy/NguyenVanDuy/app/src/main/java/com/example/npbi/NextActivity.java)
+![NguyenVanDuy](https://github.com/LE-VAN-HUNG/ELT3097-1-2020/blob/Nhom8/NguyenVanDuy/NguyenVanDuy/app/src/main/java/com/example/npbi/PreActivity.java)
+

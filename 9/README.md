@@ -17,6 +17,7 @@ https://github.com/Deviluke-z/ELT3097-1-2021/blob/master/9/app/src/main/res/layo
 https://github.com/Deviluke-z/ELT3097-1-2021/blob/master/9/app/src/main/res/layout/nav_header.xml
 
 https://github.com/Deviluke-z/ELT3097-1-2021/blob/master/9/app/src/main/java/com/example/android/app/MainActivity.java
+
 ![test_app](https://user-images.githubusercontent.com/63990239/96062477-f82a5b80-0ebf-11eb-99cd-861490009bcb.gif)
 
 
@@ -29,4 +30,5 @@ https://github.com/Deviluke-z/ELT3097-1-2021/blob/master/NguyenNgocDuc/app/app/s
 https://github.com/Deviluke-z/ELT3097-1-2021/blob/master/NguyenNgocDuc/app/app/src/main/java/com/example/android/myapplicationhhuhu/MainActivity.java
 
 https://github.com/Deviluke-z/ELT3097-1-2021/blob/master/NguyenNgocDuc/app/app/src/main/java/com/example/android/myapplicationhhuhu/Question.java
+
 ![test](https://user-images.githubusercontent.com/63990239/94774020-2cdde380-03e7-11eb-8edf-30b242820f12.gif)

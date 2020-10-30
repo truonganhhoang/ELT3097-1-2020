@@ -1,6 +1,7 @@
 package com.example.duolingo;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -13,6 +14,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import com.example.duolingo.question.QuestionOne;
 import com.example.duolingo.question.QuestionTwo;
+import com.example.duolingo.ui.HomeActivity;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInApi;
@@ -42,13 +44,14 @@ public class LoginActivity extends AppCompatActivity {
     private SignInButton signInBtn;
     private GoogleSignInClient mGoogleSignInClient;
     private FirebaseAuth mAuth;
-
+    ActionBar actionBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
+        actionBar = getSupportActionBar();
+        actionBar.hide();
         account = (EditText) findViewById(R.id.Account);
         password = (EditText) findViewById(R.id.Password);
         info = (TextView) findViewById(R.id.textInfo);
@@ -96,7 +99,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private void validate(String userName, String userPassword) {
         if ((userName.equals("admin")) && (userPassword.equals("admin"))) {
-            startActivity(new Intent(LoginActivity.this, QuestionOne.class));
+            startActivity(new Intent(LoginActivity.this, HomeActivity.class));
         } else {
             counter--;
             info.setText("Number of attemps remaining" + String.valueOf(counter));
@@ -127,12 +130,12 @@ public class LoginActivity extends AppCompatActivity {
                     Log.d(TAG, "firebaseAuthWithGoogle:" + account.getId());
                     firebaseAuthWithGoogle(account.getIdToken());
                 } catch (ApiException e) {
-                    // Google Sign In failed, update UI appropriately
-                    Log.w(TAG, "Google sign in failed", e);
+                    // Google Sign In failed, update UI appropriatelyadmin
+                    Log.d(TAG, "Google sign in failed", e);
                     // ...
                 }
             }else{
-                Log.w(TAG, "Google sign in failed", task.getException());
+                Log.d(TAG, "Google sign in failed", task.getException());
             }
 
         }

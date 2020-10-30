@@ -58,7 +58,7 @@ public class QuestionTwo extends AppCompatActivity {
             switch (Id) {
                 case R.id.dapan1:
                     kiemtra.setEnabled(true);
-                    kiemtra.setBackgroundResource(R.drawable.custom_kiemtra);
+                    kiemtra.setBackgroundResource(R.drawable.button_check);
                     dapan1.setSelected(true);
                     dapan2.setSelected(false);
                     dapan3.setSelected(false);
@@ -66,7 +66,7 @@ public class QuestionTwo extends AppCompatActivity {
                 case R.id.dapan2:
                     kiemtra.setEnabled(true);
                     dapan2.setSelectAllOnFocus(true);
-                    kiemtra.setBackgroundResource(R.drawable.custom_kiemtra);
+                    kiemtra.setBackgroundResource(R.drawable.button_check);
                     dapan2.setSelected(true);
                     dapan1.setSelected(false);
                     dapan3.setSelected(false);
@@ -75,7 +75,7 @@ public class QuestionTwo extends AppCompatActivity {
                 case R.id.dapan3:
                     kiemtra.setEnabled(true);
                     dapan3.setSelectAllOnFocus(true);
-                    kiemtra.setBackgroundResource(R.drawable.custom_kiemtra);
+                    kiemtra.setBackgroundResource(R.drawable.button_check);
                     dapan3.setSelected(true);
                     dapan1.setSelected(false);
                     dapan2.setSelected(false);
@@ -89,7 +89,7 @@ public class QuestionTwo extends AppCompatActivity {
                     }
                     else {
                         layout1.setVisibility(layout1.VISIBLE);
-                        layout1.setBackgroundResource(R.drawable.custom_tiep1);
+                        layout1.setBackgroundResource(R.drawable.nextquestion_false);
                         tieptuc.setTextColor(Color.WHITE);
                         tieptuc.setBackgroundResource(R.drawable.custom_check);
                         kiemtra.setVisibility(View.INVISIBLE);

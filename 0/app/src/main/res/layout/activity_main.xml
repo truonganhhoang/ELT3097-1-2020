@@ -6,11 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <CalendarView
-        android:id="@+id/calendarView"
-        android:layout_width="405dp"
-        android:layout_height="398dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <com.example.myapplication.CustomCalendarView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/custom_calendar_view">
+
+    </com.example.myapplication.CustomCalendarView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

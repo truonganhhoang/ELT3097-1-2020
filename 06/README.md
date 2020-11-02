@@ -4,7 +4,7 @@ Môn học Lập trình cho thiết bị di động
 
 Layout của Đào Công Minh
 <p align="center">
-  <img width="400" height="800" src="https://github.com/congminh1809/ELT3097-1-2020/blob/master/DaoCongMinh/%C4%90%C3%A0o%20C%C3%B4ng%20Minh.gif?raw=true
+  <img width="400" height="800" src="https://github.com/congminh1809/ELT3097-1-2020/blob/master/DaoCongMinh/Đào%20Công%20Minh.gif?raw=true
 ">
 </p>
 

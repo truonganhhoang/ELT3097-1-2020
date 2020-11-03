@@ -152,17 +152,18 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add ok in AndroidManifest.xml" />
     <option name="LAST_COMMIT_MESSAGE" value="add ok in AndroidManifest.xml" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="424" y="28" key="#app" timestamp="1604414754004">
+    <state x="424" y="28" key="#app" timestamp="1604417085771">
       <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state x="402" y="10" key="#app/0.0.1366.728@0.0.1366.728" timestamp="1601369076828" />
-    <state x="424" y="28" key="#app/0.23.1440.808@0.23.1440.808" timestamp="1604414754004" />
+    <state x="424" y="28" key="#app/0.23.1440.808@0.23.1440.808" timestamp="1604417085771" />
     <state x="429" y="167" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601370129234">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

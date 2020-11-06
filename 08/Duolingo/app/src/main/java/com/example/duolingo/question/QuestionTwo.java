@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.example.duolingo.CardActivity;
 import com.example.duolingo.R;
+import com.example.duolingo.utils.CustomProgressbar;
 
 public class QuestionTwo extends AppCompatActivity {
     ActionBar actionBar;
@@ -42,7 +43,7 @@ public class QuestionTwo extends AppCompatActivity {
         buttonback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(QuestionTwo.this, CardActivity.class));
+                startActivity(new Intent(QuestionTwo.this, CustomProgressbar.class));
             }
         });
         dapan1.setOnClickListener(mListener);

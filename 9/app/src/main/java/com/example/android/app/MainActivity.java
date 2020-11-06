@@ -9,12 +9,23 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.Toast;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
 
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawer;
+    private Button btt_thisathach;
+    private Button btt_hoclythuyet;
+    private Button btt_bienbao;
+    private Button btt_meothi;
+    private Button btt_tracuuluat;
+    private Button btt_cauhoihaysai;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +48,21 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 new LearningFragment()).commit();
         navigationView.setCheckedItem(R.id.nav_learn);
         }
+
+        btt_thisathach = findViewById(R.id.btt_thisathach);
+        btt_hoclythuyet = findViewById(R.id.btt_hoclythuyet);
+        btt_bienbao = findViewById(R.id.btt_bienbao);
+        btt_meothi = findViewById(R.id.btt_meothi);
+        btt_tracuuluat = findViewById(R.id.btt_tracuuluat);
+        btt_cauhoihaysai = findViewById(R.id.btt_cauhoihaysai);
+
+        btt_thisathach.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getBaseContext(),)
+            }
+        });
+
     }
 
     @Override
@@ -80,5 +106,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }else {
             super.onBackPressed();
         }
+    }
+
+    public void button1(View view){
+        Intent i = new Intent(this, MainActivity2.class);
+        startActivity(i);
     }
 }

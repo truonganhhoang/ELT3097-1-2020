@@ -48,8 +48,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="130dp">
 
-                <include layout="@layout/activity_custom_progressbar"/>
+                <include
+                    layout="@layout/activity_custom_progressbar"
+                    />
 
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/btn_circle"
+                    android:textColor="#fff"
+                    android:layout_centerInParent="true"
+                    />
 
 
             </RelativeLayout>
@@ -69,6 +78,13 @@
 
                     <include layout="@layout/activity_custom_progressbar"/>
 
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/btn_circle"
+                        android:textColor="#fff"
+                        android:layout_centerInParent="true"
+                        />
 
 
 
@@ -84,6 +100,13 @@
 
                     <include layout="@layout/activity_custom_progressbar"/>
 
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/btn_circle"
+                        android:textColor="#fff"
+                        android:layout_centerInParent="true"
+                        />
                 </RelativeLayout>
 
             </LinearLayout>
@@ -103,7 +126,13 @@
 
 
                     <include layout="@layout/activity_custom_progressbar"/>
-
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/btn_circle"
+                        android:textColor="#fff"
+                        android:layout_centerInParent="true"
+                        />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -114,7 +143,13 @@
                     android:layout_marginStart="16dp">
 
                     <include layout="@layout/activity_custom_progressbar"/>
-
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/btn_circle"
+                        android:textColor="#fff"
+                        android:layout_centerInParent="true"
+                        />
                 </RelativeLayout>
             </LinearLayout>
 
@@ -124,10 +159,55 @@
                 android:layout_marginTop="8dp">
 
                 <include layout="@layout/activity_custom_progressbar"/>
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/btn_circle"
+                    android:textColor="#fff"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
 
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="110dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp">
+
+
+                <include layout="@layout/activity_custom_progressbar"/>
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/btn_circle"
+                    android:textColor="#fff"
+                    android:layout_centerInParent="true"
+                    />
             </RelativeLayout>
 
-            <include layout="@layout/activity_custom_progressbar"/>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="110dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp">
+
+                <include layout="@layout/activity_custom_progressbar"/>
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/btn_circle"
+                    android:textColor="#fff"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
 
 
         </LinearLayout>

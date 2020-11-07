@@ -116,7 +116,6 @@ public class TestExamActivityImpl extends AppCompatActivity implements BaseQuest
                 if (position > currentPage) {
                     currentPage = position;
                 }
-                //Todo load lại các đáp án đã được chọn fragment.xuLyLuVet()
                 fragments.get(position).xuLyLuuAnswerDuocChon();
 
             }
@@ -185,7 +184,6 @@ public class TestExamActivityImpl extends AppCompatActivity implements BaseQuest
 
             @Override
             public void onFinish() {
-                //TODO Whatever's meant to happen when it finishes
                 //Mở activity kết thúc
                 Toast.makeText(getApplicationContext(), "Điểm: " + diem + "/20", Toast.LENGTH_SHORT).show();
             }
@@ -202,7 +200,6 @@ public class TestExamActivityImpl extends AppCompatActivity implements BaseQuest
 
     private String secondsToString(int improperSeconds) {
 
-        //Seconds must be fewer than are in a day
 
         Time secConverter = new Time();
 

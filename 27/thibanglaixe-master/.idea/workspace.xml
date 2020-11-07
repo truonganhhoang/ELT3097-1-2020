@@ -8,6 +8,9 @@
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="37797602-bcd3-49d4-8598-58564d97c922" name="Default Changelist" comment="add ok in AndroidManifest.xml" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +18,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_2_API_28]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -27,23 +31,18 @@
       </state>
     </system>
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="thibanglaixe-master" />
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1iAyb7f7CBDDkYft8D6jWnOYSBA" />
+  <component name="ProjectId" id="1jv1xFR5SUq0owNstJljYJwwWoT" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="device.picker.selection" value="192.168.196.103:5555" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Dropbox/My PC (DESKTOP-VI43N30)/Documents/GitHub/ELT3097-1-2020/27/thibanglaixe-master" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -54,12 +53,13 @@
       </method>
     </configuration>
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
-      <module name="app" />
+      <module name="thibanglaixe-master.app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
@@ -95,11 +95,16 @@
       </Native>
       <Profilers>
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
@@ -131,48 +136,41 @@
     <option name="LAST_COMMIT_MESSAGE" value="add ok in AndroidManifest.xml" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="402" y="10" key="#app" timestamp="1601369076828">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="100" y="100" width="1240" height="700" key="AVDManager" timestamp="1604760272651">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="402" y="10" key="#app/0.0.1366.728@0.0.1366.728" timestamp="1601369076828" />
-    <state x="429" y="167" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601370129234">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="100" y="100" width="1240" height="700" key="AVDManager/0.0.1440.900@0.0.1440.900" timestamp="1604760272651" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1604674856598">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
-    <state x="429" y="167" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1601370129234" />
-    <state x="531" y="253" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1601364982675">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1604674653732" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.23.1440.808@0.23.1440.808" timestamp="1604674856598" />
+    <state width="1358" height="152" key="GridCell.Tab.0.bottom/0.23.1440.811@0.23.1440.811" timestamp="1604670292365" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1604674856598">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
-    <state x="531" y="253" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1601364982675" />
-    <state x="363" y="92" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1601368779551">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1604674653730" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.23.1440.808@0.23.1440.808" timestamp="1604674856598" />
+    <state width="1358" height="152" key="GridCell.Tab.0.center/0.23.1440.811@0.23.1440.811" timestamp="1604670292364" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1604674856596">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
-    <state x="363" y="92" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1601368779551" />
-    <state x="463" y="126" key="FileChooserDialogImpl" timestamp="1604419430256">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1604674653730" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.23.1440.808@0.23.1440.808" timestamp="1604674856596" />
+    <state width="1358" height="152" key="GridCell.Tab.0.left/0.23.1440.811@0.23.1440.811" timestamp="1604670292364" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1604674856598">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1601533144714" />
-    <state x="463" y="126" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1604419430256" />
-    <state x="184" y="7" key="SettingsEditor" timestamp="1604419624582">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1604674653731" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.23.1440.808@0.23.1440.808" timestamp="1604674856598" />
+    <state width="1358" height="152" key="GridCell.Tab.0.right/0.23.1440.811@0.23.1440.811" timestamp="1604670292364" />
+    <state x="308" y="200" key="IDE.errors.dialog" timestamp="1604671272220">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1601448995583" />
-    <state x="184" y="7" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1604419624582" />
-    <state x="92" y="92" width="1182" height="544" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1601448996136">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="308" y="200" key="IDE.errors.dialog/0.0.1440.900@0.0.1440.900" timestamp="1604671272220" />
+    <state x="384" y="155" width="670" height="676" key="search.everywhere.popup" timestamp="1604670626315">
+      <screen x="0" y="23" width="1440" height="808" />
     </state>
-    <state x="92" y="92" width="1182" height="544" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1366.728@0.0.1366.728" timestamp="1601448996136" />
-    <state x="379" y="198" key="com.intellij.ide.util.TipDialog" timestamp="1604419605488">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1602858117325" />
-    <state x="379" y="198" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1604419605488" />
-    <state x="339" y="164" key="run.anything.popup" timestamp="1601463135026">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="339" y="164" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1601463135026" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1601488625602">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1601488625602" />
+    <state x="384" y="155" width="670" height="676" key="search.everywhere.popup/0.23.1440.808@0.23.1440.808" timestamp="1604670626315" />
   </component>
 </project>

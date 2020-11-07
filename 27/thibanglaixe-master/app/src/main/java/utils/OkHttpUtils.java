@@ -30,14 +30,6 @@ public class OkHttpUtils {
         return enableTls12OnPreLollipop(client).build();
     }
 
-
-    /**
-     * Enables TLSv1.2 protocol (which is disabled by default)
-     * on pre-Lollipop devices, as well as on Lollipop, because some issues can take place on Samsung devices.
-     *
-     * @param client OKHtp client builder
-     * @return
-     */
     private static OkHttpClient.Builder enableTls12OnPreLollipop(OkHttpClient.Builder client) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN && Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP_MR1) {
             try {

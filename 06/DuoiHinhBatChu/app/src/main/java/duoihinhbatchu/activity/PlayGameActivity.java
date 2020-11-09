@@ -1,0 +1,37 @@
+package nhom6.com.duoihinhbatchu.activity;
+
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.graphics.BitmapFactory;
+import android.os.Bundle;
+import android.os.Handler;
+import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.*;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.reward.RewardItem;
+import com.google.android.gms.ads.reward.RewardedVideoAd;
+import com.google.android.gms.ads.reward.RewardedVideoAdListener;
+import duoihinhbatchu.MainActivity;
+import nhom6.com.duoihinhbatchu.R;
+import nhom6.com.duoihinhbatchu.model.Question;
+import nhom6.com.duoihinhbatchu.utils.Const;
+import nhom6.com.duoihinhbatchu.utils.DatabaseManager;
+import nhom6.com.duoihinhbatchu.utils.PlayMusic;
+import nhom6.com.duoihinhbatchu.utils.SharePreferenceUtils;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;

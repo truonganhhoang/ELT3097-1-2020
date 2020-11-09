@@ -192,3 +192,56 @@ public class PlayGameActivity extends AppCompatActivity implements RewardedVideo
     private int questionCount = 1;
     private RewardedVideoAd mRewardedVideoAd;
     private boolean isHelp = false;
+
+
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_play_game);
+        ButterKnife.bind(this);
+        initAdmob();
+        initWatchVideo();
+        initViews();
+        initData();
+    }
+
+    private void initWatchVideo() {
+        mRewardedVideoAd = MobileAds.getRewardedVideoAdInstance(this);
+        mRewardedVideoAd.setRewardedVideoAdListener(this);
+        loadRewardedVideoAd();
+    }
+
+    private void loadRewardedVideoAd() {
+        mRewardedVideoAd.loadAd(getResources().getString(R.string.app_id_video),//use this id for testing
+                new AdRequest.Builder().build());
+    }
+
+    private void initAdmob() {
+        AdRequest adRequest = new AdRequest.Builder()
+                .build();
+        adView.loadAd(adRequest);
+    }
+
+    private void initData() {
+        try {
+            InputStream is = getAssets().open("images/" + filename);
+            imgQuestion.setImageBitmap(BitmapFactory.decodeStream(is));
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void initViews() {
+        databaseManager = new DatabaseManager(PlayGameActivity.this);
+        question = databaseManager.getOneQuestion();
+        dapAn = question.getDapAn();
+        filename = question.getFileName();
+        ketQua = question.getKetQua();
+        goiY = question.getGoiY();
+        questionCount = getIntent().getIntExtra(Const.KEY_QUESTION, 1);
+        scoreRuby = getIntent().getIntExtra(Const.KEY_RUBY, 0);
+        tvQuestion.setText(String.format("Câu %d", questionCount));
+        tvRuby.setText(String.format("%d", scoreRuby));
+        if (scoreRuby <= 5) {
+            Toast.makeText(this, "Gợi ý bạn đáp án cho bạn có ít vốn. " + dapAn, Toast.LENGTH_LONG).show();
+        }

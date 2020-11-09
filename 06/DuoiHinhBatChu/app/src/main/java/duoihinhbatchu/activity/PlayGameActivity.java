@@ -245,3 +245,210 @@ public class PlayGameActivity extends AppCompatActivity implements RewardedVideo
         if (scoreRuby <= 5) {
             Toast.makeText(this, "Gợi ý bạn đáp án cho bạn có ít vốn. " + dapAn, Toast.LENGTH_LONG).show();
         }
+
+
+        listViewDapAn.add(dapan1);
+        listViewDapAn.add(dapan2);
+        listViewDapAn.add(dapan3);
+        listViewDapAn.add(dapan4);
+        listViewDapAn.add(dapan5);
+        listViewDapAn.add(dapan6);
+        listViewDapAn.add(dapan7);
+        listViewDapAn.add(dapan8);
+        listViewDapAn.add(dapan9);
+        listViewDapAn.add(dapan10);
+        listViewDapAn.add(dapan11);
+        listViewDapAn.add(dapan12);
+        listViewDapAn.add(dapan13);
+        listViewDapAn.add(dapan14);
+
+        listViewGoiY.add(goiy1);
+        listViewGoiY.add(goiy2);
+        listViewGoiY.add(goiy3);
+        listViewGoiY.add(goiy4);
+        listViewGoiY.add(goiy5);
+        listViewGoiY.add(goiy6);
+        listViewGoiY.add(goiy7);
+        listViewGoiY.add(goiy8);
+        listViewGoiY.add(goiy9);
+        listViewGoiY.add(goiy10);
+        listViewGoiY.add(goiy11);
+        listViewGoiY.add(goiy12);
+        listViewGoiY.add(goiy13);
+        listViewGoiY.add(goiy14);
+
+        textViewsDapAn.add(txtDapan1);
+        textViewsDapAn.add(txtDapan2);
+        textViewsDapAn.add(txtDapan3);
+        textViewsDapAn.add(txtDapan4);
+        textViewsDapAn.add(txtDapan5);
+        textViewsDapAn.add(txtDapan6);
+        textViewsDapAn.add(txtDapan7);
+        textViewsDapAn.add(txtDapan8);
+        textViewsDapAn.add(txtDapan9);
+        textViewsDapAn.add(txtDapan10);
+        textViewsDapAn.add(txtDapan11);
+        textViewsDapAn.add(txtDapan12);
+        textViewsDapAn.add(txtDapan13);
+        textViewsDapAn.add(txtDapan14);
+
+        textViewsGoiY.add(txtGoiy1);
+        textViewsGoiY.add(txtGoiy2);
+        textViewsGoiY.add(txtGoiy3);
+        textViewsGoiY.add(txtGoiy4);
+        textViewsGoiY.add(txtGoiy5);
+        textViewsGoiY.add(txtGoiy6);
+        textViewsGoiY.add(txtGoiy7);
+        textViewsGoiY.add(txtGoiy8);
+        textViewsGoiY.add(txtGoiy9);
+        textViewsGoiY.add(txtGoiy10);
+        textViewsGoiY.add(txtGoiy11);
+        textViewsGoiY.add(txtGoiy12);
+        textViewsGoiY.add(txtGoiy13);
+        textViewsGoiY.add(txtGoiy14);
+
+        for (int i = 0; i <= 13; i++) {
+            listViewDapAn.get(i).setVisibility(View.GONE);
+        }
+        for (int j = 0; j < dapAn.length(); j++) {
+            listViewDapAn.get(j).setVisibility(View.VISIBLE);
+        }
+        for (int k = 0; k < goiY.length(); k++) {
+            textViewsGoiY.get(k).setText(String.valueOf(goiY.charAt(k)));
+        }
+
+
+    }
+
+    @OnClick({R.id.btn_back, R.id.btn_help, R.id.btn_share, R.id.dapan_1, R.id.dapan_2, R.id.dapan_3, R.id.dapan_4, R.id.dapan_5, R.id.dapan_6, R.id.dapan_7, R.id.dapan_8, R.id.dapan_9, R.id.dapan_10, R.id.dapan_11, R.id.dapan_12, R.id.dapan_13, R.id.dapan_14, R.id.goiy_1, R.id.goiy_2, R.id.goiy_3, R.id.goiy_4, R.id.goiy_5, R.id.goiy_6, R.id.goiy_7, R.id.goiy_8, R.id.goiy_9, R.id.goiy_10, R.id.goiy_11, R.id.goiy_12, R.id.goiy_13, R.id.goiy_14})
+    public void onViewClicked(View view) {
+        switch (view.getId()) {
+            case R.id.btn_back:
+                PlayMusic.playClick(getApplicationContext());
+                makeBack();
+                break;
+            case R.id.btn_help:
+                PlayMusic.playClick(getApplicationContext());
+                makeHelp();
+                break;
+            case R.id.btn_share:
+                PlayMusic.playClick(getApplicationContext());
+                makeVideo();
+                break;
+            case R.id.dapan_1:
+                PlayMusic.playClick(getApplicationContext());
+                makeDapAn(0);
+                break;
+            case R.id.dapan_2:
+                PlayMusic.playClick(getApplicationContext());
+                makeDapAn(1);
+                break;
+            case R.id.dapan_3:
+                PlayMusic.playClick(getApplicationContext());
+                makeDapAn(2);
+                break;
+            case R.id.dapan_4:
+                PlayMusic.playClick(getApplicationContext());
+                makeDapAn(3);
+                break;
+            case R.id.dapan_5:
+                PlayMusic.playClick(getApplicationContext());
+                makeDapAn(4);
+                break;
+            case R.id.dapan_6:
+                PlayMusic.playClick(getApplicationContext());
+                makeDapAn(5);
+                break;
+            case R.id.dapan_7:
+                PlayMusic.playClick(getApplicationContext());
+                makeDapAn(6);
+                break;
+            case R.id.dapan_8:
+                PlayMusic.playClick(getApplicationContext());
+                makeDapAn(7);
+                break;
+            case R.id.dapan_9:
+                PlayMusic.playClick(getApplicationContext());
+                makeDapAn(8);
+                break;
+            case R.id.dapan_10:
+                PlayMusic.playClick(getApplicationContext());
+                makeDapAn(9);
+                break;
+            case R.id.dapan_11:
+                PlayMusic.playClick(getApplicationContext());
+                makeDapAn(10);
+                break;
+            case R.id.dapan_12:
+                PlayMusic.playClick(getApplicationContext());
+                makeDapAn(11);
+                break;
+            case R.id.dapan_13:
+                PlayMusic.playClick(getApplicationContext());
+                makeDapAn(12);
+                break;
+            case R.id.dapan_14:
+                PlayMusic.playClick(getApplicationContext());
+                makeDapAn(13);
+                break;
+            case R.id.goiy_1:
+                PlayMusic.playClick(getApplicationContext());
+                makeGoiY(0);
+                break;
+            case R.id.goiy_2:
+                PlayMusic.playClick(getApplicationContext());
+                makeGoiY(1);
+                break;
+            case R.id.goiy_3:
+                PlayMusic.playClick(getApplicationContext());
+                makeGoiY(2);
+                break;
+            case R.id.goiy_4:
+                PlayMusic.playClick(getApplicationContext());
+                makeGoiY(3);
+                break;
+            case R.id.goiy_5:
+                PlayMusic.playClick(getApplicationContext());
+                makeGoiY(4);
+                break;
+            case R.id.goiy_6:
+                PlayMusic.playClick(getApplicationContext());
+                makeGoiY(5);
+                break;
+            case R.id.goiy_7:
+                PlayMusic.playClick(getApplicationContext());
+                makeGoiY(6);
+                break;
+            case R.id.goiy_8:
+                PlayMusic.playClick(getApplicationContext());
+                makeGoiY(7);
+                break;
+            case R.id.goiy_9:
+                PlayMusic.playClick(getApplicationContext());
+                makeGoiY(8);
+                break;
+            case R.id.goiy_10:
+                PlayMusic.playClick(getApplicationContext());
+                makeGoiY(9);
+                break;
+            case R.id.goiy_11:
+                PlayMusic.playClick(getApplicationContext());
+                makeGoiY(10);
+                break;
+            case R.id.goiy_12:
+                PlayMusic.playClick(getApplicationContext());
+                makeGoiY(11);
+                break;
+            case R.id.goiy_13:
+                PlayMusic.playClick(getApplicationContext());
+                makeGoiY(12);
+                break;
+            case R.id.goiy_14:
+                PlayMusic.playClick(getApplicationContext());
+                makeGoiY(13);
+                break;
+        }
+    }
+
+
+    

@@ -1,4 +1,4 @@
-package trieuphu.donglv.com.duoihinhbatchu.utils;
+package nhom6.com.duoihinhbatchu.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;

@@ -1,8 +1,8 @@
-package trieuphu.donglv.com.duoihinhbatchu.utils;
+package nhom6.com.duoihinhbatchu.utils;
 
 import android.content.Context;
 import android.media.MediaPlayer;
-import trieuphu.donglv.com.duoihinhbatchu.R;
+import nhom6.com.duoihinhbatchu.R;
 
 public class PlayMusic {
 

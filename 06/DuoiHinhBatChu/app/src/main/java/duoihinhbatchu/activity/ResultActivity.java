@@ -1,4 +1,4 @@
-package trieuphu.donglv.com.duoihinhbatchu.activity;
+package nhom6.com.duoihinhbatchu.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,9 +11,9 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-import trieuphu.donglv.com.duoihinhbatchu.R;
-import trieuphu.donglv.com.duoihinhbatchu.utils.Const;
-import trieuphu.donglv.com.duoihinhbatchu.utils.SharePreferenceUtils;
+import nhom6.com.duoihinhbatchu.R;
+import nhom6.com.duoihinhbatchu.utils.Const;
+import nhom6.com.duoihinhbatchu.utils.SharePreferenceUtils;
 
 public class ResultActivity extends AppCompatActivity {
 

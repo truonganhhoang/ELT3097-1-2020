@@ -1,4 +1,4 @@
-package trieuphu.donglv.com.duoihinhbatchu.utils;
+package nhom6.com.duoihinhbatchu.utils;
 
 public class Const {
     public static final String KEY_RESULT = "RESULT";

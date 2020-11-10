@@ -451,4 +451,115 @@ public class PlayGameActivity extends AppCompatActivity implements RewardedVideo
     }
 
 
-    
+    private void makeVideo() {
+        AlertDialog dialog = new AlertDialog.Builder(PlayGameActivity.this)
+                .setTitle("Thông báo")
+                .setMessage("Bạn có muốn xem video để được cộng thêm 5 ruby không?")
+                .setNegativeButton("Có", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                        if (mRewardedVideoAd.isLoaded()) {
+                            mRewardedVideoAd.show();
+                        } else {
+                            Toast.makeText(PlayGameActivity.this, "Hiện tại không có video nhận thưởng nào!", Toast.LENGTH_SHORT).show();
+                        }
+                        dialog.dismiss();
+                    }
+                })//setPositiveButton
+                .setPositiveButton("Không", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                        dialog.dismiss();
+                    }
+                })//setNegativeButton
+                .create();
+        dialog.show();
+
+    }
+
+    private void makeHelp() {
+        AlertDialog dialog = new AlertDialog.Builder(PlayGameActivity.this)
+                .setTitle("Thông báo")
+                .setMessage("Bạn có muốn dùng 5 ruby để mở 1 ô chữ không?")
+                .setNegativeButton("Có", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                        makeAddText();
+                        dialog.dismiss();
+                    }
+                })//setPositiveButton
+                .setPositiveButton("Không", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                        dialog.dismiss();
+                    }
+                })//setNegativeButton
+                .create();
+        dialog.show();
+    }
+
+    private void makeAddText() {
+        if (scoreRuby >= 5) {
+            scoreRuby = scoreRuby - 5;
+            tvRuby.setText(String.valueOf(scoreRuby));
+            if (countDapAn < dapAn.length()) {
+                if (textViewsDapAn.get(countHelp).getText().toString().equals("")) {
+                    countDapAn = countDapAn + 1;
+                    textViewsDapAn.get(countHelp).setText(dapAn.charAt(countHelp) + "");
+                } else {
+                    textViewsDapAn.get(countHelp).setText(dapAn.charAt(countHelp) + "");
+                }
+                textViewsDapAn.get(countHelp).setTextColor(ContextCompat.getColor(PlayGameActivity.this, R.color.red_A700));
+                listViewDapAn.get(countHelp).setClickable(false);
+                for (int i = 0; i < goiY.length(); i++) {
+                    if (textViewsDapAn.get(countHelp).getText().equals(textViewsGoiY.get(i).getText())) {
+                        listViewGoiY.get(i).setVisibility(View.INVISIBLE);
+                        break;
+                    }
+                }
+                String selectDapAn = "";
+                for (int i = 0; i < dapAn.length(); i++) {
+                    selectDapAn += textViewsDapAn.get(i).getText();
+                }
+                if (countDapAn == dapAn.length()) {
+                    if (dapAn.equals(selectDapAn)) {
+                        scoreRuby = scoreRuby + 5;
+                        tvRuby.setText(String.valueOf(scoreRuby));
+                        questionCount = questionCount + 1;
+                        Toast.makeText(this, "Ban tra loi dung", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(PlayGameActivity.this, ResultActivity.class);
+                        intent.putExtra(Const.KEY_QUESTION, questionCount);
+                        intent.putExtra(Const.KEY_RESULT, ketQua);
+                        intent.putExtra(Const.KEY_RUBY, scoreRuby);
+                        startActivity(intent);
+                        finish();
+                    } else {
+                        if (scoreRuby >= 5) {
+                            scoreRuby = scoreRuby - 5;
+                        }
+                        tvResult.setVisibility(View.VISIBLE);
+                        PlayMusic.playWrong(getApplicationContext());
+                        Animation anim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.blink);
+                        tvResult.startAnimation(anim);
+                        YoYo.with(Techniques.Shake)
+                                .duration(1000)
+                                .playOn(tvResult);
+                        YoYo.with(Techniques.Shake)
+                                .duration(1000)
+                                .playOn(layoutDapan);
+                    }
+                }
+                countHelp = countHelp + 1;
+            }
+        } else {
+            Toast.makeText(this, "Bạn không đủ ruby để được gợi ý", Toast.LENGTH_SHORT).show();
+        }
+
+    }
+
+    private void makeDapAn(int position) {
+        if (countDapAn > 0) {
+            countDapAn = countDapAn - 1;
+        }
+        textViewsDapAn.get(position).setText("");
+        if (textViewsDapAn.get(position).getTag() != null) {
+            int positionTag = Integer.parseInt(textViewsDapAn.get(position).getTag().toString());
+            listViewGoiY.get(positionTag).setVisibility(View.VISIBLE);
+        }
+    }

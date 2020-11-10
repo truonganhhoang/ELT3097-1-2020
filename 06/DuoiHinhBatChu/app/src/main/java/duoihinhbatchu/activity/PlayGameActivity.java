@@ -563,3 +563,157 @@ public class PlayGameActivity extends AppCompatActivity implements RewardedVideo
             listViewGoiY.get(positionTag).setVisibility(View.VISIBLE);
         }
     }
+
+
+    private void makeGoiY(int position) {
+        if (countDapAn < dapAn.length()) {
+            countDapAn = countDapAn + 1;
+            listViewGoiY.get(position).setVisibility(View.INVISIBLE);
+            for (int i = 0; i < dapAn.length(); i++) {
+                if (textViewsDapAn.get(i).getText().equals("")) {
+                    textViewsDapAn.get(i).setText(textViewsGoiY.get(position).getText());
+                    textViewsDapAn.get(i).setTag(position);
+                    break;
+                }
+            }
+            String selectDapAn = "";
+            for (int i = 0; i < dapAn.length(); i++) {
+                selectDapAn += textViewsDapAn.get(i).getText();
+            }
+            if (countDapAn == dapAn.length()) {
+                if (dapAn.equals(selectDapAn)) {
+                    scoreRuby = scoreRuby + 5;
+                    questionCount = questionCount + 1;
+                    PlayMusic.playTrue(getApplicationContext());
+                    YoYo.with(Techniques.Pulse)
+                            .duration(1500)
+                            .playOn(findViewById(R.id.layout_dapan));
+
+                    YoYo.with(Techniques.Flash)
+                            .duration(1500)
+                            .playOn(findViewById(R.id.layout_dapan));
+                    final Intent intent = new Intent(PlayGameActivity.this, ResultActivity.class);
+                    intent.putExtra(Const.KEY_QUESTION, questionCount);
+                    intent.putExtra(Const.KEY_RESULT, ketQua);
+                    intent.putExtra(Const.KEY_RUBY, scoreRuby);
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            startActivity(intent);
+                        }
+                    }, 1000);
+                } else {
+                    if (scoreRuby >= 5) {
+                        scoreRuby = scoreRuby - 5;
+                        tvRuby.setText(scoreRuby + "");
+                    }
+                    tvResult.setVisibility(View.VISIBLE);
+                    PlayMusic.playWrong(getApplicationContext());
+                    Animation anim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.blink);
+                    tvResult.startAnimation(anim);
+                    YoYo.with(Techniques.Shake)
+                            .duration(1000)
+                            .playOn(tvResult);
+                    YoYo.with(Techniques.Shake)
+                            .duration(1000)
+                            .playOn(layoutDapan);
+                }
+            }
+        }
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        makeBack();
+    }
+
+    private void makeBack() {
+        AlertDialog dialog = new AlertDialog.Builder(PlayGameActivity.this)
+                .setTitle("Xác nhận")
+                .setMessage("Bạn có chắc chắn muốn thoát ?")
+                .setNegativeButton("Có", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                        dialog.dismiss();
+                        Intent intent = new Intent(PlayGameActivity.this, MainActivity.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP |
+                                Intent.FLAG_ACTIVITY_CLEAR_TASK |
+                                Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intent);
+                        finish();
+                    }
+                })//setPositiveButton
+                .setPositiveButton("Không", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                        dialog.dismiss();
+                    }
+                })//setNegativeButton
+                .create();
+        dialog.show();
+    }
+
+    @Override
+    public void onPause() {
+        if (adView != null) {
+            adView.pause();
+        }
+        super.onPause();
+        SharePreferenceUtils.insertIntData(PlayGameActivity.this, Const.KEY_SHARE_RUBY, scoreRuby);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (adView != null) {
+            adView.resume();
+        }
+    }
+
+    @Override
+    public void onDestroy() {
+        if (adView != null) {
+            adView.destroy();
+        }
+
+        super.onDestroy();
+
+    }
+
+
+    @Override
+    public void onRewardedVideoAdLoaded() {
+
+    }
+
+    @Override
+    public void onRewardedVideoAdOpened() {
+
+    }
+
+    @Override
+    public void onRewardedVideoStarted() {
+
+    }
+
+    @Override
+    public void onRewardedVideoAdClosed() {
+        loadRewardedVideoAd();
+    }
+
+    @Override
+    public void onRewarded(RewardItem rewardItem) {
+        scoreRuby = scoreRuby + 5;
+        tvRuby.setText(String.valueOf(scoreRuby));
+        loadRewardedVideoAd();
+    }
+
+    @Override
+    public void onRewardedVideoAdLeftApplication() {
+
+    }
+
+    @Override
+    public void onRewardedVideoAdFailedToLoad(int i) {
+
+    }
+}

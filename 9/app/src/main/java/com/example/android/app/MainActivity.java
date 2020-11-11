@@ -23,6 +23,7 @@ import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawer;
+    private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +46,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     new LearningFragment()).commit();
             navigationView.setCheckedItem(R.id.nav_learn);
         }
+
+        button = (Button) findViewById(R.id.btt_thisathach);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startQuiz();
+            }
+        });
+    }
+
+    public void startQuiz() {
+        Intent intent = new Intent(this, QuizActivity.class);
+        startActivity(intent);
     }
 
     @Override

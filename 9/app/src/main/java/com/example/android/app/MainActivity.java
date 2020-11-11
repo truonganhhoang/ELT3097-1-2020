@@ -76,7 +76,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 Toast.makeText(this, "Đã đánh giá ứng dụng 5 sao. Cảm ơn bạn!", Toast.LENGTH_SHORT).show();
                 break;
         }
-
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }

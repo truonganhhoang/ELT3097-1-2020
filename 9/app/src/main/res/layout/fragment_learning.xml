@@ -118,7 +118,6 @@
         android:layout_width="113dp"
         android:layout_height="101dp"
         android:background="@drawable/icon_1_lay1"
-        android:onClick="button1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.02"
         app:layout_constraintLeft_toLeftOf="parent"

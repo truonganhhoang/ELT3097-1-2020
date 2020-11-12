@@ -1,4 +1,4 @@
-package com.example.npbi;
+package com.example.duolingo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,23 +7,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class NextActivity extends AppCompatActivity {
+import com.example.duolingo.question.QuestionTwo;
+
+public class CardActivity extends AppCompatActivity {
 
     Button back;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_next);
+        setContentView(R.layout.activity_card);
 
         back = (Button) findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(com.example.npbi.NextActivity.this, com.example.npbi.MainAcitivity.class);
-                startActivity(intent);
+                startActivity(new Intent(CardActivity.this, QuestionTwo.class));
             }
-
         });
     }
 }

@@ -1,4 +1,4 @@
-package com.example.relative_layouts;
+package com.example.duolingo;
 
 import org.junit.Test;
 

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_row="2"
+    android:layout_column="3"
+    android:background="#F8FFFCFC"
+    tools:context=".LoginActivity"
+    tools:ignore="Deprecated">
+
+
+    <Button
+        android:id="@+id/dapan1"
+        android:layout_width="160dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/dapan3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="17dp"
+        android:layout_x="22dp"
+        android:layout_y="141dp"
+        android:background="@drawable/button_selecter"
+        android:drawableTop="@drawable/tea"
+        android:paddingTop="10dp"
+        android:text="tea"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/dapan2"
+        android:layout_width="160dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/dapan4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="17dp"
+        android:layout_x="207dp"
+        android:layout_y="140dp"
+        android:background="@drawable/button_selecter"
+        android:drawableTop="@drawable/coffee"
+        android:paddingTop="10dp"
+        android:text="cafe"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/layout1"
+        app:layout_constraintEnd_toStartOf="@+id/dapan4"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/dapan3"
+        android:layout_width="160dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="121dp"
+        android:layout_x="22dp"
+        android:layout_y="333dp"
+        android:background="@drawable/button_selecter"
+        android:drawableTop="@drawable/rice"
+        android:paddingTop="10dp"
+        android:text="rice"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/dapan4"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/dapan4"
+        android:layout_width="160dp"
+        android:layout_height="200dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="121dp"
+        android:layout_x="207dp"
+        android:layout_y="333dp"
+        android:background="@drawable/button_selecter"
+        android:drawableTop="@drawable/food"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:text="food"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/layout1"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+
+        android:id="@+id/kiemtra"
+        android:layout_width="363dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="22dp"
+        android:layout_x="23dp"
+        android:layout_y="553dp"
+        android:background="@drawable/button_unselected"
+        android:enabled="false"
+        android:text="kiểm tra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="277dp"
+        android:layout_height="13dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="21dp"
+        android:layout_x="109dp"
+        android:layout_y="29dp"
+        android:background="@drawable/custom_seek"
+        android:max="100"
+        android:progress="20"
+        android:progressTint="#1ABA20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/back"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="69dp"
+        android:layout_height="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="45dp"
+        android:layout_toStartOf="@+id/progressBar"
+        android:layout_x="14dp"
+        android:layout_y="16dp"
+        android:background="#FFFFFF"
+        android:drawableTop="@drawable/back"
+        android:textColor="#848A8A"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@+id/progressBar"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="266dp"
+        android:layout_x="28dp"
+        android:layout_y="72dp"
+        android:text='Đâu là "Trà"?'
+        android:textColor="#070707"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.007"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back" />
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="125dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-3dp"
+        android:layout_x="-1dp"
+        android:layout_y="535dp"
+        android:background="#5BE160"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/check"
+            android:layout_width="190dp"
+            android:layout_height="44dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="213dp"
+            android:layout_marginBottom="83dp"
+            android:text="Giỏi Lắm!"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/tieptuc"
+            android:layout_width="361dp"
+            android:layout_height="46dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/nextquestion_true"
+            android:text="Tiếp Tục"
+            android:textColor="#FFFF" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

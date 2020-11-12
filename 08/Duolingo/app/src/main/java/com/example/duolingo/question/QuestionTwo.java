@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.example.duolingo.CardActivity;
 import com.example.duolingo.R;
+import com.example.duolingo.ui.HomeActivity;
 import com.example.duolingo.utils.CustomProgressbar;
 
 public class QuestionTwo extends AppCompatActivity {
@@ -50,7 +51,23 @@ public class QuestionTwo extends AppCompatActivity {
         dapan2.setOnClickListener(mListener);
         dapan3.setOnClickListener(mListener);
         kiemtra.setOnClickListener(mListener);
+
+        tieptuc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivityChild(v);
+            }
+        });
+
     }
+    public void openActivityChild(View v){
+        Intent intent = new Intent(QuestionTwo.this , HomeActivity.class);
+        int current = 20;
+        intent.putExtra("update", current);
+        startActivity(intent);
+    }
+
+
     View.OnClickListener mListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {

@@ -62,7 +62,7 @@ public class QuestionTwo extends AppCompatActivity {
     }
     public void openActivityChild(View v){
         Intent intent = new Intent(QuestionTwo.this , HomeActivity.class);
-        int current = 20;
+        int current = 100;
         intent.putExtra("update", current);
         startActivity(intent);
     }

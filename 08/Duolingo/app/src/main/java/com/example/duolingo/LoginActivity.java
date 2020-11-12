@@ -38,7 +38,6 @@ public class LoginActivity extends AppCompatActivity {
     private static final int RC_SIGN_IN = 0;
     private EditText account;
     private EditText password;
-    private TextView info;
     private Button login;
     private int counter = 5;
     private TextView userRegistration;
@@ -55,14 +54,11 @@ public class LoginActivity extends AppCompatActivity {
         actionBar.hide();
         account = (EditText) findViewById(R.id.Account);
         password = (EditText) findViewById(R.id.Password);
-        info = (TextView) findViewById(R.id.textInfo);
         login = (Button) findViewById(R.id.Confirm);
         userRegistration = (TextView) findViewById(R.id.Register);
         signInBtn = findViewById(R.id.signInButton);
 
 
-
-        info.setText("Number of attemps remaining : 5");
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -103,8 +99,6 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(new Intent(LoginActivity.this, HomeActivity.class));
         } else {
             counter--;
-            info.setText("Number of attemps remaining" + String.valueOf(counter));
-
             if (counter == 0) {
                 login.setEnabled(false);
             }

@@ -6,7 +6,7 @@ Link: https://play.google.com/store/apps/details?id=com.tiennd.trieuphumobile&hl
 
 Thành viên trong nhóm: Đào Minh Đức, Nguyễn Ngọc Đức
 
-Layout 1:
+Layout 1 (Đào Minh Đức):
 https://github.com/Deviluke-z/ELT3097-1-2021/blob/master/9/app/src/main/res/layout/activity_main.xml
 https://github.com/Deviluke-z/ELT3097-1-2021/blob/master/9/app/src/main/res/layout/activity_main2.xml
 https://github.com/Deviluke-z/ELT3097-1-2021/blob/master/9/app/src/main/java/com/minhduc/android/trieuphumobile/MainActivity.java

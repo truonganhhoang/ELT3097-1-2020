@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_row="2"
+    android:layout_column="3"
+    android:background="#F8FFFCFC"
+    tools:context=".MainActivity"
+    tools:ignore="Deprecated">
+
+    <Button
+        android:id="@+id/button"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="69dp"
+        android:layout_height="42dp"
+        android:layout_x="14dp"
+        android:layout_y="16dp"
+        android:background="#FFFFFF"
+        android:drawableTop="@drawable/back"
+        android:textColor="#848A8A"
+        android:textSize="32sp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="162dp"
+        android:layout_height="165dp"
+        android:layout_x="22dp"
+        android:layout_y="141dp"
+        android:background="@drawable/custom_botton"
+        android:drawableTop="@drawable/cake"
+        android:paddingTop="10dp"
+        android:text="cake"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="162dp"
+        android:layout_height="170dp"
+        android:layout_x="208dp"
+        android:layout_y="140dp"
+        android:drawableTop="@drawable/coffee"
+        android:paddingTop="10dp"
+        android:background="@drawable/custom_botton"
+        android:textAllCaps="false"
+        android:text="coffee" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="160dp"
+        android:layout_height="170dp"
+        android:layout_x="22dp"
+        android:layout_y="332dp"
+        android:background="@drawable/custom_botton"
+        android:drawableTop="@drawable/food"
+        android:paddingTop="10dp"
+        android:text="food"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="160dp"
+        android:layout_height="168dp"
+        android:layout_x="207dp"
+        android:layout_y="333dp"
+        android:background="@drawable/custom_botton"
+        android:drawableTop="@drawable/tea"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:text="tea"
+        android:textAllCaps="false" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_x="109dp"
+        android:layout_y="29dp"
+        android:background="@drawable/custom_seek"
+        android:max="100"
+        android:progress="40"
+        android:progressTint="#1ABA20" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="28dp"
+        android:layout_y="72dp"
+        android:text='Đâu là "Trà"?'
+        android:textColor="#DD000000"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="400dp"
+        android:layout_height="104dp"
+        android:layout_x="6dp"
+        android:layout_y="480dp"
+        android:translationZ="30dp"
+        android:background="#5BE160"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="361dp"
+            android:layout_height="46dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="-3dp"
+            android:background="@drawable/custom_tiep"
+            android:text="Tiếp Tục"
+            android:textColor="#FFFF" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="190dp"
+            android:layout_height="44dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="207dp"
+            android:layout_marginBottom="63dp"
+            android:text="Giỏi Lắm!"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <Button
+
+        android:id="@+id/button5"
+        android:layout_width="360dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="31dp"
+        android:layout_x="31dp"
+        android:layout_y="543dp"
+        android:background="@drawable/custom_botton1"
+        android:enabled="false"
+        android:text="kiểm tra" />
+
+
+</AbsoluteLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/mainbackground"
+    android:orientation="vertical"
+    tools:context="ui.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:text="Ôn thi giấy phép lái xe"
+        android:textColor="@color/green"
+        android:textSize="25dp" />
+
+    <LinearLayout
+        android:layout_width="386dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="105dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        android:background="@drawable/viengoc"
+
+        <Button
+            android:id="@+id/btnThithu"
+            android:layout_width="75dp"
+            android:layout_height="82dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="56dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/lamthude" />
+
+        <Button
+            android:id="@+id/btnLythuyet"
+            android:layout_width="75dp"
+            android:layout_height="82dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/onlythuyet" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="386dp"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnHocSaHinh"
+            android:layout_width="75dp"
+            android:layout_height="82dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/hocsahinh" />
+
+        <Button
+            android:id="@+id/btnHocBienBao"
+            android:layout_width="75dp"
+            android:layout_height="82dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/hocbienbao" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="386dp"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnThuchanh"
+            android:layout_width="75dp"
+            android:layout_height="82dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/gioithieuthuchanh" />
+
+        <Button
+            android:id="@+id/btnFines"
+            android:layout_width="75dp"
+            android:layout_height="82dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/mucxuphat" />
+    </LinearLayout>
+
+</LinearLayout>

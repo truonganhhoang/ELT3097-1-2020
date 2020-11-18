@@ -29,12 +29,6 @@
             android:layout_height="55dp"
             android:gravity="center">
 
-            <View
-                android:layout_centerInParent="true"
-                android:layout_width="match_parent"
-                android:layout_height="3dp"
-                android:background="#FFEB3B" />
-
             <Button
                 android:onClick="batdau"
                 android:layout_width="match_parent"
@@ -42,8 +36,8 @@
                 android:layout_marginLeft="50dp"
                 android:layout_marginRight="50dp"
                 android:background="@drawable/bg_button"
-                android:text="CHƠI ĐƠN"
-                android:textColor="#fff"
+                android:text="BẮT ĐẦU CHƠI"
+                android:textColor="#3F51B5"
                 android:textSize="22sp"
                 android:textStyle="bold" />
         </RelativeLayout>

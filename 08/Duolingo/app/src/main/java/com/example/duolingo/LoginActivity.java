@@ -12,7 +12,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.example.duolingo.R;
+import com.example.duolingo.RegistrationActivity;
 import com.example.duolingo.question.QuestionOne;
+import com.example.duolingo.question.QuestionThree;
 import com.example.duolingo.question.QuestionTwo;
 import com.example.duolingo.ui.HomeActivity;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -96,7 +100,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private void validate(String userName, String userPassword) {
         if ((userName.equals("admin")) && (userPassword.equals("admin"))) {
-            startActivity(new Intent(LoginActivity.this, HomeActivity.class));
+            startActivity(new Intent(LoginActivity.this, QuestionThree.class));
         } else {
             counter--;
             if (counter == 0) {

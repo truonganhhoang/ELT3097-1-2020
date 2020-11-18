@@ -12,12 +12,12 @@
         android:id="@+id/et_input"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:layout_marginTop="428dp"
+        android:layout_marginTop="400dp"
         android:background="@drawable/custom_botton"
         android:hint="answer"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -95,7 +95,6 @@
         android:layout_x="23dp"
         android:layout_y="553dp"
         android:background="@drawable/button_unselected"
-        android:enabled="false"
         android:text="kiểm tra"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

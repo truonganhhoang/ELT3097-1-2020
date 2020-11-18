@@ -20,7 +20,8 @@ public class QuestionThree extends AppCompatActivity {
     // initialize Variable
 
     EditText etInput;
-    Button  btConvert , back ,continous, check;
+    Button  btConvert , back ,continous;
+    Button check;
     TextToSpeech textToSpeech;
     ProgressBar bar;
     RelativeLayout layout1;
@@ -62,7 +63,8 @@ public class QuestionThree extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String a = etInput.getText().toString();
-                if(a == "i drink water"){
+                String ans = "i drink water";
+                if( a.equals(ans)){
                     check.setBackgroundResource(R.drawable.custom_check);
                     check.setText("Tuyệt Vời");
                     check.setTextColor(Color.WHITE);

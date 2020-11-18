@@ -1,4 +1,4 @@
-package trieuphu.donglv.com.duoihinhbatchu.activity;
+package nhom6.com.duoihinhbatchu.activity;
 
 import android.content.Intent;
 import android.os.Handler;
@@ -9,8 +9,8 @@ import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
-import trieuphu.donglv.com.duoihinhbatchu.MainActivity;
-import trieuphu.donglv.com.duoihinhbatchu.R;
+import duoihinhbatchu.MainActivity;
+import nhom6.com.duoihinhbatchu.R;
 
 public class SplashActivity extends AppCompatActivity {
     private InterstitialAd interstitialAd;

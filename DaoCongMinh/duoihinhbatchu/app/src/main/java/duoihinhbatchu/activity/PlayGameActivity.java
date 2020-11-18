@@ -1,4 +1,4 @@
-package trieuphu.donglv.com.duoihinhbatchu.activity;
+package nhom6.com.duoihinhbatchu.activity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -23,13 +23,13 @@ import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.reward.RewardItem;
 import com.google.android.gms.ads.reward.RewardedVideoAd;
 import com.google.android.gms.ads.reward.RewardedVideoAdListener;
-import trieuphu.donglv.com.duoihinhbatchu.MainActivity;
-import trieuphu.donglv.com.duoihinhbatchu.R;
-import trieuphu.donglv.com.duoihinhbatchu.model.Question;
-import trieuphu.donglv.com.duoihinhbatchu.utils.Const;
-import trieuphu.donglv.com.duoihinhbatchu.utils.DatabaseManager;
-import trieuphu.donglv.com.duoihinhbatchu.utils.PlayMusic;
-import trieuphu.donglv.com.duoihinhbatchu.utils.SharePreferenceUtils;
+import duoihinhbatchu.MainActivity;
+import nhom6.com.duoihinhbatchu.R;
+import nhom6.com.duoihinhbatchu.model.Question;
+import nhom6.com.duoihinhbatchu.utils.Const;
+import nhom6.com.duoihinhbatchu.utils.DatabaseManager;
+import nhom6.com.duoihinhbatchu.utils.PlayMusic;
+import nhom6.com.duoihinhbatchu.utils.SharePreferenceUtils;
 
 import java.io.IOException;
 import java.io.InputStream;

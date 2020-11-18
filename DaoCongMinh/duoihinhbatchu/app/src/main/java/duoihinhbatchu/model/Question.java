@@ -1,4 +1,4 @@
-package trieuphu.donglv.com.duoihinhbatchu.model;
+package nhom6.com.duoihinhbatchu.model;
 
 public class Question {
     private String dapAn;

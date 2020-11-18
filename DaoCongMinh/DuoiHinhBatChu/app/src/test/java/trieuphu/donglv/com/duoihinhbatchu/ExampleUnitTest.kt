@@ -1,4 +1,4 @@
-package trieuphu.donglv.com.duoihinhbatchu
+package nhom6.com.duoihinhbatchu
 
 import org.junit.Test
 

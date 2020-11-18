@@ -1,4 +1,4 @@
-package trieuphu.donglv.com.duoihinhbatchu;
+package duoihinhbatchu;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -20,10 +20,12 @@ import com.flaviofaria.kenburnsview.KenBurnsView;
 import com.flaviofaria.kenburnsview.RandomTransitionGenerator;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-import trieuphu.donglv.com.duoihinhbatchu.activity.PlayGameActivity;
-import trieuphu.donglv.com.duoihinhbatchu.utils.Const;
-import trieuphu.donglv.com.duoihinhbatchu.utils.PlayMusic;
-import trieuphu.donglv.com.duoihinhbatchu.utils.SharePreferenceUtils;
+
+import nhom6.com.duoihinhbatchu.R;
+import nhom6.com.duoihinhbatchu.activity.PlayGameActivity;
+import nhom6.com.duoihinhbatchu.utils.Const;
+import nhom6.com.duoihinhbatchu.utils.PlayMusic;
+import nhom6.com.duoihinhbatchu.utils.SharePreferenceUtils;
 
 public class MainActivity extends AppCompatActivity {
 

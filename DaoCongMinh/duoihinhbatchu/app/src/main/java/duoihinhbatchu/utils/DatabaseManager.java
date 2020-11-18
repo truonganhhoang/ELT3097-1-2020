@@ -1,11 +1,11 @@
-package trieuphu.donglv.com.duoihinhbatchu.utils;
+package nhom6.com.duoihinhbatchu.utils;
 
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Environment;
 import android.util.Log;
-import trieuphu.donglv.com.duoihinhbatchu.model.Question;
+import nhom6.com.duoihinhbatchu.model.Question;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -13,7 +13,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 
 public class DatabaseManager {
-    private static final String DATABASE_PATH = Environment.getDataDirectory().getAbsolutePath() + "/data/com.dong.luong.duoihinhbatchu/";
+    private static final String DATABASE_PATH = Environment.getDataDirectory().getAbsolutePath() + "/data/com.nhom6.duoihinhbatchu/";
     private static final String DATABSE_NAME = "database.db";
     private static final String TABLE_NAME_QUESTION = "cauhoi";
     private static final String SQL_GET_QUESTION = "SELECT * FROM " + TABLE_NAME_QUESTION;

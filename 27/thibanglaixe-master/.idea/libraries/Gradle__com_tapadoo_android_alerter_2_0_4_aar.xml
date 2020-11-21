@@ -1,11 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.tapadoo.android:alerter:2.0.4@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e748accee72262cc91f03e69b6957544/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e748accee72262cc91f03e69b6957544/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0f7fc54525035a15644358e254dbd99e/alerter-2.0.4/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0f7fc54525035a15644358e254dbd99e/alerter-2.0.4/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0f7fc54525035a15644358e254dbd99e/alerter-2.0.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9ce6d4ccb87fd9d56fb368be5ea2294d/alerter-2.0.4/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9ce6d4ccb87fd9d56fb368be5ea2294d/alerter-2.0.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9ce6d4ccb87fd9d56fb368be5ea2294d/alerter-2.0.4/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tapadoo.android/alerter/2.0.4/e8f58e0c982033f53afa3cce492795873984d65d/alerter-2.0.4-javadoc.jar!/" />

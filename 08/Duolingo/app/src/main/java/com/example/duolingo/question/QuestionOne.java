@@ -17,6 +17,7 @@ import android.widget.TextView;
 
 import com.example.duolingo.LoginActivity;
 import com.example.duolingo.R;
+import com.example.duolingo.ui.HomeActivity;
 
 public class QuestionOne extends AppCompatActivity {
         Button back;
@@ -48,7 +49,7 @@ public class QuestionOne extends AppCompatActivity {
                 back.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                                startActivity(new Intent(QuestionOne.this, LoginActivity.class));
+                                startActivity(new Intent(QuestionOne.this, HomeActivity.class));
                         }
                 });
                 tieptuc.setOnClickListener(new View.OnClickListener() {

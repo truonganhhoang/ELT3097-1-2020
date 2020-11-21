@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/thibanglaixe-master.iml" filepath="$PROJECT_DIR$/.idea/modules/thibanglaixe-master.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/thibanglaixe-master.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/thibanglaixe-master.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="thibanglaixe-master/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/thibanglaixe-master.iml" filepath="$PROJECT_DIR$/.idea/modules/thibanglaixe-master.iml" group="thibanglaixe-master" />
     </modules>
   </component>
 </project>

@@ -10,7 +10,6 @@ import java.util.List;
 import ui.fragmentImpl.QuestionFragmentImpl;
 
 
-
 public class CustomPagerAdapter extends FragmentStatePagerAdapter {
 
     private ArrayList<QuestionFragmentImpl> fragments = new ArrayList<>();

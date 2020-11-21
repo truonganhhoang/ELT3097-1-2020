@@ -60,6 +60,19 @@
                     android:background="@drawable/btn_circle"
                     android:textColor="#fff"
                     android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/quatrungtim"
+                    />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/list_one"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="177dp"
+                    android:text="Cơ bản 1"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+
                     />
 
 
@@ -74,18 +87,31 @@
                 <RelativeLayout
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_height="110dp"
+                    android:layout_height="120dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="16dp">
 
-                    <include layout="@layout/activity_custom_progressbar"/>
+                    <include layout="@layout/activity_custom_progressbar" />
 
                     <Button
+                        android:id="@+id/list_two"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:background="@drawable/btn_circle"
                         android:textColor="#fff"
                         android:layout_centerInParent="true"
+                        android:drawableTop="@drawable/quatrungtim"
+                        />
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/list_two"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="68dp"
+                        android:text="Cơ bản 2"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+
                         />
 
 
@@ -95,7 +121,7 @@
                 <RelativeLayout
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_height="110dp"
+                    android:layout_height="120dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginStart="16dp">
 
@@ -103,12 +129,26 @@
                     <include layout="@layout/activity_custom_progressbar"/>
 
                     <Button
+                        android:id="@+id/list_three"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:background="@drawable/btn_circle"
                         android:textColor="#fff"
                         android:layout_centerInParent="true"
+                        android:drawableTop="@drawable/quatrungtim"
                         />
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/list_three"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="68dp"
+                        android:text="Cơ bản 3"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+
+                        />
+
                 </RelativeLayout>
 
             </LinearLayout>
@@ -122,35 +162,63 @@
                 <RelativeLayout
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_height="110dp"
+                    android:layout_height="120dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="16dp">
 
 
                     <include layout="@layout/activity_custom_progressbar"/>
                     <Button
+                        android:id="@+id/list_four"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:background="@drawable/btn_circle"
                         android:textColor="#fff"
                         android:layout_centerInParent="true"
+                        android:drawableTop="@drawable/quatrungxanh"
+                        />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/list_four"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="68dp"
+                        android:text="Cơ bản 4"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+
                         />
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_height="110dp"
+                    android:layout_height="120dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginStart="16dp">
 
                     <include layout="@layout/activity_custom_progressbar"/>
                     <Button
+                        android:id="@+id/list_five"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:background="@drawable/btn_circle"
                         android:textColor="#fff"
                         android:layout_centerInParent="true"
+                        android:drawableTop="@drawable/quatrungxanh"
+                        />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/list_five"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="68dp"
+                        android:text="Cơ bản 5"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+
                         />
                 </RelativeLayout>
             </LinearLayout>
@@ -162,52 +230,95 @@
 
                 <include layout="@layout/activity_custom_progressbar"/>
                 <Button
+                    android:id="@+id/list_commu"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/btn_circle"
                     android:textColor="#fff"
                     android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/quatrungbantay"
                     />
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/list_commu"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="177dp"
+                    android:text="Chào hỏi"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+
+                    />
+
             </RelativeLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="300dp"
             android:layout_marginTop="30dp"
             android:orientation="horizontal">
 
             <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_height="110dp"
+                android:layout_height="120dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp">
 
 
                 <include layout="@layout/activity_custom_progressbar"/>
                 <Button
+                    android:id="@+id/list_food"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/btn_circle"
                     android:textColor="#fff"
                     android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/quatrungxanh"
+                    />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/list_food"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="68dp"
+                    android:text="Thức ăn"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+
                     />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_height="110dp"
+                android:layout_height="120dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginStart="16dp">
 
                 <include layout="@layout/activity_custom_progressbar"/>
                 <Button
+                    android:id="@+id/list_animal"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/btn_circle"
                     android:textColor="#fff"
                     android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/quatrungxanh"
                     />
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/list_animal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="68dp"
+                    android:text="Động vật"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+
+                    />
+
+
             </RelativeLayout>
         </LinearLayout>
 
@@ -222,24 +333,25 @@
         android:layout_height="55dp"
         android:layout_alignParentBottom="true"
         android:background="@drawable/gray_top_border"
-        android:padding="16dp">
+        >
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_width="104dp"
+            android:layout_height="match_parent"
+             />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="104dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="350px" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="104dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="700px" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="104dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="1050px" />
 

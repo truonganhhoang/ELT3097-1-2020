@@ -36,13 +36,16 @@ public class MainActivity extends AppCompatActivity {
         actionBar.setTitle("Lý thuyết bằng lái xe A1");
         actionBar.setBackgroundDrawable(new ColorDrawable(ContextCompat.getColor(getApplicationContext(),R.color.toolbar2)));
         btnFines = findViewById(R.id.btnFines);
-        btnThiThu = findViewById(R.id.btnThithu);
+       btnThiThu = findViewById(R.id.btnThithu);
         btnLyThuyet = findViewById(R.id.btnLythuyet);
         btnHocSaHinh = findViewById(R.id.btnHocSaHinh);
         btnHocBienBao = findViewById(R.id.btnHocBienBao);
         btnThucHanh = findViewById(R.id.btnThuchanh);
 
-        //set intent
+        //  Set intent
+
+
+
         btnFines.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

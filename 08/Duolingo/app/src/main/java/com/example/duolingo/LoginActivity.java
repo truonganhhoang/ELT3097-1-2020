@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
@@ -48,14 +49,14 @@ public class LoginActivity extends AppCompatActivity {
     private SignInButton signInBtn;
     private GoogleSignInClient mGoogleSignInClient;
     private FirebaseAuth mAuth;
-    ActionBar actionBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        actionBar = getSupportActionBar();
-        actionBar.hide();
+
+
+        //Assign
         account = (EditText) findViewById(R.id.Account);
         password = (EditText) findViewById(R.id.Password);
         login = (Button) findViewById(R.id.Confirm);

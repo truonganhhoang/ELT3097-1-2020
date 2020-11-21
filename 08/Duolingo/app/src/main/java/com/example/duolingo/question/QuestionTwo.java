@@ -1,19 +1,18 @@
 package com.example.duolingo.question;
 
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.example.duolingo.CardActivity;
 import com.example.duolingo.R;
 import com.example.duolingo.ui.HomeActivity;
 import com.example.duolingo.utils.CustomProgressbar;

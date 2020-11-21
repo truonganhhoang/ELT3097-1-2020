@@ -9,6 +9,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -18,7 +19,6 @@ import com.example.duolingo.ui.HomeActivity;
 import com.example.duolingo.utils.CustomProgressbar;
 
 public class QuestionTwo extends AppCompatActivity {
-    ActionBar actionBar;
     Button buttonback;
     Button dapan1;
     Button dapan2;
@@ -27,12 +27,13 @@ public class QuestionTwo extends AppCompatActivity {
     Button tieptuc;
     RelativeLayout layout1;
     TextView check;
+    ProgressBar bar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question_two);
-        actionBar = getSupportActionBar();
-        actionBar.hide();
+
+        bar = findViewById(R.id.progressBar);
         buttonback = findViewById(R.id.back);
         dapan1 = findViewById(R.id.dapan1);
         dapan2 = findViewById(R.id.dapan2);
@@ -51,6 +52,11 @@ public class QuestionTwo extends AppCompatActivity {
         dapan2.setOnClickListener(mListener);
         dapan3.setOnClickListener(mListener);
         kiemtra.setOnClickListener(mListener);
+
+    // update progressBa
+
+        int current = getIntent().getIntExtra("update",0);
+        bar.setProgress(current);
 
         tieptuc.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -104,6 +110,11 @@ public class QuestionTwo extends AppCompatActivity {
                         check.setText("Tuyệt Vời!");
                         layout1.setVisibility(layout1.VISIBLE);
                         kiemtra.setVisibility(View.INVISIBLE);
+
+
+                       int  current = getIntent().getIntExtra("update",0);
+                        bar.setProgress(current+20);
+
                     }
                     else {
                         layout1.setVisibility(layout1.VISIBLE);

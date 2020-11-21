@@ -12,6 +12,7 @@ import android.text.Layout;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -29,13 +30,13 @@ public class QuestionOne extends AppCompatActivity {
         Button tieptuc;
         RelativeLayout layout1;
         TextView check;
-        ActionBar actionBar;
+        ProgressBar bar;
         @Override
         protected void onCreate(Bundle savedInstanceState) {
                 super.onCreate(savedInstanceState);
                 setContentView(R.layout.activity_question_one);
-                actionBar = getSupportActionBar();
-                actionBar.hide();
+
+                bar = findViewById((R.id.progressBar));
                 back = findViewById(R.id.back);
                 dapan1 = findViewById(R.id.dapan1);
                 dapan2 = findViewById(R.id.dapan2);
@@ -46,6 +47,7 @@ public class QuestionOne extends AppCompatActivity {
                 layout1 = findViewById(R.id.layout1);
                 check = findViewById(R.id.check);
 
+
                 back.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
@@ -55,7 +57,10 @@ public class QuestionOne extends AppCompatActivity {
                 tieptuc.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                                startActivity(new Intent(QuestionOne.this, QuestionTwo.class));
+                                Intent intent = new Intent(QuestionOne.this ,QuestionTwo.class);
+                                int current = bar.getProgress();
+                                intent.putExtra("update", current);
+                                startActivity(intent);
                                 overridePendingTransition(R.anim.anim_enter,R.anim.anim_exit);
                         }
                 });
@@ -114,6 +119,14 @@ public class QuestionOne extends AppCompatActivity {
                                                 kiemtra.setTextColor(Color.WHITE);
                                                 layout1.setVisibility(layout1.VISIBLE);
                                                 kiemtra.setVisibility(View.INVISIBLE);
+
+                                                int current = bar.getProgress();
+                                                bar.setProgress(current+20);
+
+
+
+
+
                                         }
                                         else {
                                                 layout1.setVisibility(layout1.VISIBLE);
@@ -131,5 +144,6 @@ public class QuestionOne extends AppCompatActivity {
                         }
                 };
         };
+
 
 }

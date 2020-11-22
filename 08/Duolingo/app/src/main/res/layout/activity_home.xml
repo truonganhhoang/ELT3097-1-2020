@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/default_light_grey_bg">
+    android:background="#232321">
 
     <RelativeLayout
 
@@ -72,6 +72,7 @@
                     android:text="Cơ bản 1"
                     android:textAllCaps="false"
                     android:textStyle="bold"
+                    android:textColor="@color/white_text"
 
                     />
 
@@ -85,11 +86,13 @@
                 android:orientation="horizontal">
 
                 <RelativeLayout
+
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="120dp"
                     android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp">
+                    android:layout_marginEnd="16dp"
+                    
+                    android:layout_weight="1">
 
                     <include layout="@layout/activity_custom_progressbar" />
 
@@ -97,54 +100,55 @@
                         android:id="@+id/list_two"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:background="@drawable/btn_circle"
-                        android:textColor="#fff"
                         android:layout_centerInParent="true"
+                        android:background="@drawable/btn_circle"
                         android:drawableTop="@drawable/quatrungtim"
-                        />
+                        android:textColor="#fff" />
+
                     <TextView
                         android:layout_width="70dp"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/list_two"
-                        android:layout_marginTop="10dp"
                         android:layout_marginLeft="68dp"
+                        android:layout_marginTop="10dp"
                         android:text="Cơ bản 2"
                         android:textAllCaps="false"
+                        android:textColor="@color/white_text"
                         android:textStyle="bold"
 
                         />
-
 
 
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="120dp"
+                    android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
-                    android:layout_marginStart="16dp">
+                    android:layout_weight="1">
 
 
-                    <include layout="@layout/activity_custom_progressbar"/>
+                    <include layout="@layout/activity_custom_progressbar" />
 
                     <Button
                         android:id="@+id/list_three"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:background="@drawable/btn_circle"
-                        android:textColor="#fff"
                         android:layout_centerInParent="true"
+                        android:background="@drawable/btn_circle"
                         android:drawableTop="@drawable/quatrungtim"
-                        />
+                        android:textColor="#fff" />
+
                     <TextView
                         android:layout_width="70dp"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/list_three"
-                        android:layout_marginTop="10dp"
                         android:layout_marginLeft="68dp"
+                        android:layout_marginTop="10dp"
                         android:text="Cơ bản 3"
                         android:textAllCaps="false"
+                        android:textColor="@color/white_text"
                         android:textStyle="bold"
 
                         />
@@ -187,6 +191,7 @@
                         android:text="Cơ bản 4"
                         android:textAllCaps="false"
                         android:textStyle="bold"
+                        android:textColor="@color/white_text"
 
                         />
                 </RelativeLayout>
@@ -218,6 +223,7 @@
                         android:text="Cơ bản 5"
                         android:textAllCaps="false"
                         android:textStyle="bold"
+                        android:textColor="@color/white_text"
 
                         />
                 </RelativeLayout>
@@ -247,6 +253,7 @@
                     android:text="Chào hỏi"
                     android:textAllCaps="false"
                     android:textStyle="bold"
+                    android:textColor="@color/white_text"
 
                     />
 
@@ -285,6 +292,7 @@
                     android:text="Thức ăn"
                     android:textAllCaps="false"
                     android:textStyle="bold"
+                    android:textColor="@color/white_text"
 
                     />
             </RelativeLayout>
@@ -315,6 +323,7 @@
                     android:text="Động vật"
                     android:textAllCaps="false"
                     android:textStyle="bold"
+                    android:textColor="@color/white_text"
 
                     />
 

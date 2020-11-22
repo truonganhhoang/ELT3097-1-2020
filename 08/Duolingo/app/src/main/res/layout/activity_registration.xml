@@ -8,8 +8,8 @@
 
     <EditText
         android:id="@+id/etuserName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
         android:layout_marginTop="68dp"
         android:ems="10"
         android:hint="userName"
@@ -21,26 +21,27 @@
 
     <EditText
         android:id="@+id/etuserEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintHorizontal_bias="0.557"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etuserName" />
 
     <EditText
         android:id="@+id/etuserPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="84dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintHorizontal_bias="0.557"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etuserName" />
 
@@ -50,7 +51,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:text="Already Sign in ? Log in"
-        android:textSize="20dp"
+        android:textSize="22dp"
+        android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.563"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,10 +60,12 @@
 
     <Button
         android:id="@+id/btnRegister"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
         android:layout_marginTop="80dp"
         android:text="Register"
+        android:textSize="22dp"
+        android:background="@drawable/button_unselected"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etuserPassword" />

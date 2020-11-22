@@ -63,6 +63,8 @@ public class QuestionOne extends AppCompatActivity {
                                 intent.putExtra("update", current);
                                 startActivity(intent);
                                 overridePendingTransition(R.anim.anim_enter,R.anim.anim_exit);
+
+
                         }
                 });
                 dapan1.setOnClickListener(mListener);

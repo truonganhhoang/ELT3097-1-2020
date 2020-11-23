@@ -28,7 +28,7 @@ public class QuestionOne extends AppCompatActivity {
         Button dapan3;
         Button dapan4;
         Button kiemtra;
-        Button tieptuc;
+        Button continuos;
         RelativeLayout layout1;
         TextView check;
         ProgressBar bar;
@@ -44,7 +44,7 @@ public class QuestionOne extends AppCompatActivity {
                 dapan3 = findViewById(R.id.dapan3);
                 dapan4 = findViewById(R.id.dapan4);
                 kiemtra = findViewById(R.id.kiemtra);
-                tieptuc = findViewById(R.id.tieptuc);
+                continuos = findViewById(R.id.continuos);
                 layout1 = findViewById(R.id.layout1);
                 check = findViewById(R.id.check);
 
@@ -55,7 +55,7 @@ public class QuestionOne extends AppCompatActivity {
                                 startActivity(new Intent(QuestionOne.this, HomeActivity.class));
                         }
                 });
-                tieptuc.setOnClickListener(new View.OnClickListener() {
+                continuos.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
                                 Intent intent = new Intent(QuestionOne.this ,QuestionTwo.class);
@@ -63,8 +63,6 @@ public class QuestionOne extends AppCompatActivity {
                                 intent.putExtra("update", current);
                                 startActivity(intent);
                                 overridePendingTransition(R.anim.anim_enter,R.anim.anim_exit);
-
-
                         }
                 });
                 dapan1.setOnClickListener(mListener);
@@ -134,8 +132,8 @@ public class QuestionOne extends AppCompatActivity {
                                         else {
                                                 layout1.setVisibility(layout1.VISIBLE);
                                                 layout1.setBackgroundResource(R.drawable.nextquestion_false);
-                                                tieptuc.setTextColor(Color.WHITE);
-                                                tieptuc.setBackgroundResource(R.drawable.custom_check);
+                                                continuos.setTextColor(Color.WHITE);
+                                                continuos.setBackgroundResource(R.drawable.custom_check);
                                                 kiemtra.setVisibility(View.INVISIBLE);
                                                 check.setText("Trả lời đúng: tea ");
                                                 check.setTextColor(Color.RED);

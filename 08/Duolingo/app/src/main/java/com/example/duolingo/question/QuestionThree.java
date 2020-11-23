@@ -2,6 +2,7 @@ package com.example.duolingo.question;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
@@ -12,8 +13,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.example.duolingo.R;
+import com.example.duolingo.ui.HomeActivity;
 
 import java.util.Locale;
 
@@ -21,14 +24,10 @@ public class QuestionThree extends AppCompatActivity {
     // initialize Variable
 
     EditText etInput;
-    Button  btConvert , back ,continous;
-    Button check;
+    Button  btConvert , back ,continous, kiemtra;
     TextToSpeech textToSpeech;
-    ProgressBar bar;
     RelativeLayout layout1;
-
-
-
+    TextView check;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +36,30 @@ public class QuestionThree extends AppCompatActivity {
 
         // Assign Variable
 
-        Assign();
+        etInput = findViewById(R.id.et_input);
+        btConvert = findViewById(R.id.bt_convert);
+        back = findViewById(R.id.back);
+        continous = findViewById(R.id.continuos);
+        layout1 = findViewById(R.id.layout1);
+        kiemtra = findViewById(R.id.kiemtra);
+        check = findViewById(R.id.check);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(QuestionThree.this, HomeActivity.class));
+            }
+        });
+        continous.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(QuestionThree.this , HomeActivity.class);
+                int current = 100;
+                intent.putExtra("update", current);
+                startActivity(intent);
+            }
+        });
+
 
         textToSpeech = new TextToSpeech(getApplicationContext()
                 , new TextToSpeech.OnInitListener() {
@@ -49,35 +71,33 @@ public class QuestionThree extends AppCompatActivity {
                 }
             }
         });
-
         btConvert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // get EditText value
-                String s = "i drink water";
+                String s = "I drink water";
 
                 // text convert to speech
                 int speech = textToSpeech.speak(s, TextToSpeech.QUEUE_FLUSH, null);
             }
         });
-        check.setOnClickListener(new View.OnClickListener() {
+        kiemtra.setBackgroundResource(R.drawable.button_check);
+        kiemtra.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String a = etInput.getText().toString();
-                String ans = "i drink water";
+                String ans = "I drink water";
                 if( a.equals(ans)){
-                    check.setBackgroundResource(R.drawable.custom_check);
-                    check.setText("Tuyệt Vời");
-                    check.setTextColor(Color.WHITE);
+                    check.setText("Gút Chóp em!");
                     layout1.setVisibility(layout1.VISIBLE);
-                    check.setVisibility(View.INVISIBLE);
+                    kiemtra.setVisibility(View.INVISIBLE);
                 }
                 else {
                     layout1.setVisibility(layout1.VISIBLE);
                     layout1.setBackgroundResource(R.drawable.nextquestion_false);
                     continous.setTextColor(Color.WHITE);
                     continous.setBackgroundResource(R.drawable.custom_check);
-                    check.setVisibility(View.INVISIBLE);
+                    kiemtra.setVisibility(View.INVISIBLE);
                     check.setText("Trả lời đúng: i drink water ");
                     check.setTextColor(Color.RED);
                 }
@@ -87,14 +107,5 @@ public class QuestionThree extends AppCompatActivity {
 
     }
 
-    public void Assign(){
-        etInput = findViewById(R.id.et_input);
-        btConvert = findViewById(R.id.bt_convert);
-        back = findViewById(R.id.back);
-        continous = findViewById(R.id.tieptuc);
-        bar = findViewById(R.id.progressBar);
-        layout1 = findViewById(R.id.layout1);
-        check = findViewById(R.id.kiemtra);
-    }
 
 }

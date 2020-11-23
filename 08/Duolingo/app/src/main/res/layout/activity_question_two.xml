@@ -8,38 +8,9 @@
     android:drawingCacheQuality="auto"
     tools:context=".LoginActivity">
 
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="@android:style/Widget.ProgressBar.Horizontal"
-        android:layout_width="277dp"
-        android:layout_height="13dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="16dp"
-        android:layout_x="109dp"
-        android:layout_y="29dp"
-        android:background="@drawable/custom_seek"
-        android:max="100"
-        android:progress="20"
-        android:progressTint="#1ABA20"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/back"
-        style="?android:attr/borderlessButtonStyle"
-        android:layout_width="69dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="15dp"
-        android:layout_x="14dp"
-        android:layout_y="16dp"
-        android:background="#FFFFFF"
-        android:drawableTop="@drawable/back"
-        android:textColor="#848A8A"
-        android:textSize="32sp"
-        app:layout_constraintEnd_toStartOf="@+id/progressBar"
-        app:layout_constraintHorizontal_bias="0.046"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <include
+        android:id="@+id/include"
+        layout="@layout/activity_progressbar" />
 
     <TextView
         android:id="@+id/yeucau"
@@ -76,6 +47,7 @@
         android:id="@+id/dapan1"
         android:layout_width="286dp"
         android:layout_height="55dp"
+        android:layout_marginTop="108dp"
         android:background="@drawable/button_selecter"
         android:text="I eat you."
         android:textAllCaps="false"
@@ -131,47 +103,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <RelativeLayout
-        android:id="@+id/layout1"
-        android:layout_width="wrap_content"
-        android:layout_height="125dp"
-        android:layout_x="-1dp"
-        android:layout_y="535dp"
-        android:background="#5BE160"
-        android:orientation="vertical"
-        android:visibility="invisible"
+    <include
+        layout="@layout/activity_check"
+        android:layout_width="413dp"
+        android:layout_height="138dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <Button
-            android:id="@+id/tieptuc"
-            android:layout_width="361dp"
-            android:layout_height="46dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="29dp"
-            android:layout_marginEnd="25dp"
-            android:layout_marginBottom="22dp"
-            android:background="@drawable/nextquestion_true"
-            android:text="Tiếp Tục"
-            android:textColor="#FFFF" />
-
-        <TextView
-            android:id="@+id/check"
-            android:layout_width="190dp"
-            android:layout_height="44dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="213dp"
-            android:layout_marginBottom="83dp"
-            android:text="Giỏi Lắm!"
-            android:textSize="17dp"
-            android:textStyle="bold" />
-
-
-    </RelativeLayout>
+        tools:layout_editor_absoluteX="1dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

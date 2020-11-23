@@ -1,28 +1,23 @@
 package com.example.duolingo;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.example.duolingo.R;
-import com.example.duolingo.RegistrationActivity;
 import com.example.duolingo.question.QuestionOne;
 import com.example.duolingo.question.QuestionThree;
-import com.example.duolingo.question.QuestionTwo;
 import com.example.duolingo.ui.HomeActivity;
+import com.example.duolingo.ui.InforActivity;
+import com.example.duolingo.ui.RankActivity;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
-import com.google.android.gms.auth.api.signin.GoogleSignInApi;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.SignInButton;

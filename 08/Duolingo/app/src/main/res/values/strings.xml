@@ -9,7 +9,6 @@
     <string name="title_activity_home">MainActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
-    <string name= "agree">Khi đăng ký trên Duolingo, bạn đã đồng ý với Các chính sách và Chính sách bảo mật của chúng tôi</string>
 
     <!-- Login/Register Screen Toast Strings -->
     <string name="blankEditText">You must fill out all fields</string>

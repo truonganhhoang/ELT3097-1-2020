@@ -22,31 +22,31 @@ public class RegistrationActivity extends AppCompatActivity {
     private EditText userName, userPassword , userEmail;
     private Button regButton;
     private TextView userLogin;
-    private FirebaseAuth firebaseAuth;
+    private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
-        setupUIView();
+        Assign();
 
-        firebaseAuth = FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance();
 
         regButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(validate()){
 
-                    final String user_email = userEmail.getText().toString().trim();
-                    final String user_password = userPassword.getText().toString().trim();
+                     String user_email = userEmail.getText().toString();
+                     String user_password = userPassword.getText().toString();
 
-                    firebaseAuth.createUserWithEmailAndPassword(user_email,user_password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    mAuth.createUserWithEmailAndPassword(user_email,user_password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful()){
-                                Toast.makeText(RegistrationActivity.this, "Registration Successfull" , Toast.LENGTH_SHORT).show();
+                                Toast.makeText(RegistrationActivity.this, "Registration UnSuccessfull" , Toast.LENGTH_SHORT).show();
                                 startActivity(new Intent(RegistrationActivity.this, LoginActivity.class));
                             }else{
-                                Toast.makeText(RegistrationActivity.this,"Registration Failed", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(RegistrationActivity.this,"Registration Successfull", Toast.LENGTH_SHORT).show();
                             }
                         }
                     });
@@ -63,7 +63,7 @@ public class RegistrationActivity extends AppCompatActivity {
 
     }
 
-    private void setupUIView(){
+    private void Assign(){
         userName = (EditText) findViewById(R.id.etuserName);
         userPassword = (EditText) findViewById(R.id.etuserPassword);
         userEmail = (EditText) findViewById(R.id.etuserEmail);

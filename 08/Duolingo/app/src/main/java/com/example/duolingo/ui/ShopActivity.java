@@ -13,7 +13,7 @@ import com.example.duolingo.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class ShopActivity extends AppCompatActivity {
-    ActionBar actionBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,7 +45,6 @@ public class ShopActivity extends AppCompatActivity {
                 return false;
             }
         });
-        actionBar = getSupportActionBar();
-        actionBar.hide();
+        
     }
 }

@@ -69,7 +69,7 @@ public class QuestionTwo extends AppCompatActivity {
     }
     public void openActivityChild(View v){
         Intent intent = new Intent(QuestionTwo.this , QuestionThree.class);
-        int current = 100;
+        int current = bar.getProgress();
         intent.putExtra("update", current);
         startActivity(intent);
     }

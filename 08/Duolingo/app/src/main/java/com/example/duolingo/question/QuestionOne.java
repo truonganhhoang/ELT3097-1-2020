@@ -32,10 +32,14 @@ public class QuestionOne extends AppCompatActivity {
         RelativeLayout layout1;
         TextView check;
         ProgressBar bar;
+        ActionBar actionBar;
         @Override
         protected void onCreate(Bundle savedInstanceState) {
                 super.onCreate(savedInstanceState);
                 setContentView(R.layout.activity_question_one);
+                actionBar = getSupportActionBar();
+                actionBar.hide();
+
 
                 bar = findViewById((R.id.progressBar));
                 back = findViewById(R.id.back);

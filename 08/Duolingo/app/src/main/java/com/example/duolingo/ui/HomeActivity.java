@@ -3,6 +3,10 @@ package com.example.duolingo.ui;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.navigation.ui.AppBarConfiguration;
+import androidx.navigation.ui.NavigationUI;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -29,6 +33,7 @@ public class HomeActivity extends AppCompatActivity {
         listOne = findViewById(R.id.list_one);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+
 
         bottomNavigationView.setSelectedItemId(R.id.home);
 

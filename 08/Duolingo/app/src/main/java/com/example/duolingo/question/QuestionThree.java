@@ -28,6 +28,7 @@ public class QuestionThree extends AppCompatActivity {
     TextToSpeech textToSpeech;
     RelativeLayout layout1;
     TextView check;
+    ProgressBar bar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +44,11 @@ public class QuestionThree extends AppCompatActivity {
         layout1 = findViewById(R.id.layout1);
         kiemtra = findViewById(R.id.kiemtra);
         check = findViewById(R.id.check);
+        bar = findViewById(R.id.progressBar);
+
+
+        int current = getIntent().getIntExtra("update",0);
+        bar.setProgress(current);
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override

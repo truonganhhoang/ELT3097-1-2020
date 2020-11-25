@@ -1,6 +1,7 @@
 package com.example.duolingo.question;
 
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -31,6 +32,8 @@ public class QuestionTwo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question_two);
+
+
 
         bar = findViewById(R.id.progressBar);
         buttonback = findViewById(R.id.back);

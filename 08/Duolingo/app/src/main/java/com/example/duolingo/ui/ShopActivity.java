@@ -45,6 +45,6 @@ public class ShopActivity extends AppCompatActivity {
                 return false;
             }
         });
-        
+
     }
 }

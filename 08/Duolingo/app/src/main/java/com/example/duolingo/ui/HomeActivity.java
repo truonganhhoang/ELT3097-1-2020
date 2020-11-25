@@ -24,6 +24,7 @@ public class HomeActivity extends AppCompatActivity {
 
     ProgressBar bar;
     Button listOne;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

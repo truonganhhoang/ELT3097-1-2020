@@ -20,6 +20,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:orientation="vertical">
 
             <RelativeLayout
@@ -45,7 +46,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/list_one"
                     android:layout_marginTop="13dp"
-                    android:layout_marginLeft="177dp"
+                    android:layout_marginLeft="180dp"
                     android:text="Cơ bản 1"
                     android:textAllCaps="false"
                     android:textStyle="bold"

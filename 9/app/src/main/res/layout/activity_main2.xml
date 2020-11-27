@@ -7,6 +7,9 @@
     android:background="#320F45"
     android:orientation="vertical"
     tools:context=".MainActivity2">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -141,6 +144,17 @@
             </RelativeLayout>
         </LinearLayout>
     </LinearLayout>
+        <TextView
+            android:id="@+id/textGameover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:text="asd"
+            android:background="#673AB7" />
+    </RelativeLayout>
     <RelativeLayout
         android:background="#6A127A"
         android:layout_width="250dp"

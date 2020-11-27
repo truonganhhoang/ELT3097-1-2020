@@ -11,7 +11,7 @@ public class Questions {
     }
 
     public void setContent(String content) {
-        Content = content;
+        this.Content = content;
     }
 
     public String getCorrectAnswer() {
@@ -19,7 +19,7 @@ public class Questions {
     }
 
     public void setCorrectAnswer(String correctAnswer) {
-        CorrectAnswer = correctAnswer;
+        this.CorrectAnswer = correctAnswer;
     }
 
     public ArrayList<String> getArrWrongAnser() {

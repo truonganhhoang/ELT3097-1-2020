@@ -36,7 +36,7 @@
                 android:layout_marginLeft="50dp"
                 android:layout_marginRight="50dp"
                 android:background="@drawable/bg_button"
-                android:text="BẮT ĐẦU CHƠI"
+                android:text="START"
                 android:textColor="#3F51B5"
                 android:textSize="22sp"
                 android:textStyle="bold" />

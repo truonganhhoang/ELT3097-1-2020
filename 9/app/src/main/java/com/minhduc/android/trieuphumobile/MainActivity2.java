@@ -3,6 +3,7 @@ package com.minhduc.android.trieuphumobile;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -23,7 +24,9 @@ Questions questions;
 
 int AnswerPosition = 1;
 
-TextView textQuestions,textAnswer1,textAnswer2,textAnswer3,textAnswer4;
+TextView textQuestions,textAnswer1,textAnswer2,textAnswer3,textAnswer4,textGameover;
+ArrayList<TextView> arrTextAnswers;
+    String Answer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,6 +58,8 @@ TextView textQuestions,textAnswer1,textAnswer2,textAnswer3,textAnswer4;
         TienThuongAdapter = new TienThuong(this, 0, arrTienThuong);
 
         questions = new Questions();
+
+        arrTextAnswers = new ArrayList<>();
     }
 
     public void AnhXa() {
@@ -64,10 +69,17 @@ TextView textQuestions,textAnswer1,textAnswer2,textAnswer3,textAnswer4;
         textAnswer2 = findViewById(R.id.textAnswer2);
         textAnswer3 = findViewById(R.id.textAnswer3);
         textAnswer4 = findViewById(R.id.textAnswer4);
+        textGameover = findViewById(R.id.textGameover);
+
+        arrTextAnswers.add(textAnswer1);
+        arrTextAnswers.add(textAnswer2);
+        arrTextAnswers.add(textAnswer3);
+        arrTextAnswers.add(textAnswer4);
 
     }
 
     public void setUp() {
+        textGameover.setVisibility(View.GONE);
         setQuestions();
         lsvTienThuong.setAdapter(TienThuongAdapter);
 
@@ -78,28 +90,61 @@ TextView textQuestions,textAnswer1,textAnswer2,textAnswer3,textAnswer4;
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                CheckAnswer(((TextView)view).getText().toString());
+                CheckAnswer(((TextView)view));
             }
         };
-        textAnswer1.setOnClickListener(listener);
-        textAnswer2.setOnClickListener(listener);
-        textAnswer3.setOnClickListener(listener);
-        textAnswer4.setOnClickListener(listener);
-    }
-    public void CheckAnswer(String Answer){
-        if(Answer.equals(questions.getCorrectAnswer())){
-            AnswerPosition++;
-            if (AnswerPosition >= 15) {
-                AnswerPosition = 15;
-            }
-            ShowAnswer();
-        }else{
-            Toast.makeText(this,"GAME OVER!!!",Toast.LENGTH_SHORT).show();
+        for (TextView t:arrTextAnswers){
+            t.setOnClickListener(listener);
         }
+    }
+    public void CheckAnswer(final TextView text){
+        Answer = text.getText().toString();
+        text.setBackgroundResource(R.drawable.bg_choose);
+
+        new CountDownTimer(2000,100){
+
+            @Override
+            public void onTick(long millisUntilFinished) {
+
+            }
+
+            @Override
+            public void onFinish() {
+                for(TextView t : arrTextAnswers){
+                    String s = t.getText().toString();
+                    if(s.equals(questions.getCorrectAnswer()));
+                    t.setBackgroundResource(R.drawable.bg_correct);
+                    break;
+                }
+                new CountDownTimer(2000, 100) {
+                    @Override
+                    public void onTick(long millisUntilFinished) {
+
+                    }
+
+                    @Override
+                    public void onFinish() {
+                        if(Answer.equals(questions.getCorrectAnswer())){
+                            AnswerPosition++;
+                            if (AnswerPosition >= 15) {
+                                AnswerPosition = 15;
+                            }
+                            ShowAnswer();
+                        }else{
+                            textGameover.setVisibility(View.VISIBLE);
+                            int TienThuongPosition = (AnswerPosition/5)*5 ;
+                            textGameover.setText("You will go home with: \n" + arrTienThuong.get(14-AnswerPosition) + "$");
+                        }
+
+                    }
+                }.start();
+            }
+        }.start();
+
+
     }
 
     public void setQuestions(){
-        questions = new Questions();
         questions.setContent("1 + 1 = ? ");
         questions.setCorrectAnswer(" 2 ");
         ArrayList<String> arrWrongAnswer = new ArrayList<>();
@@ -121,11 +166,10 @@ TextView textQuestions,textAnswer1,textAnswer2,textAnswer3,textAnswer4;
             arrAnswer.set(pos1,arrAnswer.get(pos2));
             arrAnswer.set(pos2,x);
         }
-
-        textAnswer1.setText(arrAnswer.get(0));
-        textAnswer2.setText(arrAnswer.get(1));
-        textAnswer3.setText(arrAnswer.get(2));
-        textAnswer4.setText(arrAnswer.get(3));
+        for(int i=0; i < arrTextAnswers.size();i++){
+            arrTextAnswers.get(i).setBackgroundResource(R.drawable.bg_button);
+            arrTextAnswers.get(i).setText(arrAnswer.get(i));
+        }
 
         TienThuongAdapter.setAnswerPosition(AnswerPosition);
     }

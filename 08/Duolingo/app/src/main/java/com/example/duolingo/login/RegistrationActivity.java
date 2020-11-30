@@ -66,7 +66,7 @@ public class RegistrationActivity extends AppCompatActivity {
         userLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(RegistrationActivity.this, LoginActivity.class));
+                startActivity(new Intent(RegistrationActivity.this, com.example.duolingo.LoginActivity.class));
             }
         });
 

@@ -36,7 +36,7 @@ import com.google.firebase.auth.GoogleAuthProvider;
 public class LoginActivity extends AppCompatActivity {
 
     SignInButton verify;
-    EditText et_user , et_password;
+    EditText userEmail , userPassword;
     Button bt_signIn;
     TextView tv_signUp;
 
@@ -69,16 +69,26 @@ public class LoginActivity extends AppCompatActivity {
         bt_signIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(et_user.getText().toString().equals("admin") && et_password.getText().toString().equals("admin")){
-                    startActivity(new Intent(LoginActivity.this , HomeActivity.class));
-                }
+                String user_email = userEmail.getText().toString().trim();
+                String user_password = userPassword.getText().toString().trim();
+
+                mAuth.signInWithEmailAndPassword(user_email,user_password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if(task.isSuccessful()){
+                            startActivity(new Intent(getApplicationContext() , HomeActivity.class ));
+                        }else{
+                            Toast.makeText(LoginActivity.this,"error! "+task.getException().getMessage(),Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
             }
         });
 
         tv_signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LoginActivity.this , RegistrationActivity.class));
+                startActivity(new Intent(LoginActivity.this , com.example.duolingo.RegistrationActivity.class));
             }
         });
 
@@ -93,8 +103,8 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void assign() {
-        et_user = findViewById(R.id.user);
-        et_password = findViewById(R.id.password);
+        userEmail = findViewById(R.id.user);
+        userPassword = findViewById(R.id.password);
         bt_signIn = findViewById(R.id.signIn);
         verify = findViewById(R.id.signInButton);
         tv_signUp = findViewById(R.id.signUp);

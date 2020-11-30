@@ -156,7 +156,7 @@ ArrayList<TextView> arrTextAnswers;
     }
     public void ShowAnswer(){
         setQuestions();
-        textAnswer1.setText(questions.getContent());
+        textQuestions.setText(questions.getContent());
         ArrayList<String> arrAnswer = new ArrayList<>(questions.getArrWrongAnser());
         arrAnswer.add(questions.getCorrectAnswer());
 

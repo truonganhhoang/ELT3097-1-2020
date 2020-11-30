@@ -22,7 +22,6 @@
         <activity android:name=".ui.HomeActivity" />
         <activity android:name=".question.QuestionOne" />
         <activity android:name=".question.QuestionTwo" />
-        <activity android:name=".CardActivity" />
         <activity android:name=".RegistrationActivity" />
         <activity android:name=".Welcome">
             <intent-filter>

@@ -114,11 +114,12 @@ ArrayList<TextView> arrTextAnswers;
 
             @Override
             public void onFinish() {
-                for(TextView t : arrTextAnswers){
+                for(TextView t : arrTextAnswers) {
                     String s = t.getText().toString();
-                    if(s.equals(questions.getCorrectAnswer()));
-                    t.setBackgroundResource(R.drawable.bg_correct);
-                    break;
+                    if (s.equals(questions.getCorrectAnswer())){
+                        t.setBackgroundResource(R.drawable.bg_correct);
+                        break;
+                    }
                 }
                 new CountDownTimer(2000, 100) {
                     @Override

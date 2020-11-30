@@ -7,17 +7,30 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.TextView;
 
+import com.example.duolingo.LoginActivity;
 import com.example.duolingo.R;
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class InforActivity extends AppCompatActivity {
+
+    TextView name , email;
+    Button Logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_infor);
+
+        Assign();
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
@@ -46,5 +59,26 @@ public class InforActivity extends AppCompatActivity {
             }
         });
 
+        GoogleSignInAccount signInAccount = GoogleSignIn.getLastSignedInAccount(this);
+        if(signInAccount != null){
+            name.setText(signInAccount.getDisplayName());
+            email.setText(signInAccount.getEmail());
+        }
+
+        Logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+            }
+        });
+
     }
+
+    private void Assign() {
+        name = findViewById(R.id.userName);
+        email   = findViewById(R.id.userEmail);
+        Logout = findViewById(R.id.logout);
+    }
+
 }

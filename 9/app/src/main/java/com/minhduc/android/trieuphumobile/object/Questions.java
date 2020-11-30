@@ -10,16 +10,19 @@ public class Questions {
         return Content;
     }
 
-    public void setContent(String content) {
-        this.Content = content;
+    public void setContent(String Content) {
+
+        this.Content = Content;
     }
 
     public String getCorrectAnswer() {
+
         return CorrectAnswer;
     }
 
-    public void setCorrectAnswer(String correctAnswer) {
-        this.CorrectAnswer = correctAnswer;
+    public void setCorrectAnswer(String CorrectAnswer) {
+
+        this.CorrectAnswer = CorrectAnswer;
     }
 
     public ArrayList<String> getArrWrongAnser() {

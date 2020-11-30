@@ -44,6 +44,7 @@
                     android:src="@drawable/doicauhoi_icon"
                     android:layout_marginLeft="20dp"/>
                 <ImageView
+                    android:onClick="trogiup5050"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/trogiup5050_icon"
@@ -145,6 +146,7 @@
         </LinearLayout>
     </LinearLayout>
         <TextView
+            android:visibility="gone"
             android:id="@+id/textGameover"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

@@ -10,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.minhduc.android.trieuphumobile.adapter.TienThuong;
+import com.minhduc.android.trieuphumobile.object.NewData;
 import com.minhduc.android.trieuphumobile.object.Questions;
 
 import java.util.ArrayList;
@@ -21,12 +22,13 @@ TienThuong TienThuongAdapter;
 ArrayList<String> arrTienThuong;
 Questions questions;
 
-
-int AnswerPosition = 1;
+int AnswerPosition ;
+    View.OnClickListener listener;
 
 TextView textQuestions,textAnswer1,textAnswer2,textAnswer3,textAnswer4,textGameover;
 ArrayList<TextView> arrTextAnswers;
     String Answer;
+    NewData newdata;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,6 +62,8 @@ ArrayList<TextView> arrTextAnswers;
         questions = new Questions();
 
         arrTextAnswers = new ArrayList<>();
+
+        newdata = new NewData();
     }
 
     public void AnhXa() {
@@ -87,7 +91,7 @@ ArrayList<TextView> arrTextAnswers;
     }
 
     public void setClick() {
-        View.OnClickListener listener = new View.OnClickListener() {
+         listener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 CheckAnswer(((TextView)view));
@@ -126,8 +130,11 @@ ArrayList<TextView> arrTextAnswers;
                     public void onFinish() {
                         if(Answer.equals(questions.getCorrectAnswer())){
                             AnswerPosition++;
-                            if (AnswerPosition >= 15) {
+                            if (AnswerPosition > 15) {
                                 AnswerPosition = 15;
+                                textGameover.setVisibility(View.VISIBLE);
+                                textGameover.setText("Congrats! You will get: \n" + arrTienThuong.get(0) + "$");
+                                return;
                             }
                             ShowAnswer();
                         }else{
@@ -145,15 +152,10 @@ ArrayList<TextView> arrTextAnswers;
     }
 
     public void setQuestions(){
-        questions.setContent("1 + 1 = ? ");
-        questions.setCorrectAnswer(" 2 ");
-        ArrayList<String> arrWrongAnswer = new ArrayList<>();
-        arrWrongAnswer.add(" 3 ");
-        arrWrongAnswer.add(" 5 ");
-        arrWrongAnswer.add(" 11 ");
-        questions.setArrWrongAnser(arrWrongAnswer);
+        questions = newdata.MakeQuestions(AnswerPosition);
     }
     public void ShowAnswer(){
+        setQuestions();
         textAnswer1.setText(questions.getContent());
         ArrayList<String> arrAnswer = new ArrayList<>(questions.getArrWrongAnser());
         arrAnswer.add(questions.getCorrectAnswer());
@@ -167,10 +169,31 @@ ArrayList<TextView> arrTextAnswers;
             arrAnswer.set(pos2,x);
         }
         for(int i=0; i < arrTextAnswers.size();i++){
+            arrTextAnswers.get(i).setOnClickListener(listener);
+            arrTextAnswers.get(i).setVisibility(View.VISIBLE);
             arrTextAnswers.get(i).setBackgroundResource(R.drawable.bg_button);
             arrTextAnswers.get(i).setText(arrAnswer.get(i));
         }
 
         TienThuongAdapter.setAnswerPosition(AnswerPosition);
+    }
+    boolean troGiup5050 = true;
+    public void trogiup5050(View view) {
+            if(troGiup5050 == false ){
+                return;
+            }
+            Random r = new Random();
+            int QuestionsAndi =2;
+            do{
+                int Anpos = r.nextInt(4 );
+                TextView t = arrTextAnswers.get(Anpos);
+
+                if(t.getVisibility() == View.VISIBLE && t.getText().toString().equals(questions.getCorrectAnswer()) == false){
+                    t.setVisibility(View.INVISIBLE);
+                    t.setOnClickListener(null);
+                    QuestionsAndi --;
+                }
+            }while(QuestionsAndi>0);
+            troGiup5050 = false;
     }
 }

@@ -193,7 +193,6 @@ public class PlayGameActivity extends AppCompatActivity implements RewardedVideo
     private RewardedVideoAd mRewardedVideoAd;
     private boolean isHelp = false;
 
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_game);
@@ -211,7 +210,7 @@ public class PlayGameActivity extends AppCompatActivity implements RewardedVideo
     }
 
     private void loadRewardedVideoAd() {
-        mRewardedVideoAd.loadAd(getResources().getString(R.string.app_id_video),//use this id for testing
+        mRewardedVideoAd.loadAd(getResources().getString(R.string.app_id_video),
                 new AdRequest.Builder().build());
     }
 
@@ -245,8 +244,6 @@ public class PlayGameActivity extends AppCompatActivity implements RewardedVideo
         if (scoreRuby <= 5) {
             Toast.makeText(this, "Gợi ý bạn đáp án cho bạn có ít vốn. " + dapAn, Toast.LENGTH_LONG).show();
         }
-
-
         listViewDapAn.add(dapan1);
         listViewDapAn.add(dapan2);
         listViewDapAn.add(dapan3);
@@ -450,7 +447,6 @@ public class PlayGameActivity extends AppCompatActivity implements RewardedVideo
         }
     }
 
-
     private void makeVideo() {
         AlertDialog dialog = new AlertDialog.Builder(PlayGameActivity.this)
                 .setTitle("Thông báo")
@@ -495,7 +491,7 @@ public class PlayGameActivity extends AppCompatActivity implements RewardedVideo
     }
 
     private void makeAddText() {
-        if (scoreRuby >= 5) {
+        if (scoreRuby >= -1000) {
             scoreRuby = scoreRuby - 5;
             tvRuby.setText(String.valueOf(scoreRuby));
             if (countDapAn < dapAn.length()) {
@@ -523,14 +519,14 @@ public class PlayGameActivity extends AppCompatActivity implements RewardedVideo
                         tvRuby.setText(String.valueOf(scoreRuby));
                         questionCount = questionCount + 1;
                         Toast.makeText(this, "Ban tra loi dung", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(PlayGameActivity.this, ResultActivity.class);
+                        Intent intent = new Intent(PlayGameActivity.this, nhom6.com.duoihinhbatchu.activity.ResultActivity.class);
                         intent.putExtra(Const.KEY_QUESTION, questionCount);
                         intent.putExtra(Const.KEY_RESULT, ketQua);
                         intent.putExtra(Const.KEY_RUBY, scoreRuby);
                         startActivity(intent);
                         finish();
                     } else {
-                        if (scoreRuby >= 5) {
+                        if (scoreRuby >= -1000) {
                             scoreRuby = scoreRuby - 5;
                         }
                         tvResult.setVisibility(View.VISIBLE);
@@ -564,7 +560,6 @@ public class PlayGameActivity extends AppCompatActivity implements RewardedVideo
         }
     }
 
-
     private void makeGoiY(int position) {
         if (countDapAn < dapAn.length()) {
             countDapAn = countDapAn + 1;
@@ -592,7 +587,7 @@ public class PlayGameActivity extends AppCompatActivity implements RewardedVideo
                     YoYo.with(Techniques.Flash)
                             .duration(1500)
                             .playOn(findViewById(R.id.layout_dapan));
-                    final Intent intent = new Intent(PlayGameActivity.this, ResultActivity.class);
+                    final Intent intent = new Intent(PlayGameActivity.this, nhom6.com.duoihinhbatchu.activity.ResultActivity.class);
                     intent.putExtra(Const.KEY_QUESTION, questionCount);
                     intent.putExtra(Const.KEY_RESULT, ketQua);
                     intent.putExtra(Const.KEY_RUBY, scoreRuby);
@@ -603,7 +598,7 @@ public class PlayGameActivity extends AppCompatActivity implements RewardedVideo
                         }
                     }, 1000);
                 } else {
-                    if (scoreRuby >= 5) {
+                    if (scoreRuby >= -1000) {
                         scoreRuby = scoreRuby - 5;
                         tvRuby.setText(scoreRuby + "");
                     }

@@ -1,4 +1,4 @@
-package trieuphu.donglv.com.duoihinhbatchu
+package nhom6.com.duoihinhbatchu
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
-        assertEquals("trieuphu.donglv.com.duoihinhbatchu", appContext.packageName)
+        assertEquals("nhom6.com.duoihinhbatchu", appContext.packageName)
     }
 }

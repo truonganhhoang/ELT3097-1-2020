@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.btn_game_differ:
                 Intent intent1 = new Intent(Intent.ACTION_VIEW);
-                intent1.setData(Uri.parse("https://play.google.com/store/apps/details?id=com.dong.luong.ailatrieuphu"));
+                intent1.setData(Uri.parse("https://facebook/professor.coconut"));
                 startActivity(intent1);
                 break;
         }

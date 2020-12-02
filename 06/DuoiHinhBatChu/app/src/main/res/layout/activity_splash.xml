@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="trieuphu.donglv.com.duoihinhbatchu.activity.SplashActivity">
+        tools:context="nhom6.com.duoihinhbatchu.activity.SplashActivity">
     <ImageView
             android:contentDescription="@string/app_name"
             android:scaleType="centerCrop"

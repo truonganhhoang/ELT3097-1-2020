@@ -197,4 +197,19 @@ ArrayList<TextView> arrTextAnswers;
             }while(QuestionsAndi>0);
             troGiup5050 = false;
     }
+
+    boolean trogiup_khangia = true;
+
+    public void trogiup_khangia(View view) {
+        if (trogiup_khangia = false) {
+            return;
+        }
+        for (int i = 0; i < arrTextAnswers.size(); i++) {
+            TextView t = arrTextAnswers.get(i);
+            if (t.getText().toString().equals(questions.getCorrectAnswer())) {
+                new KhanGiaTroGiup(this, i+1).show();
+                break;
+            }
+        }
+    }
 }

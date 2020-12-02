@@ -30,6 +30,7 @@
                     android:src="@drawable/goidienthoai_icon"
                     android:layout_marginRight="20dp"/>
                 <ImageView
+                    android:onClick="trogiup_khangia"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/trogiupkhangia_icon"

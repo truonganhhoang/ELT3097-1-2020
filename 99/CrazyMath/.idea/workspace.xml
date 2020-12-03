@@ -28,6 +28,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="layoutResourceFile" />
         <option value="Class" />
       </list>
     </option>
@@ -128,22 +129,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="286" y="164" key="#PSD" timestamp="1605667481368">
+    <state x="286" y="164" key="#PSD" timestamp="1606284496055">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="286" y="164" key="#PSD/0.0.1536.864@0.0.1536.864" timestamp="1605667481368" />
+    <state x="286" y="164" key="#PSD/0.0.1536.864@0.0.1536.864" timestamp="1606284496055" />
     <state x="574" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1605168039774">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="574" y="141" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1605168039774" />
-    <state x="349" y="187" key="AndroidCreateResourceFileDialog" timestamp="1605169145403">
+    <state x="349" y="187" key="AndroidCreateResourceFileDialog" timestamp="1605681709296">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="349" y="187" key="AndroidCreateResourceFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1605169145403" />
-    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1605667827400">
+    <state x="349" y="187" key="AndroidCreateResourceFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1605681709296" />
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1606286826590">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1605667827400" />
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1606286826590" />
     <state x="584" y="210" key="chooseDestDirectoryDialog" timestamp="1605169207405">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

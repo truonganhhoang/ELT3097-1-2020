@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#1DAFA2"
+        android:fontFamily="casual"
+        android:text="Truyen Song Ngu AV"
+        android:textColor="#F8F8F8"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#B0E6E1"
+        android:fontFamily="casual"
+        android:text="Today's quotation When you reach the end of your rope, tie a knot in it and hang on "
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <ScrollView
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="600dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="76dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/buttonmain"
+                    android:src="@drawable/book" />
+
+                <Button
+                    android:id="@+id/btn1a"
+                    android:layout_width="333dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonmain"
+                    android:fontFamily="casual"
+                    android:gravity="left|center"
+                    android:text="Nhat ki chinh phuc English"
+                    android:textColor="#f000"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="76dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/buttonmain"
+                    android:src="@drawable/newspapericon" />
+
+                <Button
+                    android:id="@+id/btn1b"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonmain"
+                    android:fontFamily="casual"
+                    android:gravity="left|center"
+                    android:text="Bao song ngu"
+                    android:textColor="#f000"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="76dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/buttonmain"
+                    android:src="@drawable/headphoneicon" />
+
+                <Button
+                    android:id="@+id/btn1c"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonmain"
+                    android:fontFamily="casual"
+                    android:gravity="left|center"
+                    android:text="Truyen ngan (co audio)"
+                    android:textColor="#f000"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="76dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/buttonmain"
+                    android:src="@drawable/openbook" />
+
+                <Button
+                    android:id="@+id/btn1d"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonmain"
+                    android:fontFamily="casual"
+                    android:gravity="left|center"
+                    android:text="Truyen ngan"
+                    android:textColor="#f000"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="76dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/buttonmain"
+                    android:src="@drawable/happy" />
+
+                <Button
+                    android:id="@+id/btn1e"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonmain"
+                    android:fontFamily="casual"
+                    android:gravity="left|center"
+                    android:text="Truyen cuoi"
+                    android:textColor="#f000"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="76dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/buttonmain"
+                    android:src="@drawable/people" />
+
+                <Button
+                    android:id="@+id/btn1f"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonmain"
+                    android:fontFamily="casual"
+                    android:gravity="left|center"
+                    android:text="Mau cau thong dung"
+                    android:textColor="#f000"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal" />
+
+            <ImageView
+                android:layout_width="76dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btn1g"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|left"
+                android:background="@drawable/buttonmain"
+                android:fontFamily="casual"
+                android:text="Cac cau danh ngon"
+                android:textColor="#f000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_width="76dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btn1h"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center"
+                android:background="@drawable/buttonmain"
+                android:fontFamily="casual"
+                android:text="Kien thu tong hop"
+                android:textColor="#f000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="76dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btn1i"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|left"
+                android:background="@drawable/buttonmain"
+                android:fontFamily="casual"
+                android:text="Truyen co tich"
+                android:textColor="#f000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="76dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btn1k"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center"
+                android:background="@drawable/buttonmain"
+                android:fontFamily="casual"
+                android:text="Truyen ngu ngon"
+                android:textColor="#f000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="76dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btn1l"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|left"
+                android:background="@drawable/buttonmain"
+                android:fontFamily="casual"
+                android:text="Bai luan mau"
+                android:textColor="#f000"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

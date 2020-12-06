@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "982386054498",
+    "project_id": "truyensongngu-fcee4",
+    "storage_bucket": "truyensongngu-fcee4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:982386054498:android:67c5ea8cddaf85efa5083b",
+        "android_client_info": {
+          "package_name": "com.example.truyensongngu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "982386054498-9663hc4kebci189hgmt5ab5ejtbv7jbn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.truyensongngu",
+            "certificate_hash": "cf499cc1ee7b576bfe0b666bbc051bdc26134fde"
+          }
+        },
+        {
+          "client_id": "982386054498-oqvbc0176prc4vj0gfv8ons3vdl5h6gk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiPPpEe0nnMXdm6qNgFtd5bS_zP9SoRy8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "982386054498-oqvbc0176prc4vj0gfv8ons3vdl5h6gk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

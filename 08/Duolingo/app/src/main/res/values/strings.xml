@@ -18,5 +18,16 @@
     <string name="account_creation_fail"> Failed to create an account with this email. Try again later!</string>
     <string name="account_creation_success"> Your account has been successfully created!\n Please check your email in order to confirm your account.</string>
     <string name="email_not_verified"> You account is not verified.\n Check your email to verify it!</string>
-    <string name= "agree">Khi đăng ký trên Duolingo, bạn đã đồng ý với Các chính sách và Chính sách bảo mật của chúng tôi</string>
+    <string name="agree">Khi đăng ký trên Duolingo, bạn đã đồng ý với Các chính sách và Chính sách bảo mật của chúng tôi</string>
+
+    <string-array name="language_join">
+        <item>English</item>
+        <item>Brazil</item>
+        <item>Spanish</item>
+        <item>Russia</item>
+        <item>China</item>
+        <item>Italia</item>
+        <item>Japan</item>
+        <item>Korean</item>
+    </string-array>
 </resources>

@@ -11,7 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".utils.CheckActivity"></activity>
+        <activity android:name=".ui.join.LevelList"></activity>
+        <activity android:name=".ui.join.Join2" />
+        <activity android:name=".ui.join.Join1" />
+        <activity android:name=".ui.selectlanguage.SelectLanguage" />
+        <activity android:name=".ui.Start" />
+        <activity android:name=".utils.CheckActivity" />
         <activity android:name=".question.QuestionThree" />
         <activity android:name=".utils.Progressbar" />
         <activity android:name=".LoginActivity" />

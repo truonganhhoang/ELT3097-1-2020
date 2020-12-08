@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.join.Join2">
+
+    <include
+        android:id="@+id/bar"
+        layout="@layout/activity_progressbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="509dp"
+        android:layout_below="@+id/bar"
+        android:layout_marginTop="102dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/friend"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/first_choice"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:onClick="openActivityChild">
+
+            <ImageView
+                android:id="@+id/image_friend"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/ketban"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/image_friend"
+                android:text="Kết bạn và sẻ chia"
+                android:textStyle="bold"
+                android:textColor="@color/custom_view_text_color"
+                android:textSize="17sp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/image_friend" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/brain"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/choice_view"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:onClick="openActivityChild">
+
+            <ImageView
+                android:id="@+id/image_brain"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/trinao"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/image_brain"
+                android:text="Luyện trí não"
+                android:textStyle="bold"
+                android:textColor="@color/custom_view_text_color"
+                android:textSize="17sp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/image_brain" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/school"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/choice_view"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:onClick="openActivityChild">
+
+            <ImageView
+                android:id="@+id/image_school"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/hocduong"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/image_school"
+                android:text="Học đường"
+                android:textStyle="bold"
+                android:textColor="@color/custom_view_text_color"
+                android:textSize="17sp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/image_school" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/job"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/choice_view"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:onClick="openActivityChild">
+
+            <ImageView
+                android:id="@+id/image_job"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/cohoi"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/image_job"
+                android:text="Cơ hội nghề nghiệp"
+                android:textStyle="bold"
+                android:textColor="@color/custom_view_text_color"
+                android:textSize="17sp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/image_job" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cultural"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/choice_view"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:onClick="openActivityChild">
+
+            <ImageView
+                android:id="@+id/image_cultural"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/vanhoa"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/image_cultural"
+                android:text="Văn hóa"
+                android:textStyle="bold"
+                android:textColor="@color/custom_view_text_color"
+                android:textSize="17sp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/image_cultural" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/travel"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/choice_view"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:onClick="openActivityChild">
+
+            <ImageView
+                android:id="@+id/image_travel"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/dulich"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/image_travel"
+                android:text="Du lịch"
+                android:textStyle="bold"
+                android:textColor="@color/custom_view_text_color"
+                android:textSize="17sp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/image_travel" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/others"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/last_choice"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:onClick="openActivityChild">
+
+            <ImageView
+                android:id="@+id/image_others"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/khac"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/image_others"
+                android:text="Khác"
+                android:textStyle="bold"
+                android:textColor="@color/custom_view_text_color"
+                android:textSize="17sp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/image_others" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bar"
+        android:layout_marginTop="30dp"
+        android:text="Tại sao bạn học ngoại ngữ?"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>

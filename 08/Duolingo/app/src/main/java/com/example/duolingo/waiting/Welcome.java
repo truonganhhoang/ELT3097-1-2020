@@ -10,6 +10,8 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
+import com.example.duolingo.ui.Start;
+
 public class Welcome extends AppCompatActivity {
 
 
@@ -37,7 +39,7 @@ public class Welcome extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(Welcome.this , LoginActivity.class);
+                Intent intent = new Intent(Welcome.this , Start.class);
                 startActivity(intent);
                 finish();
             }

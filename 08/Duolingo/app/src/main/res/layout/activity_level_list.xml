@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <include layout="@layout/activity_progressbar"
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn một mục tiêu"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_below="@+id/bar"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="14dp"/>
+
+    <LinearLayout
+        android:id="@+id/choose_goal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/casual"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/first_choice"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:onClick="Casual">
+
+            <TextView
+                android:id="@+id/cas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dễ"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textColor="@color/custom_view_text_color"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/fiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="15dp"
+                android:text="5 phút một ngày"
+                android:textColor="@color/custom_view_text_color"
+                android:textSize="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/medium"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/choice_view"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:onClick="Medium">
+
+            <TextView
+                android:id="@+id/med"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vừa"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textColor="@color/custom_view_text_color"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/ten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="15dp"
+                android:text="10 phút một ngày"
+                android:textColor="@color/custom_view_text_color"
+                android:textSize="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/serious"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/choice_view"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:onClick="Serious">
+
+            <TextView
+                android:id="@+id/ser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Khó"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textColor="@color/custom_view_text_color"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/fif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="15 phút một ngày"
+                android:textColor="@color/custom_view_text_color"
+                android:textSize="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/veryserious"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/choice_view"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:onClick="VerySerious">
+
+            <TextView
+                android:id="@+id/veryser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Siêu Khó"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textColor="@color/custom_view_text_color"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/twen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="20 phút một ngày"
+                android:textColor="@color/custom_view_text_color"
+                android:textSize="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/my_goal"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/choose_goal"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/level"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="80dp"
+        android:layout_toEndOf="@+id/my_goal"
+        android:layout_below="@+id/choose_goal"
+        android:layout_marginTop="110dp"
+        android:text="Bạn có thể thay\nđổi mục tiêu sau"
+        android:textColor="@color/custom_view_text_color"
+        android:textSize="17dp"
+        android:background="@drawable/log_in_link_button"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/my_goal" />
+
+    <Button
+        android:id="@+id/continue_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/get_started_button"
+        android:textColor="@color/button_task_continue"
+        android:textSize="17sp"
+        android:layout_alignParentBottom="true"
+        android:text="Tiếp Tục"
+        android:layout_margin="16dp"/>
+
+</RelativeLayout>

@@ -42,8 +42,18 @@ dependencies {
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.navigation:navigation-fragment:2.3.1'
     implementation 'androidx.navigation:navigation-ui:2.3.1'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.1.+'
+    //ButterKnife
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+    //Hawk
+    implementation 'com.orhanobut:hawk:2.0.1'
 
+    //Dialog
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
 
-
+    //Recycler View
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
 
 }

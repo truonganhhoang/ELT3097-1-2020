@@ -11,7 +11,13 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         app:itemIconTint="#2B8181"
-        android:background="#FFFE"
+        android:background="@drawable/bottom_nav_custom"
         app:menu="@menu/menu_navigation" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/fun" />
 
 </RelativeLayout>

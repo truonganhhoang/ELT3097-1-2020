@@ -158,7 +158,7 @@ ArrayList<TextView> arrTextAnswers;
     public void ShowAnswer(){
         setQuestions();
         textQuestions.setText(questions.getContent());
-        ArrayList<String> arrAnswer = new ArrayList<>(questions.getArrWrongAnser());
+        ArrayList<String> arrAnswer = new ArrayList<>(questions.getArrWrongAnswer());
         arrAnswer.add(questions.getCorrectAnswer());
 
         Random r = new Random();
@@ -178,9 +178,9 @@ ArrayList<TextView> arrTextAnswers;
 
         TienThuongAdapter.setAnswerPosition(AnswerPosition);
     }
-    boolean troGiup5050 = true;
+    boolean trogiup5050 = true;
     public void trogiup5050(View view) {
-            if(troGiup5050 == false ){
+            if(trogiup5050 == false ){
                 return;
             }
             Random r = new Random();
@@ -195,11 +195,10 @@ ArrayList<TextView> arrTextAnswers;
                     QuestionsAndi --;
                 }
             }while(QuestionsAndi>0);
-            troGiup5050 = false;
+            trogiup5050 = false;
     }
 
     boolean trogiup_khangia = true;
-
     public void trogiup_khangia(View view) {
         if (trogiup_khangia = false) {
             return;
@@ -211,5 +210,14 @@ ArrayList<TextView> arrTextAnswers;
                 break;
             }
         }
+    }
+
+    boolean trohiup_doicauhoi = true;
+    public void trogiup_doicauhoi(View view) {
+        if (trohiup_doicauhoi =  false) {
+            return;
+        }
+        ShowAnswer();
+        trohiup_doicauhoi = false;
     }
 }

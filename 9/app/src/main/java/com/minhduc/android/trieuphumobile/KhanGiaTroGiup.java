@@ -2,6 +2,7 @@ package com.minhduc.android.trieuphumobile;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.view.Window;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -11,6 +12,7 @@ import java.util.Random;
 public class KhanGiaTroGiup extends Dialog {
     public KhanGiaTroGiup(@NonNull Context context, int vtD) {
         super(context);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.khan_gia_tro_giup);
         TextView ykienA, ykienB, ykienC, ykienD;
         ykienA = findViewById(R.id.ykienA);

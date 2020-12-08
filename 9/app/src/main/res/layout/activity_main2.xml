@@ -40,6 +40,7 @@
                     android:layout_height="match_parent"
                     android:src="@drawable/app_icon" />
                 <ImageView
+                    android:onClick="trogiup_doicauhoi"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/doicauhoi_icon"

@@ -79,7 +79,7 @@
             android:background="@drawable/log_in_link_button"
             android:layout_marginLeft="12dp"
             android:layout_marginRight="12dp"
-            android:onClick="StartTask">
+            android:onClick="StartQues">
 
             <ImageView
                 android:id="@+id/advance_image"

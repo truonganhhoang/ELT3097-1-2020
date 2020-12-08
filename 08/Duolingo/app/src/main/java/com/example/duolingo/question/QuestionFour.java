@@ -1,15 +1,12 @@
 package com.example.duolingo.question;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
-import android.text.style.TtsSpan;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -22,13 +19,13 @@ import com.example.duolingo.ui.HomeActivity;
 
 import java.util.Locale;
 
-public class QuestionThree extends AppCompatActivity {
+public class QuestionFour extends AppCompatActivity {
     // initialize Variable
 
     EditText etInput;
-    Button  back ,continous, kiemtra;
-    ImageView btConvert;
+    Button back ,continous, kiemtra;
     TextToSpeech textToSpeech;
+    ImageView btConvert;
     RelativeLayout layout1;
     TextView check;
     ProgressBar bar;
@@ -36,7 +33,7 @@ public class QuestionThree extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_question_three);
+        setContentView(R.layout.activity_question_four);
 
         // Assign Variable
 
@@ -56,13 +53,13 @@ public class QuestionThree extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(QuestionThree.this, HomeActivity.class));
+                startActivity(new Intent(QuestionFour.this, HomeActivity.class));
             }
         });
         continous.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(QuestionThree.this , QuestionFour.class);
+                Intent intent = new Intent(QuestionFour.this , QuestionFive.class);
                 int current = bar.getProgress();
                 intent.putExtra("update", current);
                 startActivity(intent);
@@ -84,33 +81,34 @@ public class QuestionThree extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // get EditText value
-                String s = "I drink water";
+                String s = "Happy";
 
                 // text convert to speech
                 int speech = textToSpeech.speak(s, TextToSpeech.QUEUE_FLUSH, null);
-                kiemtra.setEnabled(true);
-                kiemtra.setBackgroundResource(R.drawable.button_continue_true);
             }
         });
+        kiemtra.setBackgroundResource(R.drawable.button_check);
         kiemtra.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String a = etInput.getText().toString();
-                String ans = "I drink water";
+                String ans = "Happy";
                 if( a.equals(ans)){
-                    check.setText("Đúng rồi!");
+                    check.setText("Tuyệt vời!");
                     layout1.setVisibility(layout1.VISIBLE);
                     kiemtra.setVisibility(View.INVISIBLE);
+
                     int  current = getIntent().getIntExtra("update",0);
                     bar.setProgress(current+20);
+
                 }
                 else {
                     layout1.setVisibility(layout1.VISIBLE);
                     layout1.setBackgroundResource(R.drawable.nextquestion_false);
                     continous.setTextColor(Color.WHITE);
-                    continous.setBackgroundResource(R.drawable.button_continue_false);
+                    continous.setBackgroundResource(R.drawable.custom_check);
                     kiemtra.setVisibility(View.INVISIBLE);
-                    check.setText("Trả lời đúng: i drink water ");
+                    check.setText("Trả lời đúng: Happy ");
                     check.setTextColor(Color.RED);
                 }
             }
@@ -118,6 +116,5 @@ public class QuestionThree extends AppCompatActivity {
 
 
     }
-
 
 }

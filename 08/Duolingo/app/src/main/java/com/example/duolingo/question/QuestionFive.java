@@ -1,15 +1,12 @@
 package com.example.duolingo.question;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
-import android.text.style.TtsSpan;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -22,21 +19,21 @@ import com.example.duolingo.ui.HomeActivity;
 
 import java.util.Locale;
 
-public class QuestionThree extends AppCompatActivity {
+public class QuestionFive extends AppCompatActivity {
     // initialize Variable
 
     EditText etInput;
-    Button  back ,continous, kiemtra;
-    ImageView btConvert;
+    Button back, continous, kiemtra;
     TextToSpeech textToSpeech;
     RelativeLayout layout1;
+    ImageView btConvert;
     TextView check;
     ProgressBar bar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_question_three);
+        setContentView(R.layout.activity_question_five);
 
         // Assign Variable
 
@@ -50,20 +47,20 @@ public class QuestionThree extends AppCompatActivity {
         bar = findViewById(R.id.progressBar);
 
 
-        int current = getIntent().getIntExtra("update",0);
+        int current = getIntent().getIntExtra("update", 0);
         bar.setProgress(current);
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(QuestionThree.this, HomeActivity.class));
+                startActivity(new Intent(QuestionFive.this, HomeActivity.class));
             }
         });
         continous.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(QuestionThree.this , QuestionFour.class);
-                int current = bar.getProgress();
+                Intent intent = new Intent(QuestionFive.this, HomeActivity.class);
+                int current = 100;
                 intent.putExtra("update", current);
                 startActivity(intent);
             }
@@ -74,9 +71,9 @@ public class QuestionThree extends AppCompatActivity {
                 , new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {
-                if(status == TextToSpeech.SUCCESS){
+                if (status == TextToSpeech.SUCCESS) {
                     // select Language
-                    int lang  = textToSpeech.setLanguage(Locale.ENGLISH);
+                    int lang = textToSpeech.setLanguage(Locale.ENGLISH);
                 }
             }
         });
@@ -84,33 +81,29 @@ public class QuestionThree extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // get EditText value
-                String s = "I drink water";
+                String s = "He is an apple";
 
                 // text convert to speech
                 int speech = textToSpeech.speak(s, TextToSpeech.QUEUE_FLUSH, null);
-                kiemtra.setEnabled(true);
-                kiemtra.setBackgroundResource(R.drawable.button_continue_true);
             }
         });
+        kiemtra.setBackgroundResource(R.drawable.button_check);
         kiemtra.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String a = etInput.getText().toString();
-                String ans = "I drink water";
-                if( a.equals(ans)){
-                    check.setText("Đúng rồi!");
+                String ans = "Anh ấy là một quả táo";
+                if (a.equals(ans)) {
+                    check.setText("Tuyệt vời!");
                     layout1.setVisibility(layout1.VISIBLE);
                     kiemtra.setVisibility(View.INVISIBLE);
-                    int  current = getIntent().getIntExtra("update",0);
-                    bar.setProgress(current+20);
-                }
-                else {
+                } else {
                     layout1.setVisibility(layout1.VISIBLE);
                     layout1.setBackgroundResource(R.drawable.nextquestion_false);
                     continous.setTextColor(Color.WHITE);
-                    continous.setBackgroundResource(R.drawable.button_continue_false);
+                    continous.setBackgroundResource(R.drawable.custom_check);
                     kiemtra.setVisibility(View.INVISIBLE);
-                    check.setText("Trả lời đúng: i drink water ");
+                    check.setText("Trả lời đúng: Anh ấy là một quả táo ");
                     check.setTextColor(Color.RED);
                 }
             }
@@ -118,6 +111,5 @@ public class QuestionThree extends AppCompatActivity {
 
 
     }
-
 
 }

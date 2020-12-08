@@ -120,7 +120,7 @@ public class QuestionOne extends AppCompatActivity {
                                                 kiemtra.setTextColor(Color.WHITE);
                                                 layout1.setVisibility(layout1.VISIBLE);
                                                 kiemtra.setVisibility(View.INVISIBLE);
-                                                
+
                                                 int current = bar.getProgress();
                                                 bar.setProgress(current+20);
 
@@ -145,6 +145,7 @@ public class QuestionOne extends AppCompatActivity {
                         }
                 };
         };
+
 
 
 }

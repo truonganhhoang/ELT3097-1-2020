@@ -25,7 +25,7 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="130dp">
+                android:layout_height="160dp">
 
                 <include
                     layout="@layout/activity_custom_progressbar"
@@ -45,12 +45,12 @@
                     android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/list_one"
-                    android:layout_marginTop="13dp"
                     android:layout_marginLeft="180dp"
+                    android:layout_marginTop="22dp"
                     android:text="Cơ bản 1"
                     android:textAllCaps="false"
+                    android:textColor="@color/black_text"
                     android:textStyle="bold"
-                    android:textColor="@color/white_text"
 
                     />
 
@@ -59,17 +59,14 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
+                android:layout_height="160dp"
+
                 android:orientation="horizontal">
 
                 <RelativeLayout
-
                     android:layout_width="0dp"
-                    android:layout_height="120dp"
-                    android:layout_marginTop="16dp"
+                    android:layout_height="160dp"
                     android:layout_marginEnd="16dp"
-                    
                     android:layout_weight="1"
                     android:layout_marginRight="16dp">
 
@@ -89,10 +86,10 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/list_two"
                         android:layout_marginLeft="68dp"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="22dp"
                         android:text="Cơ bản 2"
                         android:textAllCaps="false"
-                        android:textColor="@color/white_text"
+                        android:textColor="@color/black_text"
                         android:textStyle="bold"
 
                         />
@@ -102,9 +99,7 @@
 
                 <RelativeLayout
                     android:layout_width="0dp"
-                    android:layout_height="120dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
+                    android:layout_height="160dp"
                     android:layout_weight="1"
                     android:layout_marginLeft="16dp">
 
@@ -125,10 +120,10 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/list_three"
                         android:layout_marginLeft="68dp"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="22dp"
                         android:text="Cơ bản 3"
                         android:textAllCaps="false"
-                        android:textColor="@color/white_text"
+                        android:textColor="@color/black_text"
                         android:textStyle="bold"
 
                         />
@@ -140,15 +135,12 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
                 android:orientation="horizontal">
 
                 <RelativeLayout
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_height="120dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp"
+                    android:layout_height="160dp"
                     android:layout_marginRight="16dp">
 
 
@@ -172,7 +164,7 @@
                         android:text="Cơ bản 4"
                         android:textAllCaps="false"
                         android:textStyle="bold"
-                        android:textColor="@color/white_text"
+                        android:textColor="@color/black_text"
 
                         />
                 </RelativeLayout>
@@ -180,9 +172,7 @@
                 <RelativeLayout
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_height="120dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginStart="16dp"
+                    android:layout_height="160dp"
                     android:layout_marginLeft="16dp">
 
                     <include layout="@layout/activity_custom_progressbar"/>
@@ -200,12 +190,12 @@
                         android:layout_width="70dp"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/list_five"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="22dp"
                         android:layout_marginLeft="68dp"
                         android:text="Cơ bản 5"
                         android:textAllCaps="false"
                         android:textStyle="bold"
-                        android:textColor="@color/white_text"
+                        android:textColor="@color/black_text"
 
                         />
                 </RelativeLayout>
@@ -213,8 +203,8 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="130dp"
-                android:layout_marginTop="8dp">
+                android:layout_height="160dp"
+                >
 
                 <include layout="@layout/activity_custom_progressbar"/>
                 <Button
@@ -230,12 +220,12 @@
                     android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/list_commu"
-                    android:layout_marginTop="13dp"
+                    android:layout_marginTop="22dp"
                     android:layout_marginLeft="177dp"
                     android:text="Chào hỏi"
                     android:textAllCaps="false"
                     android:textStyle="bold"
-                    android:textColor="@color/white_text"
+                    android:textColor="@color/black_text"
 
                     />
 
@@ -275,7 +265,7 @@
                     android:text="Thức ăn"
                     android:textAllCaps="false"
                     android:textStyle="bold"
-                    android:textColor="@color/white_text"
+                    android:textColor="@color/black_text"
 
                     />
             </RelativeLayout>
@@ -307,7 +297,7 @@
                     android:text="Động vật"
                     android:textAllCaps="false"
                     android:textStyle="bold"
-                    android:textColor="@color/white_text"
+                    android:textColor="@color/black_text"
 
                     />
 

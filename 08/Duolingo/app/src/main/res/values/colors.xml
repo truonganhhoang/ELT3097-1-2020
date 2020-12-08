@@ -34,6 +34,7 @@
     <!-- Text -->
     <color name="week_letter">#757575</color>
     <color name="white_text">#fff</color>
+    <color name="black_text">#000</color>
 
     <!-- Background -->
 

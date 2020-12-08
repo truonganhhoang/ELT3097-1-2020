@@ -27,19 +27,14 @@
     <TextView
         android:layout_width="354dp"
         android:layout_height="42dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="49dp"
+        android:layout_below="@+id/bar"
+        android:layout_marginTop="30dp"
         android:text="Dịch câu này"
         android:textAllCaps="false"
-        android:textSize="25sp"
+        android:textColor="#000"
+        android:textSize="25dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        />
     <RelativeLayout
         android:layout_width="250dp"
         android:layout_height="60dp"
@@ -67,39 +62,27 @@
         android:layout_width="140dp"
         android:layout_height="140dp"
         android:layout_marginTop="160dp"
-        android:src="@drawable/girl"/>
+        android:background="@drawable/girl"/>
 
 
     <include
         layout="@layout/activity_progressbar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="0dp" />
+        android:id="@+id/bar" />
     <Button
 
         android:id="@+id/kiemtra"
-        android:layout_width="363dp"
-        android:layout_height="41dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="29dp"
         android:layout_marginEnd="25dp"
         android:layout_marginBottom="22dp"
-        android:layout_x="23dp"
-        android:layout_y="553dp"
-        android:background="@drawable/button_unselected"
-        android:text="kiểm tra"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:enabled="false"
+        android:background="@drawable/button_check"
+        android:text="kiểm tra" />
 
-    <include
-        layout="@layout/activity_check"
-        android:layout_width="match_parent"
-        android:layout_height="160dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="2dp" />
+    <include layout="@layout/activity_check" />
 
 </RelativeLayout>

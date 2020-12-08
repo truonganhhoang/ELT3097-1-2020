@@ -25,67 +25,53 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/yeucau"
         android:layout_width="354dp"
         android:layout_height="42dp"
+        android:layout_below="@+id/bar"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="49dp"
+        android:layout_marginTop="30dp"
         android:text="Đoán từ"
         android:textAllCaps="false"
-        android:textSize="25sp"
+        android:textColor="#000"
+        android:textSize="25dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_marginRight="49dp" />
 
     <ImageView
         android:id="@+id/bt_convert"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_marginTop="144dp"
+        android:layout_below="@+id/yeucau"
+        android:layout_marginTop="15dp"
         android:layout_marginLeft="144dp"
-        android:background="#fff"
-        android:src="@drawable/happy"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.243"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:background="@drawable/happy"
+         />
 
     <include
         layout="@layout/activity_progressbar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="0dp" />
+        android:id="@+id/bar"/>
     <Button
 
         android:id="@+id/kiemtra"
-        android:layout_width="363dp"
-        android:layout_height="41dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="29dp"
         android:layout_marginEnd="25dp"
         android:layout_marginBottom="22dp"
-        android:layout_x="23dp"
-        android:layout_y="553dp"
-        android:background="@drawable/button_unselected"
+        android:enabled="false"
+        android:background="@drawable/button_check"
         android:text="kiểm tra"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+         />
 
     <include
         layout="@layout/activity_check"
-        android:layout_width="match_parent"
-        android:layout_height="160dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="2dp" />
+         />
 
 
 </RelativeLayout>

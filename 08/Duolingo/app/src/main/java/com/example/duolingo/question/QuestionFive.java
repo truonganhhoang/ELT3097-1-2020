@@ -85,14 +85,16 @@ public class QuestionFive extends AppCompatActivity {
 
                 // text convert to speech
                 int speech = textToSpeech.speak(s, TextToSpeech.QUEUE_FLUSH, null);
+                kiemtra.setEnabled(true);
+                kiemtra.setBackgroundResource(R.drawable.button_continue_true);
             }
         });
-        kiemtra.setBackgroundResource(R.drawable.button_check);
+
         kiemtra.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String a = etInput.getText().toString();
-                String ans = "Anh ấy là một quả táo";
+                String ans = "Anh ấy có một quả táo";
                 if (a.equals(ans)) {
                     check.setText("Tuyệt vời!");
                     layout1.setVisibility(layout1.VISIBLE);
@@ -101,9 +103,9 @@ public class QuestionFive extends AppCompatActivity {
                     layout1.setVisibility(layout1.VISIBLE);
                     layout1.setBackgroundResource(R.drawable.nextquestion_false);
                     continous.setTextColor(Color.WHITE);
-                    continous.setBackgroundResource(R.drawable.custom_check);
+                    continous.setBackgroundResource(R.drawable.button_continue_false);
                     kiemtra.setVisibility(View.INVISIBLE);
-                    check.setText("Trả lời đúng: Anh ấy là một quả táo ");
+                    check.setText("Trả lời đúng: Anh ấy có một quả táo ");
                     check.setTextColor(Color.RED);
                 }
             }

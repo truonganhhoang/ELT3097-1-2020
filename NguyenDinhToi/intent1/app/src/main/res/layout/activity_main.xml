@@ -6,6 +6,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <TextView
+        android:fontFamily="casual"
         android:layout_weight="1"
         android:id="@+id/textView1"
         android:layout_width="match_parent"
@@ -15,62 +16,141 @@
         android:textColor="#F8F8F8"
         android:textSize="20sp" />
     <TextView
-
         android:textColor="#000000"
         android:background="#B0E6E1"
         android:text="Today's quotation When you reach the end of your rope, tie a knot in it and hang on "
         android:layout_weight="1"
+        android:fontFamily="casual"
         android:textSize="20sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:background="@drawable/btn"
+            android:layout_width="76dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/book" />
+        <Button
+            android:fontFamily="casual"
+            android:id="@+id/btn1a"
+            android:layout_width="333dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/btn"
+            android:gravity="left|center"
+            android:text="Nhat ki chinh phuc English"
+            android:textColor="#f000"
+            android:textSize="17sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <ImageView
+            android:background="@drawable/btn"
+            android:src="@drawable/newspapericon"
+            android:layout_width="76dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:fontFamily="casual"
+            android:gravity="left|center"
+            android:background="@drawable/btn"
+            android:id="@+id/btn1b"
+            android:textColor="#f000"
+            android:text="Bao song ngu"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
 
-    <Button
-        android:id="@+id/btn1a"
+        <ImageView
+            android:background="@drawable/btn"
+            android:layout_width="76dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/headphoneicon" />
+        <Button
+            android:fontFamily="casual"
+            android:gravity="left|center"
+            android:background="@drawable/btn"
+            android:id="@+id/btn1c"
+            android:textColor="#f000"
+            android:text="Truyen ngan (co audio)"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Nhat ki chinh phuc English"
-        android:textColor="#f000"
-        android:textSize="20sp" />
-    <Button
-        android:id="@+id/btn1b"
-        android:textColor="#f000"
-        android:text="Bao song ngu"
-        android:layout_weight="1"
-        android:textSize="20sp"
+        android:layout_height="100dp">
+        <ImageView
+            android:background="@drawable/btn"
+            android:src="@drawable/openbook"
+            android:layout_width="76dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:fontFamily="casual"
+            android:gravity="left|center"
+            android:background="@drawable/btn"
+            android:id="@+id/btn1d"
+            android:textColor="#f000"
+            android:text="Truyen ngan"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <Button
-        android:id="@+id/btn1c"
-        android:textColor="#f000"
-        android:text="Cac cau danh ngon"
-        android:layout_weight="1"
-        android:textSize="20sp"
+        android:layout_height="100dp">
+        <ImageView
+             android:background="@drawable/btn"
+            android:src="@drawable/happy"
+            android:layout_width="76dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:fontFamily="casual"
+            android:gravity="left|center"
+            android:background="@drawable/btn"
+            android:id="@+id/btn1e"
+            android:textColor="#f000"
+            android:text="Truyen cuoi"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <Button
-        android:id="@+id/btn1d"
-        android:textColor="#f000"
-        android:text="Truyen ngan"
-        android:layout_weight="1"
-        android:textSize="20sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <Button
-        android:id="@+id/btn1e"
-        android:textColor="#f000"
-        android:text="Truyen cuoi"
-        android:layout_weight="1"
-        android:textSize="20sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <Button
-        android:id="@+id/btn1f"
-        android:textColor="#f000"
-        android:text="Mau cau thong dung"
-        android:layout_weight="1"
-        android:textSize="20sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="100dp">
+        <ImageView
+            android:background="@drawable/btn"
+            android:src="@drawable/people"
+            android:layout_width="76dp"
+            android:layout_height="match_parent"/>
 
+        <Button
+            android:id="@+id/btn1f"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn"
+            android:fontFamily="casual"
+            android:gravity="left|center"
+            android:text="Mau cau thong dung"
+            android:textColor="#f000"
+            android:textSize="20sp" />
+    </LinearLayout>
 </LinearLayout>

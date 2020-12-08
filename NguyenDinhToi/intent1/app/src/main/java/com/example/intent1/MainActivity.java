@@ -18,11 +18,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        //ánh xa
         btn = (Button) findViewById(R.id.btn1c);
         btn1 = (Button) findViewById(R.id.btn1a);
-        btn2 = (Button) findViewById(R.id.btn1b);
+        btn2 = (Button) findViewById(R.id.btn1d);
 
+        //code
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

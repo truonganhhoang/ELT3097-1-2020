@@ -49,8 +49,8 @@ public class KhanGiaTroGiup extends Dialog {
         }
 
         ykienA.setText("A : " + (int)arr1[0]*100.0f/audience + " %");
-        ykienB.setText("A : " + (int)arr1[1]*100.0f/audience + " %");
-        ykienC.setText("A : " + (int)arr1[2]*100.0f/audience + " %");
-        ykienD.setText("A : " + (int)arr1[3]*100.0f/audience + " %");
+        ykienB.setText("B : " + (int)arr1[1]*100.0f/audience + " %");
+        ykienC.setText("C : " + (int)arr1[2]*100.0f/audience + " %");
+        ykienD.setText("D : " + (int)arr1[3]*100.0f/audience + " %");
     }
 }

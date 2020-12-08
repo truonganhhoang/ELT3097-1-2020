@@ -70,7 +70,13 @@ public class LevelList extends AppCompatActivity {
         continueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LevelList.this, HomeActivity.class));
+                startActivity(new Intent(LevelList.this, Join4.class));
+            }
+        });
+        Back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LevelList.this, Join2.class));
             }
         });
 

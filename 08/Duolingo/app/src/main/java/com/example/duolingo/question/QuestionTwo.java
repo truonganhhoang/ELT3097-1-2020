@@ -86,7 +86,7 @@ public class QuestionTwo extends AppCompatActivity {
             switch (Id) {
                 case R.id.dapan1:
                     kiemtra.setEnabled(true);
-                    kiemtra.setBackgroundResource(R.drawable.button_check);
+                    kiemtra.setBackgroundResource(R.drawable.button_continue_true);
                     dapan1.setSelected(true);
                     dapan2.setSelected(false);
                     dapan3.setSelected(false);
@@ -94,7 +94,7 @@ public class QuestionTwo extends AppCompatActivity {
                 case R.id.dapan2:
                     kiemtra.setEnabled(true);
                     dapan2.setSelectAllOnFocus(true);
-                    kiemtra.setBackgroundResource(R.drawable.button_check);
+                    kiemtra.setBackgroundResource(R.drawable.button_continue_true);
                     dapan2.setSelected(true);
                     dapan1.setSelected(false);
                     dapan3.setSelected(false);
@@ -103,14 +103,13 @@ public class QuestionTwo extends AppCompatActivity {
                 case R.id.dapan3:
                     kiemtra.setEnabled(true);
                     dapan3.setSelectAllOnFocus(true);
-                    kiemtra.setBackgroundResource(R.drawable.button_check);
+                    kiemtra.setBackgroundResource(R.drawable.button_continue_true);
                     dapan3.setSelected(true);
                     dapan1.setSelected(false);
                     dapan2.setSelected(false);
                     break;
                 case R.id.kiemtra:
                     if(dapan2.isSelected()) {
-                        kiemtra.setBackgroundResource(R.drawable.custom_check);
                         check.setText("Tuyệt Vời!");
                         layout1.setVisibility(layout1.VISIBLE);
                         kiemtra.setVisibility(View.INVISIBLE);
@@ -124,7 +123,7 @@ public class QuestionTwo extends AppCompatActivity {
                         layout1.setVisibility(layout1.VISIBLE);
                         layout1.setBackgroundResource(R.drawable.nextquestion_false);
                         continuos.setTextColor(Color.WHITE);
-                        continuos.setBackgroundResource(R.drawable.custom_check);
+                        continuos.setBackgroundResource(R.drawable.button_continue_false);
                         kiemtra.setVisibility(View.INVISIBLE);
                         check.setText("Trả lời đúng: I like you ");
                         check.setTextColor(Color.RED);

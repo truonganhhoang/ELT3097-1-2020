@@ -6,10 +6,7 @@
     android:background="#fff">
 
     <include layout="@layout/activity_progressbar"
-        android:id="@+id/bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="12dp" />
+        android:id="@+id/bar" />
 
     <TextView
         android:id="@+id/text"
@@ -20,7 +17,7 @@
         android:textStyle="bold"
         android:textSize="25sp"
         android:layout_below="@+id/bar"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_marginLeft="14dp"/>
 
     <LinearLayout
@@ -68,6 +65,7 @@
             android:id="@+id/medium"
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:layout_marginTop="-1dp"
             android:background="@drawable/choice_view"
             android:layout_marginLeft="12dp"
             android:layout_marginRight="12dp"
@@ -102,6 +100,7 @@
             android:id="@+id/serious"
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:layout_marginTop="-1dp"
             android:background="@drawable/choice_view"
             android:layout_marginLeft="12dp"
             android:layout_marginRight="12dp"
@@ -135,6 +134,7 @@
             android:id="@+id/veryserious"
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:layout_marginTop="-1dp"
             android:background="@drawable/choice_view"
             android:layout_marginLeft="12dp"
             android:layout_marginRight="12dp"

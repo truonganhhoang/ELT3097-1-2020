@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -25,7 +26,8 @@ public class QuestionThree extends AppCompatActivity {
     // initialize Variable
 
     EditText etInput;
-    Button  btConvert , back ,continous, kiemtra;
+    Button  back ,continous, kiemtra;
+    ImageView btConvert;
     TextToSpeech textToSpeech;
     RelativeLayout layout1;
     TextView check;
@@ -86,16 +88,17 @@ public class QuestionThree extends AppCompatActivity {
 
                 // text convert to speech
                 int speech = textToSpeech.speak(s, TextToSpeech.QUEUE_FLUSH, null);
+                kiemtra.setEnabled(true);
+                kiemtra.setBackgroundResource(R.drawable.button_continue_true);
             }
         });
-        kiemtra.setBackgroundResource(R.drawable.button_check);
         kiemtra.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String a = etInput.getText().toString();
                 String ans = "I drink water";
                 if( a.equals(ans)){
-                    check.setText("Gút Chóp em!");
+                    check.setText("Đúng rồi!");
                     layout1.setVisibility(layout1.VISIBLE);
                     kiemtra.setVisibility(View.INVISIBLE);
                 }
@@ -103,7 +106,7 @@ public class QuestionThree extends AppCompatActivity {
                     layout1.setVisibility(layout1.VISIBLE);
                     layout1.setBackgroundResource(R.drawable.nextquestion_false);
                     continous.setTextColor(Color.WHITE);
-                    continous.setBackgroundResource(R.drawable.custom_check);
+                    continous.setBackgroundResource(R.drawable.button_continue_false);
                     kiemtra.setVisibility(View.INVISIBLE);
                     check.setText("Trả lời đúng: i drink water ");
                     check.setTextColor(Color.RED);

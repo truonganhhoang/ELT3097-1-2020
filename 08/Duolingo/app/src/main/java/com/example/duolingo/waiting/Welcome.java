@@ -12,13 +12,15 @@ import android.widget.ImageView;
 
 import com.example.duolingo.ui.Start;
 
+import pl.droidsonroids.gif.GifImageView;
+
 public class Welcome extends AppCompatActivity {
 
 
     private static  int SPLASH_SCREEN = 5000;
     // Var
     Animation topAnim ;
-    ImageView image;
+    GifImageView image;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +45,7 @@ public class Welcome extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        },SPLASH_SCREEN);
+        },5200);
 
 
     }

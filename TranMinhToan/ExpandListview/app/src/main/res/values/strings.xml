@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Expand Listview</string>
+    <string name="header_1">NEVER TELL A LIE</string>
+    <string name="truyen_ngan_1_1">On his deathbed, a father advised his son to always speak truth. The son promised that he would never tell a lie.</string>
+    <string name="truyen_ngan_1_2">One day, while going to the city through a forest, he got surrounded by some robbers. One of them asked, "What do you have?"</string>
+    <string name="truyen_ngan_1_3">The boy answered, "I have fifty rupees."</string>
+    <string name="truyen_ngan_1_4">They searched him but couldnt find anything. When they were about to go, the boy called out, "I am not telling a lie. See this fifty rupee note which I had hidden in my shirt."</string>
+    <string name="truyen_ngan_1_5">The leader of the robbers felt pleased at the truthfulness of the boy, gave him hundred rupees as reward and went away.</string>
+
+
+
+    <string-array name="truyen_ngan_1_1_dich">
+        <item>Trong giờ phút cuối đời của mình, người cha đã khuyên con trai ông ấy phải luôn nói thật. Người con hứa rằng anh ấy sẽ không bao giờ nói dối</item>
+    </string-array>
+    <string-array name="truyen_ngan_1_2_dich">
+        <item>Một ngày nọ, trong khi đi đến thành phố thông qua khu rừng, cậu bé bị bao quanh bởi những tên cướp. Một trong số chúng hỏi "mày có cái gì?"</item>
+    </string-array>
+    <string-array name="truyen_ngan_1_3_dich">
+        <item>Anh ta trả lời: "Tôi có 50 đồng ru pi"</item>
+    </string-array>
+    <string-array name="truyen_ngan_1_4_dich">
+        <item>Họ lục soát người anh ta nhưng không tìm thấy bất kỳ thứ gì. Khi họ chuẩn bị bỏ đi, cậu bé gọi họ lại: " Tôi không nói dối. Nhìn này 50 đồng rupi tôi giấu trong áo này".</item>
+    </string-array>
+    <string-array name="truyen_ngan_1_5_dich">
+        <item>Thủ lĩnh băng cướp cảm thấy hài lòng về tính thật thà của cậu bé, ông ta cho cậu bé 100 đồng rupi như một phần thưởng và bỏ đi.</item>
+    </string-array>
+
+</resources>

@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BaiLuanMau"></activity>
+        <activity android:name=".expand_list_view"></activity>
+        <activity android:name=".truyen_ngan_audio_str1" />
+        <activity android:name=".BaiLuanMau" />
         <activity android:name=".TruyenNguNgon" />
         <activity android:name=".TruyenCoTich" />
         <activity android:name=".KienThucTongHop" />

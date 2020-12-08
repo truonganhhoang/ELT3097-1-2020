@@ -1,9 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CacCauDanhNgon">
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <Button
+            android:textColor="#238A81"
+            android:text="Truyen Vua Doc"
+            android:background="@drawable/buttonmain"
+            android:layout_width="137dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:textColor="#238A81"
+            android:text="Truyen Ke Tiep"
+            android:background="@drawable/buttonmain"
+            android:layout_width="137dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:textColor="#238A81"
+            android:text="Tim"
+            android:background="@drawable/buttonmain"
+            android:layout_width="137dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:gravity="center|left"
+            android:fontFamily="casual"
+            android:background="@drawable/button_truyenngan_audio"
+            android:textSize="24sp"
+            android:text="1. Love Quotes (1)"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <Button
+            android:background="@drawable/button_truyenngan_audio"
+            android:gravity="center|left"
+            android:fontFamily="casual"
+            android:textSize="24sp"
+            android:text="2. Love Quotes (2)"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <Button
+            android:fontFamily="casual"
+            android:gravity="left|center"
+            android:background="@drawable/button_truyenngan_audio"
+            android:textSize="24sp"
+            android:text="3. Famous People Quotes"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <Button
+            android:gravity="center|left"
+            android:fontFamily="casual"
+            android:background="@drawable/button_truyenngan_audio"
+            android:textSize="24sp"
+            android:text="4. Motivational Quotes (1)"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"/>
+        <Button
+            android:gravity="left|center"
+            android:fontFamily="casual"
+            android:background="@drawable/button_truyenngan_audio"
+            android:textSize="24sp"
+            android:text="5. Motivational Quotes (2)"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <Button
+            android:gravity="center|left"
+            android:fontFamily="casual"
+            android:background="@drawable/button_truyenngan_audio"
+            android:textSize="24sp"
+            android:text="6. Success Quotes"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <Button
+            android:gravity="left|center"
+            android:fontFamily="casual"
+            android:background="@drawable/button_truyenngan_audio"
+            android:textSize="24sp"
+            android:text="7. Barack Obama Quotes"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <Button
+            android:background="@drawable/button_truyenngan_audio"
+            android:gravity="center|left"
+            android:textSize="24sp"
+            android:fontFamily="casual"
+            android:text="8. Life Quotes (1)"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <Button
+            android:fontFamily="casual"
+            android:background="@drawable/button_truyenngan_audio"
+            android:gravity="left|center"
+            android:textSize="24sp"
+            android:text="9. Life Quotes (2)"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <Button
+            android:fontFamily="casual"
+            android:gravity="center|left"
+            android:background="@drawable/button_truyenngan_audio"
+            android:textSize="24sp"
+            android:text="10. Life Quotes (3)"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+    </LinearLayout>
+</LinearLayout>

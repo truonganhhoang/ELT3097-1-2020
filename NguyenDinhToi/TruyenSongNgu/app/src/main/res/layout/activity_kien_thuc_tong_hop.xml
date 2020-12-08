@@ -1,9 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".KienThucTongHop">
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <Button
+            android:textColor="#238A81"
+            android:text="Truyen Vua Doc"
+            android:background="@drawable/buttonmain"
+            android:layout_width="137dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:textColor="#238A81"
+            android:text="Truyen Ke Tiep"
+            android:background="@drawable/buttonmain"
+            android:layout_width="137dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:textColor="#238A81"
+            android:text="Tim"
+            android:background="@drawable/buttonmain"
+            android:layout_width="137dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:gravity="center|left"
+            android:background="@drawable/button_truyenngan_audio"
+            android:fontFamily="casual"
+            android:textSize="19sp"
+            android:text="1. The Importance Of Media In Our Life"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <Button
+            android:gravity="left|center"
+            android:fontFamily="casual"
+            android:background="@drawable/button_truyenngan_audio"
+            android:textSize="19sp"
+            android:text="2. How To Learn English Passionately"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <Button
+            android:gravity="center|left"
+            android:background="@drawable/button_truyenngan_audio"
+            android:fontFamily="casual"
+            android:textSize="24sp"
+            android:text="3. A Heartwarming Friendship"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <Button
+            android:gravity="left|center"
+            android:fontFamily="casual"
+            android:textSize="19sp"
+            android:text="4. New Year's Resolutions Around Th..."
+            android:background="@drawable/button_truyenngan_audio"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <Button
+            android:gravity="center|left"
+            android:fontFamily="casual"
+            android:background="@drawable/button_truyenngan_audio"
+            android:textSize="24sp"
+            android:text="5. Christmas Truce"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <Button
+            android:gravity="left|center"
+            android:fontFamily="casual"
+            android:textSize="22sp"
+            android:background="@drawable/button_truyenngan_audio"
+            android:text="6. Tet Holiday"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <Button
+            android:gravity="center|left"
+            android:textSize="19sp"
+            android:background="@drawable/button_truyenngan_audio"
+            android:text="7. Boy Wakes Up And Can't Speak A Lic..."
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <Button
+            android:gravity="left|center"
+            android:fontFamily="casual"
+            android:background="@drawable/button_truyenngan_audio"
+            android:textSize="20sp"
+            android:text="8. Color Boots Memory And Creativity"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <Button
+            android:gravity="center|left"
+            android:fontFamily="casual"
+            android:background="@drawable/button_truyenngan_audio"
+            android:textSize="19sp"
+            android:text="9. Meditation In School Transforms Kids"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <Button
+            android:gravity="left|center"
+            android:fontFamily="casual"
+            android:background="@drawable/button_truyenngan_audio"
+            android:textSize="19sp"
+            android:text="10. Blue Is For Boys, Pink Is For Girls"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+    </LinearLayout>
+</LinearLayout>

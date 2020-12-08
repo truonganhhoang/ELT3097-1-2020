@@ -6,13 +6,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ScrollView;
+import android.widget.ExpandableListView;
+import android.widget.Toast;
 
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+//import android.widget.ScrollView;
+//
+//import com.google.firebase.database.DatabaseReference;
+//import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
     //khai bao
+
     Button btn;
     Button btn2;
     Button btn3;
@@ -25,20 +32,27 @@ public class MainActivity extends AppCompatActivity {
     Button btn10;
     Button btn11;
 
-    private ScrollView scrollView;
-    public static final int SCROLL_DELTA = 15;//pixel
-    @Override
+    private ExpandableListView expandableListView;
 
+    private ExpandableListViewAdapter expandableListViewAdapter;
+
+    private List<String> listDataGroup;
+
+    private HashMap<String, List<String>> listDataChild;
+
+//    private ScrollView scrollView;
+//    public static final int SCROLL_DELTA = 15;//pixel
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+//
+//        FirebaseDatabase database = FirebaseDatabase.getInstance();
+//        DatabaseReference myRef = database.getReference("message");
 
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("message");
-
-        myRef.setValue("Hello, World!");
 
         //anh xa
+
         btn = (Button) findViewById(R.id.btn1a);
         btn2 = (Button) findViewById(R.id.btn1b);
         btn3 = (Button) findViewById(R.id.btn1c);
@@ -48,10 +62,10 @@ public class MainActivity extends AppCompatActivity {
         btn7 = (Button) findViewById(R.id.btn1g);
         btn8 = (Button) findViewById(R.id.btn1h);
         btn9 = (Button) findViewById(R.id.btn1i);
-        btn10 =(Button) findViewById(R.id.btn1k);
+        btn10 = (Button) findViewById(R.id.btn1k);
         btn11 = (Button) findViewById(R.id.btn1l);
 
-        this.scrollView = (ScrollView) this.findViewById(R.id.scrollView);
+//        this.scrollView = (ScrollView) this.findViewById(R.id.scrollView);
 
 
         //code
@@ -132,5 +146,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 }

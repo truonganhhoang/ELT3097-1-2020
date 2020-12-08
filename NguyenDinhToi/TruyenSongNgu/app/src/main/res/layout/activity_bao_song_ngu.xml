@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
@@ -8,7 +9,7 @@
         android:layout_height="100dp">
         <TextView
             android:gravity="center|left"
-            android:background="#49BAC8"
+            android:background="#009688"
             android:textColor="#ffff"
             android:textSize="20sp"
             android:text="Che do dich 1 cham"
@@ -31,5 +32,14 @@
             android:layout_marginRight="16dp"
             android:layout_marginBottom="25dp" />
     </RelativeLayout>
-
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:gravity="top"
+            android:background="@drawable/button_truyenngan_audio"
+            android:text="Mau tin tong hop"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+    </RelativeLayout>
 </LinearLayout>

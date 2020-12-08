@@ -1,9 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TruyenCoTich">
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <Button
+            android:textColor="#238A81"
+            android:text="Truyen Vua Doc"
+            android:background="@drawable/buttonmain"
+            android:layout_width="137dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:textColor="#238A81"
+            android:text="Truyen Ke Tiep"
+            android:background="@drawable/buttonmain"
+            android:layout_width="137dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:textColor="#238A81"
+            android:text="Tim"
+            android:background="@drawable/buttonmain"
+            android:layout_width="137dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:gravity="center|left"
+            android:fontFamily="casual"
+            android:textSize="24sp"
+            android:background="@drawable/button_truyenngan_audio"
+            android:text="1. Sleeping Beauty"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <Button
+            android:gravity="left|center"
+            android:fontFamily="casual"
+            android:textSize="24sp"
+            android:background="@drawable/button_truyenngan_audio"
+            android:text="2. Cinderella"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <Button
+            android:gravity="center|left"
+            android:fontFamily="casual"
+            android:background="@drawable/button_truyenngan_audio"
+            android:textSize="24sp"
+            android:text="3. The Princess And The Pea"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <Button
+            android:gravity="left|center"
+            android:fontFamily="casual"
+            android:textSize="24sp"
+            android:background="@drawable/button_truyenngan_audio"
+            android:text="4. Jack And The Beanstalk"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <Button
+            android:gravity="center|left"
+            android:fontFamily="casual"
+            android:background="@drawable/button_truyenngan_audio"
+            android:textSize="24sp"
+            android:text="5. The Owl"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <Button
+            android:gravity="left|center"
+            android:fontFamily="casual"
+            android:background="@drawable/button_truyenngan_audio"
+            android:textSize="19sp"
+            android:text="6. The King Of The Golden Moutain"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <Button
+            android:gravity="center|left"
+            android:fontFamily="casual"
+            android:background="@drawable/button_truyenngan_audio"
+            android:textSize="24sp"
+            android:text="7. The Fisherman And His Wife"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <Button
+            android:gravity="left|center"
+            android:fontFamily="casual"
+            android:background="@drawable/button_truyenngan_audio"
+            android:textSize="24sp"
+            android:text="8. The Story Of Snow White And Th..."
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <Button
+            android:gravity="center|left"
+            android:fontFamily="casual"
+            android:background="@drawable/button_truyenngan_audio"
+            android:textSize="24sp"
+            android:text="9. Little Red Riding Hood"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <Button
+            android:gravity="left|center"
+            android:fontFamily="casual"
+            android:background="@drawable/button_truyenngan_audio"
+            android:textSize="24sp"
+            android:text="10. Little Red Riding Hood (Part 2)"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+    </LinearLayout>
+</LinearLayout>

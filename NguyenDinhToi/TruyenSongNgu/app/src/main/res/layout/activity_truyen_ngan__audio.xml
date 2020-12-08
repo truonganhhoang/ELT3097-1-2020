@@ -33,6 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <Button
+            android:id="@+id/button_truyen_ngan_audio_1"
             android:textColor="#000000"
             android:fontFamily="casual"
             android:gravity="center|left"

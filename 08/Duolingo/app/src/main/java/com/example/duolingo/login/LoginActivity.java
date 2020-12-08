@@ -18,6 +18,7 @@ import com.example.duolingo.question.QuestionThree;
 import com.example.duolingo.ui.HomeActivity;
 import com.example.duolingo.ui.InforActivity;
 import com.example.duolingo.ui.RankActivity;
+import com.example.duolingo.ui.Start;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -38,9 +39,8 @@ public class LoginActivity extends AppCompatActivity {
     SignInButton verify;
     EditText userEmail , userPassword;
     Button bt_signIn;
-    TextView tv_signUp;
-
-
+    Button signUp;
+    Button Back;
     private static final int RC_SIGN_IN = 123;
     private GoogleSignInClient mGoogleSignInClient;
     private FirebaseAuth mAuth;
@@ -65,6 +65,12 @@ public class LoginActivity extends AppCompatActivity {
 
         assign();
         createRequest();
+        Back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, Start.class));
+            }
+        });
 
         bt_signIn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -85,7 +91,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        tv_signUp.setOnClickListener(new View.OnClickListener() {
+        signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(LoginActivity.this , com.example.duolingo.RegistrationActivity.class));
@@ -103,12 +109,12 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void assign() {
-        userEmail = findViewById(R.id.user);
+        userEmail = findViewById(R.id.email);
         userPassword = findViewById(R.id.password);
         bt_signIn = findViewById(R.id.signIn);
-        verify = findViewById(R.id.signInButton);
-        tv_signUp = findViewById(R.id.signUp);
-
+        verify = findViewById(R.id.google_signin);
+        Back = findViewById(R.id.back);
+        signUp = findViewById(R.id.signUp);
     }
 
     private void createRequest() {

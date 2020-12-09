@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <Button
+            android:id="@id/truyenngan1_str1_e"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/truyenngan_audio_1"
+            android:text="ENGLISH"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/truyenngan1_str1_vn"
+            android:textSize="20sp"
+            android:layout_width="137dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/truyenngan_audio_1"
+            android:text="VIETNAMESE" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:gravity="center|left"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:text="Turn out"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:text="A small boy was back home from school, when reaching near the door, he suddenly heard a male voice courting his mother, come from inside the house."
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:text="- This night, I will wait you at the usual place! Remember to be on time, my little cucumber!"
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:text="- I know, my cat!"
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:text="So angry but didn't know what to do, the boy took a brick and threw at the door. His mother ran out and shouted:"
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:text="- What do you do so noisily?"
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:text="- Nothing! I just threw a cat intending to eat stealthily a cucumber in our kitchen cabinet!"
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:text="The man understood, turned pale, bent his head and ran away!"
+                android:textColor="#000000"
+                android:textSize="19sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

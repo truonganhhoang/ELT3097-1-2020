@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <Button
+            android:id="@id/truyenngan1_str1_e"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/truyenngan_audio_1"
+            android:text="ENGLISH"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/truyenngan1_str1_vn"
+            android:textSize="20sp"
+            android:layout_width="137dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/truyenngan_audio_1"
+            android:text="VIETNAMESE" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColor="#000000"
+                android:text="I thought you called the next student!"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:text="A teacher was asking a student a lot of questions, but the student couldn't answer any of them. The teacher then decided to ask him some very easy questions so that he could get a few right."
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:text='"What wa Bunker Hill?" She said.'
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:text='The student thought gor some time and then answered, "An airport?"'
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:text='"No, it was a battle," the teacher said. She was getting a little angry now, but she was trying not to show it. Then she asked, "Who was the first President of the United States?"'
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:text="The student thought for a long time, but didn't say anything. Then the teacher got very angry and shouted, &quot;George Washington!&quot; The student got up and began to walk towards his seat."
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:text="&quot;Come back!&quot; the teacher said. &quot;I didn't tell you to go.&quot;"
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:text="&quot;Oh, I'm sorry,&quot; the student said. &quot;I thought you called the next student.&quot;"
+                android:textColor="#000000"
+                android:textSize="19sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

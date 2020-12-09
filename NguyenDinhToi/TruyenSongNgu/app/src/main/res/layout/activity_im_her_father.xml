@@ -25,7 +25,6 @@
             android:background="@drawable/truyenngan_audio_1"
             android:text="VIETNAMESE" />
     </LinearLayout>
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -34,57 +33,76 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <TextView
-                android:layout_marginLeft="20dp"
                 android:gravity="center"
-                android:textColor="#000000"
                 android:textSize="24sp"
-                android:text="The Eight"
+                android:textColor="#000000"
+                android:text="I'M HER FATHER"
                 android:layout_width="wrap_content"
                 android:layout_height="100dp"/>
-
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:src="@drawable/booklove1" />
-
+                android:src="@drawable/babyandfather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
             <TextView
+                android:text="A lot of boys and girls in Western countries are wearing the same kinds of clothers and many of them have long hair, so it is often difficult to tell whether they are boys or girls."
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginStart="20dp"
-                android:background="@drawable/truyenngan_audio_1"
                 android:textColor="#000000"
                 android:textSize="19sp"
-                android:text="Joe was going into his usual bar before lunch when he saw a poorly dressed man fishing in a small pool of rain water about five centimeters deep outside it."
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <TextView
-                android:textColor="#000000"
-                android:textSize="19sp"
-                android:text="Joe stopped and watched the man for a few minutes. He saw that most of the poeple who passed by him believed he must be rather mad."
+                android:text="One day, an old gentleman went for a walk in a park in Washington, and when he was standing on the other side of the pond."
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginStart="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-            <TextView
-                android:text="The fisherman was delighted to accept his offer, and the two man went into the bar together. Joe bought the man a few drinks and finally said to him You've been fishing outside here, haven't you? How many did you manage to catch this morning, if may I ask?"
                 android:textColor="#000000"
                 android:textSize="19sp"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginStart="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-            <TextView
-                android:text="You're the eight, the fisherman answered merrily"
-                android:textColor="#000000"
-                android:textSize="19sp"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginStart="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:text='"My goodness!" the old man said to the person who was sitting next to him on the bench. "Do you see that person with the loose pants and long hair? Is it a boy or a girls?"'
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:text="&quot;A girl,&quot; said his neighbor. &quot;She's my daughter&quot;."
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:text="&quot;Oh!&quot; the gentleman said quickly. &quot;Please forgive me. I didn't know that you were her mother.&quot;"
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:text="&quot;I'm not, &quot;said that other person. &quot;I'm her father.&quot;"
+                android:textColor="#000000"
+                android:textSize="19sp" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

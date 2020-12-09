@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <Button
+            android:id="@id/truyenngan1_str1_e"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/truyenngan_audio_1"
+            android:text="ENGLISH"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/truyenngan1_str1_vn"
+            android:textSize="20sp"
+            android:layout_width="137dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/truyenngan_audio_1"
+            android:text="VIETNAMESE" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center|left"
+                android:text="What did I leave behind?"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:text="Six people were traveling in a compertment on a train. Five of them were quiet and well behevad, but the sixth was a rude young man was causing a lot of troble to the other passengers."
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:text='At last this young man got out on a station with his two heavy bags. none of the other passengers helpedhim, but one of them waits until the rude young man was very far away, and then opened the window the shotted to him,"You left somthing behind in the compartmentl. Then he clossed the window again.'
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:text='The young man turned around anh hurried back with the his two bags. He was very tired when he arrived, but he shuoted through thwe window,"What did I leave behind?".'
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:text='As the train began to move again, the passengers who had called him back opend the window and said,"A very bad immpression!"'
+                android:textColor="#000000"
+                android:textSize="19sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

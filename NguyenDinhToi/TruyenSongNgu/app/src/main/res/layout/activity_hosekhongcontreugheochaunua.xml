@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <Button
+            android:id="@+id/truyenngan1_str1_e"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/truyenngan_audio_1"
+            android:text="ENGLISH"
+            android:textSize="20sp" />
+        <Button
+            android:textSize="20sp"
+            android:layout_width="137dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/truyenngan_audio_1"
+            android:text="VIETNAMESE" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="THEY WONT'T PLAY THE TRICK ON ME ANY MORE!" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="William Henry Harrison, tổng thống thứ chín của Hoa Kỳ, cũng như khá nhiều tổng thống Mĩ trước ông, Harrison sinh ra ở một thành phố nhỏ. Khi còn bé, ông rất trầm lặng và rụt rè. Thật ra, cậu bé trầm lặng đến nỗi mọi người cho cậu là ngu ngốc.Do đó, dân chúng trong thành phố thích trêu ghẹo cậu.Chẳng hạn, họ đặt một đồng năm xu và một đồng mười xu trước mặt cậu ta thích lấy đồng nào. Cậu luôn luôn chọn đồng năm đồng xu để rồi sau đó, tất cả mọi người đều cười nhạo cậu."
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text='Một hôm người đàn bà thương hại cậu ta.Bà nói:"William, tại sao cháu luôn luôn chọn đồng năm xu thay vì đồng mười xu?.Cháu không biết là mặc dù đồng mười xu nhỏ hơn đồng năm xu nhưng giá trị của nó lớn hơn đồng năm xu nhiều à?".'
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text='"Có,cháu biết chứ ạ" - William chậm rãi trả lời - "Nhưng nếu cháu chọn đồng mười xu thì họ sẽ không còn trên ghẹo cháu nữa."'
+                android:textColor="#000000"
+                android:textSize="19sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

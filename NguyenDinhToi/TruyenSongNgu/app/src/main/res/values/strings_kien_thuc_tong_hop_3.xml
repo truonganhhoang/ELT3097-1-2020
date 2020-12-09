@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Header_4">
+        A Heartwarming Friendship
+    </string>
+    <string name="kien_thu_tong_hop_4_1">
+        //text
+    </string>
+    <string name="kien_thu_tong_hop_4_2">
+        //text
+    </string>
+    <string name="kien_thu_tong_hop_4_3">
+        //text
+    </string>
+    <string name="kien_thu_tong_hop_4_4">
+        //text
+    </string>
+    <string name="kien_thu_tong_hop_4_5">
+        //tex
+    </string>
+    <string name="kien_thu_tong_hop_4_6">
+        ///text
+    </string>
+    <string name="kien_thu_tong_hop_4_7">
+        //text
+    </string>
+    <string name="kien_thu_tong_hop_4_8">
+        //text
+    </string>
+    <string name="kien_thu_tong_hop_4_9">
+        //text
+    </string>
+    <string name="kien_thu_tong_hop_4_10">
+        //text
+    </string>
+    <string name="kien_thu_tong_hop_4_11">
+        //text
+    </string>
+
+
+    <string-array name="kien_thu_tong_hop_4_1_dich">
+        <item>
+            //text dich
+        </item>
+    </string-array>
+
+    <string-array name="kien_thu_tong_hop_4_2_dich">
+        <item>
+            //text dich
+        </item>
+    </string-array>
+
+    <string-array name="kien_thu_tong_hop_4_3_dich">
+        <item>
+            //text dich
+        </item>
+    </string-array>
+
+    <string-array name="kien_thu_tong_hop_4_4_dich">
+        <item>
+            //text dich
+        </item>
+    </string-array>
+
+    <string-array name="kien_thu_tong_hop_4_5_dich">
+        <item>
+            //text dich
+        </item>
+    </string-array>
+
+    <string-array name="kien_thu_tong_hop_4_6_dich">
+        <item>
+            //text dich
+        </item>
+    </string-array>
+
+    <string-array name="kien_thu_tong_hop_4_7_dich">
+        <item>
+            //text dich
+        </item>
+    </string-array>
+
+    <string-array name="kien_thu_tong_hop_4_8_dich">
+        <item>
+            //text dich
+        </item>
+    </string-array>
+
+    <string-array name="kien_thu_tong_hop_4_9_dich">
+        <item>
+            //text dich
+        </item>
+    </string-array>
+
+    <string-array name="kien_thu_tong_hop_4_10_dich">
+        <item>
+            //text dich
+        </item>
+    </string-array>
+
+    <string-array name="kien_thu_tong_hop_4_11_dich">
+        <item>
+            //text dich
+        </item>
+    </string-array>
+</resources>

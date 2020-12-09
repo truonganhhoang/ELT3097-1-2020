@@ -42,6 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"/>
         <Button
+            android:id="@+id/im_her_father"
             android:textColor="#000000"
             android:gravity="left|center"
             android:fontFamily="casual"
@@ -50,6 +51,7 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"/>
         <Button
+            android:id="@+id/i_thought_you_called"
             android:gravity="center|left"
             android:fontFamily="casual"
             android:textColor="#000000"
@@ -58,6 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"/>
         <Button
+            android:id="@+id/turn_out"
             android:gravity="left|center"
             android:fontFamily="casual"
             android:textColor="#000000"
@@ -66,6 +69,7 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"/>
         <Button
+            android:id="@+id/polite"
             android:gravity="center|left"
             android:fontFamily="casual"
             android:background="@drawable/button_truyenngan_audio"
@@ -74,6 +78,7 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"/>
         <Button
+            android:id="@+id/clever"
             android:fontFamily="casual"
             android:gravity="left|center"
             android:textColor="#000000"

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <Button
+            android:id="@+id/truyenngan1_str1_e"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/truyenngan_audio_1"
+            android:text="ENGLISH"
+            android:textSize="20sp" />
+        <Button
+            android:textSize="20sp"
+            android:layout_width="137dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/truyenngan_audio_1"
+            android:text="VIETNAMESE" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Lịch sự" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Như các bạn đã biết, người Anh rất lịch sự. Nếu như ông chủ muốn đuổi việc bạn, ông ta cùng dùng những câu tế nhị nhất,và đây là những câu phổ biến:"
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="-Tôi không biết chúng tôi sẽ làm việc thế nào thiếu bạn, nhưng chúng tôi sẽ cố gắng!"
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="-Tôi nói với mọi người là cậu xịn nghỉ việc vì ốm. Nhưng thực tế là tôi phát ốm vì cậu!"
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Anh không  vô trách nhiệm! Vấn đề là anh phải chịu trách nhiệm cho nhiều thảm họa hơn bất kì ai có thể, ở vị trí của anh! "
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="-Tôi có tin tốt cho cậu đây. Cậu sẽ không còn phải lo lắng về đi làm muộn nữa đâu!"
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Hãy nói cho tôi biết:Cậu làm việc ở đây đã bao lâu rồi, nêú không tính ngày mai?"
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

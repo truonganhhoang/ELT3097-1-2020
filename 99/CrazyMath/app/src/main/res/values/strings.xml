@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">CrazyMath</string>
+    <string name="best">diem cao nhat</string>
+    <string name="score">diem so</string>
+    <string name="crazy_math">tv</string>
+    <string name="your_score">diem so cua ban</string>
+    <string name="game_over">ket thuc</string>
 </resources>

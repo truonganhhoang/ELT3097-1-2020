@@ -7,28 +7,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class TruyenNgan_Audio extends AppCompatActivity {
-    //khai bao
-
+public class They_wont_play_the_trick extends AppCompatActivity {
     Button btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_truyen_ngan__audio);
-
-        //anh xa
-        btn = (Button) findViewById(R.id.button_truyen_ngan_audio_1);
-
-
-        //code
+        setContentView(R.layout.activity_they_wont_play_the_trick);
+        btn = (Button) findViewById(R.id.truyenngan1_str1_vn);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(TruyenNgan_Audio.this, truyen_ngan_audio_str1.class);
+                Intent intent = new Intent(They_wont_play_the_trick.this, hosekhongcontreugheochaunua.class);
                 startActivity(intent);
             }
         });
-
     }
 }

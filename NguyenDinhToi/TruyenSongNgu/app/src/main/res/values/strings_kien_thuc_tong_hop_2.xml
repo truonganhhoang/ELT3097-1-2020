@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Header_3">How To Learn English Passionately</string>
+    <string name="kien_thu_tong_hop_3_1">
+        Without energy, it is hard to succeed. Without energy, it is hard to do anything. If you have no energy, you can not exercise. If you have no energy, probably your relationships will be bad. If you have no energy, you are not going to learn English very well, you are not going to learn anything very well. If you have no energy, you are not going to be a good teacher. You are not going to be a good father, you are not going to be a good mother, nothing in your life will be excellent or even very good you do not have that energy and that passion. The passion drives everything else. It is the fuel, it is like the gasoline for your engine, for everything.
+    </string>
+    <string name="kien_thu_tong_hop_3_2">
+
+    </string>
+    <string name="kien_thu_tong_hop_3_3">
+        //tex
+    </string>
+    <string name="kien_thu_tong_hop_3_4">
+        //text
+    </string>
+    <string name="kien_thu_tong_hop_3_5">
+        //text
+    </string>
+    <string name="kien_thu_tong_hop_3_6">
+        ///text
+    </string>
+    <string name="kien_thu_tong_hop_3_7">
+        //text
+    </string>
+    <string name="kien_thu_tong_hop_3_8">
+        //text
+    </string>
+
+
+    <string-array name="kien_thu_tong_hop_3_1_dich">
+        <item>
+            Nếu không có nhiệt huyết sẽ rất khó để thành công. Nếu không có đam mê sẽ rất khó để làm bất cứ điều gì. Nếu bạn không có năng lượng, bạn không thể luyện tập. Nếu bạn không có hứng thú, mối quan hệ của của bạn sẽ xấu đi. Nếu bạn không có đam mê, bạn không thể học tốt tiếng Anh cũng như bạn không thể học tốt bất cứ thứ gì. Nếu không có nhiệt huyết bạn sẽ không thể trở thành một giáo viên tốt. Bạn cũng không thể trở thành một người cha, người mẹ tốt, không có điều gì trong cuộc sống của bạn sẽ tuyệt vời hay thậm chí là tốt nếu bạn không có năng lượng và đam mê. Niềm đam mê dẫn dắt mọi thứ. Nó là nguồn năng lượng cho mọi thứ, như xăng dầu cho động cơ.
+        </item>
+    </string-array>
+
+    <string-array name="kien_thu_tong_hop_3_2_dich">
+    <item>
+        //text dich
+    </item>
+    </string-array>
+    <string-array name="kien_thu_tong_hop_3_3_dich">
+    <item>
+        //text dich
+    </item>
+    </string-array>
+    <string-array name="kien_thu_tong_hop_3_4_dich">
+    <item>
+        //text dich
+    </item>
+    </string-array>
+    <string-array name="kien_thu_tong_hop_3_5_dich">
+    <item>
+        //text dich
+    </item>
+    </string-array>
+    <string-array name="kien_thu_tong_hop_3_6_dich">
+    <item>
+        //text dich
+    </item>
+    </string-array>
+    <string-array name="kien_thu_tong_hop_3_7_dich">
+    <item>
+        //text dich
+    </item>
+    </string-array>
+    <string-array name="kien_thu_tong_hop_3_8_dich">
+    <item>
+        //text dich
+    </item>
+    </string-array>
+</resources>

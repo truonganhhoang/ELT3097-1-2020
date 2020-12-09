@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity.OtherFragment">
+
+    <RelativeLayout
+        android:id="@+id/layout_logo"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/other_layout_logo">
+
+        <ImageView
+            android:id="@+id/other_logo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/other_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/textView_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/other_logo"
+            android:layout_centerHorizontal="true"
+            android:text="Truyện Song Ngữ AV"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:background="@drawable/login_button"
+            android:text="Đăng nhập"
+            android:textSize="12sp"
+            android:textColor="@color/blue_main"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/other_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginTop="200dp">
+
+        <RelativeLayout
+            android:id="@+id/item1"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/other_item"
+            android:paddingLeft="20dp">
+
+            <ImageView
+                android:id="@+id/nang_cap_vip"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/nang_cap_vip"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nâng cấp PRO version"
+                android:textSize="15sp"
+                android:layout_toEndOf="@id/nang_cap_vip"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item2"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_below="@+id/item1"
+            android:background="@drawable/other_item"
+            android:paddingLeft="20dp">
+
+            <ImageView
+                android:id="@+id/thoi_gian_da_hoc"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/thoi_gian_da_hoc"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thời gian đã học trong tuần"
+                android:textSize="15sp"
+                android:layout_toEndOf="@id/thoi_gian_da_hoc"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item3"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_below="@+id/item2"
+            android:background="@drawable/other_item"
+            android:paddingLeft="20dp">
+
+            <ImageView
+                android:id="@+id/hoi_thoai_hang_ngay"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/hoi_thoai_hang_ngay"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(QC) Tiếng Anh hội thoại hàng ngày"
+                android:textSize="15sp"
+                android:layout_toEndOf="@id/hoi_thoai_hang_ngay"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item4"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_below="@+id/item3"
+            android:background="@drawable/other_item"
+            android:paddingLeft="20dp">
+
+            <ImageView
+                android:id="@+id/cai_dat_thoi_gian"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/cai_dat_thoi_gian"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cài đặt thời gian học"
+                android:textSize="15sp"
+                android:layout_toEndOf="@id/cai_dat_thoi_gian"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item5"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_below="@+id/item4"
+            android:paddingLeft="20dp">
+
+            <ImageView
+                android:id="@+id/cai_dat_thong_bao"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/cai_dat_thong_bao"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cài đặt thông báo"
+                android:textSize="15sp"
+                android:layout_toEndOf="@id/cai_dat_thong_bao"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

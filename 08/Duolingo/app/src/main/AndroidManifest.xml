@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_duolingo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".question.QuestionFive"></activity>
+        <activity android:name=".ui.join.Join3"></activity>
+        <activity android:name=".question.QuestionFive" />
         <activity android:name=".question.QuestionFour" />
         <activity android:name=".ui.join.Join4" />
         <activity android:name=".ui.join.LevelList" />

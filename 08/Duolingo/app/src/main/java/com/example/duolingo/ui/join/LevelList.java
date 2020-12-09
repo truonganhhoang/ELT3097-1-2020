@@ -66,11 +66,11 @@ public class LevelList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level_list);
         ButterKnife.bind(this);
-        progressBar.setProgress(80);
+        progressBar.setProgress(60);
         continueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LevelList.this, Join4.class));
+                startActivity(new Intent(LevelList.this, Join3.class));
             }
         });
         Back.setOnClickListener(new View.OnClickListener() {

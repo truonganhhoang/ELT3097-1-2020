@@ -25,7 +25,7 @@ public class Join2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_join2);
         ButterKnife.bind(this);
-        progressBar.setProgress(60);
+        progressBar.setProgress(40);
         Back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

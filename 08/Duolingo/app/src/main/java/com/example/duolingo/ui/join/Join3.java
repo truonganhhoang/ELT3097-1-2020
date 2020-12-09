@@ -9,33 +9,34 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 
 import com.example.duolingo.R;
-import com.example.duolingo.ui.selectlanguage.SelectLanguage;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class Join1 extends AppCompatActivity {
+public class Join3 extends AppCompatActivity {
     @BindView(R.id.back)
     Button Back;
     @BindView(R.id.progressBar)
     ProgressBar progressBar;
+    @BindView(R.id.continue_button)
+    Button Continuous;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_join1);
+        setContentView(R.layout.activity_join3);
         ButterKnife.bind(this);
-
-        progressBar.setProgress(20);
+        progressBar.setProgress(80);
         Back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Join1.this, SelectLanguage.class));
+                startActivity(new Intent(Join3.this, LevelList.class));
             }
         });
-
-    }
-
-    public void openActivityChild(View view) {
-        startActivity(new Intent(Join1.this, Join2.class));
+        Continuous.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Join3.this, Join4.class));
+            }
+        });
     }
 }

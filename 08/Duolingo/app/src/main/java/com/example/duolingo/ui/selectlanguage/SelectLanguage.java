@@ -32,7 +32,7 @@ public class SelectLanguage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_language);
         ButterKnife.bind(this);
-        progressBar.setProgress(20);
+        progressBar.setProgress(0);
         Back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

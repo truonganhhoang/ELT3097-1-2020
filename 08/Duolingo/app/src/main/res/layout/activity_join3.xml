@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.join.Join3">
+    <include layout="@layout/activity_progressbar"
+            android:id="@+id/bar"/>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_below="@+id/bar"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tổng quan khóa học"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Học nghe,nói, đọc và viết bằng Tiếng Anh" />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:id="@+id/layout2"
+        android:layout_below="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="213dp"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:paddingTop="50dp">
+
+            <ImageView
+                android:id="@+id/tuvung"
+                android:layout_width="51dp"
+                android:layout_height="48dp"
+                android:background="@drawable/tuvung" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tuvung"
+                android:layout_marginLeft="60dp"
+                android:text="3.600+"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView9"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="5dp"
+                android:text="Từ vựng"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:paddingTop="50dp">
+
+            <ImageView
+                android:id="@+id/butchi"
+                android:layout_width="51dp"
+                android:layout_height="48dp"
+                android:background="@drawable/butchi" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/butchi"
+                android:layout_marginLeft="60dp"
+                android:text="7.600+"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView11"
+                android:textSize="20dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="5dp"
+                android:text="câu" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="273dp"
+        android:layout_below="@+id/layout2"
+        android:layout_marginTop="-2dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Xây dựng các kĩ năng của bạn"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:textStyle="bold"/>
+        <RelativeLayout
+            android:id="@+id/bando"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            >
+
+            <ImageView
+                android:id="@+id/img_bando"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/ketban"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/img_bando"
+                android:text="Gọi món và hỏi đường như người bản địa"
+                android:textColor="@color/custom_view_text_color"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/image_friend" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/hotro"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="4dp">
+
+            <ImageView
+                android:id="@+id/img_hotro"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/hotro"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/img_hotro"
+                android:text="Hộ trợ giúp lớp học của bạn nổi bật ở trường"
+                android:textColor="@color/custom_view_text_color"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/image_brain" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/yeucau"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="4dp">
+
+            <ImageView
+                android:id="@+id/img_yeucau"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/yeucau"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/img_yeucau"
+                android:text="Đáp ứng yêu cầu thăng tiến công việc và sự nghiêp"
+                android:textColor="@color/custom_view_text_color"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/image_school" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/continue_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/get_started_button"
+        android:textColor="@color/button_task_continue"
+        android:textSize="17sp"
+        android:layout_alignParentBottom="true"
+        android:text="Tiếp Tục"
+        android:layout_margin="16dp"/>
+
+
+</RelativeLayout>

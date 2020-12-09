@@ -30,4 +30,7 @@
         <item>Japan</item>
         <item>Korean</item>
     </string-array>
+
+    <string name="info_gapdoi">Cược 5 lingot và nhận về \n gấp đôi nếu bạn duy trì \n được 7 ngày streak.</string>
+    <string name="info_freeze">Streak Freeze cho phép \n bạn giữ nguyên Streak \n trong một ngày bạn \n không có hoạt động nào .</string>
 </resources>

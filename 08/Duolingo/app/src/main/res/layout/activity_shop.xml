@@ -14,10 +14,117 @@
         android:background="@drawable/bottom_nav_custom"
         app:menu="@menu/menu_navigation" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/fun" />
+    <RelativeLayout
+        android:id="@+id/nav_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:text="Cửa hàng"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:paddingLeft="160dp"
+            android:paddingTop="30dp"
+            android:textColor="#AFAF81"
+            android:textAllCaps="false"
+            />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/nav_bottom"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+        <RelativeLayout
+            android:id="@+id/shop1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/type1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="Streak"
+                android:textAllCaps="false"
+                android:textColor="#504B4B"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                />
+            <RelativeLayout
+                android:id="@+id/choose1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/type1"
+                android:background="@drawable/log_in_link_button"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/streak"
+                    />
+                <TextView
+                    android:id="@+id/streak"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:text="Streak Freeze"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:textColor="#1B1A1A"
+                    android:textAllCaps="false"
+                    />
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_below="@+id/streak"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:textSize="18sp"
+                    android:textColor="#635858"
+                    android:textAllCaps="false"
+
+                    android:text="@string/info_freeze"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/choose2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/choose1"
+                android:background="@drawable/log_in_link_button"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/gapdoi"
+                    />
+                <TextView
+                    android:id="@+id/streak2"
+                    android:layout_width="400dp"
+                    android:layout_marginLeft="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Gấp đôi hoặc Mất hết"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:textColor="#1B1A1A"
+                    android:textAllCaps="false"
+                    />
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_below="@+id/streak2"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:textSize="18sp"
+                    android:textColor="#635858"
+                    android:textAllCaps="false"
+
+                    android:text="@string/info_gapdoi"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
 
 </RelativeLayout>

@@ -4,100 +4,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:background="@drawable/mainbackground"
     android:orientation="vertical"
     tools:context="ui.MainActivity">
 
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawablePadding="10dp"
-        android:text="Ôn thi giấy phép lái xe"
+        android:id="@+id/textView"
         android:textColor="@color/green"
-        android:textSize="40dp" />
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:textSize="25dp"
+        android:text="Ôn thi giấy phép lái xe" />
+
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:layout_marginTop="105dp"
-        >
+        android:layout_height="160dp"
+        android:orientation="horizontal">
+
         <Button
             android:id="@+id/btnThithu"
-            android:layout_width="95dp"
-            android:layout_height="95dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:background="@drawable/lamthude" />
+            android:layout_width="61dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@drawable/sathach" />
 
         <Button
             android:id="@+id/btnLythuyet"
-            android:layout_width="95dp"
-            android:layout_height="95dp"
-            android:layout_marginRight="9dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:background="@drawable/onlythuyet" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        >
-
-        <Button
-            android:id="@+id/btnHocSaHinh"
-            android:layout_width="95dp"
-            android:layout_height="95dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginBottom="5dp"
-            android:background="@drawable/hocsahinh" />
+            android:layout_width="61dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@drawable/hoclythuyet" />
 
         <Button
             android:id="@+id/btnHocBienBao"
-            android:layout_width="95dp"
-            android:layout_height="95dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="9dp"
-            android:layout_marginBottom="5dp"
-            android:background="@drawable/hocbienbao" />
+            android:layout_width="61dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@drawable/bienbaoduongbo" />
+
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:paddingBottom="5dp"
-        >
+        android:layout_height="101dp">
+
         <Button
-            android:id="@+id/btnThuchanh"
-            android:layout_width="95dp"
-            android:layout_height="95dp"
-            android:background="@drawable/gioithieuthuchanh"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            />
+            android:id="@+id/btnHocSaHinh"
+            android:layout_width="61dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@drawable/meo" />
 
         <Button
             android:id="@+id/btnFines"
-            android:layout_width="95dp"
-            android:layout_height="95dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="9dp"
-            android:layout_marginBottom="5dp"
-            android:background="@drawable/mucxuphat" />
-    </LinearLayout>
+            android:layout_width="61dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@drawable/luat" />
 
+        <Button
+            android:id="@+id/btnThuchanh"
+            android:layout_width="61dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@drawable/cauhaysai" />
+    </LinearLayout>
 </LinearLayout>
